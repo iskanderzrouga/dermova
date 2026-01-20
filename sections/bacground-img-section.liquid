@@ -1,0 +1,235 @@
+
+<style>
+/* === PHASE 3: Enhanced Doctor Quote Section with Glassmorphism === */
+
+  .custom-quote-section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    min-height: 582px; /* Ensure enough space for the background */
+  }
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Glassmorphism Quote Card */
+  .left-content {
+    top: 81px;
+    max-width: 609px;
+    position: absolute;
+    left: 50%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 32px 32px 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+  .left-content:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+ .doctor-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #39585B;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    align-content: center;
+    align-items: center;
+}
+
+  /* Quote Text with Left Border Accent */
+ .quote-text {
+    max-width: 561px;
+    color: #333;
+    font-size: 24px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+    border-left: 4px solid #39585B;
+    text-align: left;
+    font-style: italic;
+}
+.quote-text_2 {
+    max-width: 407px;
+    color: #555;
+    font-size: 16px;
+}
+  .rich-text {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .doc-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .icon-wrapper {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+  }
+
+  .icon-wrapper img {
+    max-width: 120px;
+    border-radius: 50%;
+    height: auto;
+  }
+
+   /* Mobile-specific styles */
+  @media screen and (max-width: 768px) {
+    .custom-quote-section {
+      background-image: url({{ section.settings.mobile_background_image | img_url:'master'}})!important;
+      min-height: 880px;
+    }
+
+       .left-content {
+        position: relative;
+        max-width: 100%;
+        top: 420px;
+        left: 0;
+        transform: none;
+        padding: 16px;
+        background:#ffffff;
+    }
+
+  .quote-text {
+    font-size: 18px; 
+    line-height: 1.5; 
+    max-width: 100%; 
+  }
+
+  .doctor-name {
+    font-size: 24px; 
+    text-align: center; 
+  }
+
+  .quote-text_2 {
+    font-size: 16px;
+    max-width: 100%; 
+
+  /* Additional adjustments for icons */
+  .icon-wrapper {
+    position: static; 
+    bottom: auto; 
+    right: auto; 
+    margin-top: 20px;
+    text-align: center; 
+  }
+
+  .icon-wrapper img {
+    max-width: 80px; 
+    height: auto;
+  }
+}
+  }
+</style>
+
+<section class="custom-quote-section" style="background-image: url({{ section.settings.background_image | img_url:'master' }}); padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="page-width">
+ <div class="left-content">
+      <div class="quote-text">
+        {{ section.settings.quote_text | escape }}
+      </div>
+      <div class="doc-name">
+      <div class="doctor-name">— {{ section.settings.doctor_name }} 
+        {% render 'svg-icon-backgroundimg' %}
+</div>
+ <div class="quote-text_2">
+        {{ section.settings.quote_text_2 | escape }}
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Background image section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Background Image",
+      "id": "background_image",
+     
+    },
+     {
+      "type": "image_picker",
+      "label": "Mobile Background Image",
+      "id": "mobile_background_image"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Quote Text",
+      "id": "quote_text",
+      
+    },
+    {
+      "type": "text",
+      "label": "Doctor's Name",
+      "id": "doctor_name",
+      "default": "uw. [Name]"
+    },
+    {
+      "type": "inline_richtext",
+      "label": "Quote Text",
+      "id": "quote_text_2",
+      
+    },
+    
+    {
+     "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40
+    }
+
+  ],
+   "presets": [
+    {
+      "name": "Default",
+      "category": "Custom Sections",
+    }
+  ],
+}
+{% endschema %}

@@ -1,0 +1,200 @@
+<section id="image-with-text-custom">
+    <div class="page-width">
+        {% if section.settings.heading1 %}
+                        <h2 class="heading2">{{ section.settings.heading1 }}</h2>
+                    {% endif %}
+        {% if section.settings.heading2 %}
+                        <h2 class="heading2 mobile-visible">{{ section.settings.heading2 }}</h2>
+                    {% endif %}
+    </div>
+    <div class="page-width">
+        <div class="container">
+            <div class="row-cust">
+                <div class="col-cust">
+                    <img class="image-1" src="{{ section.settings.image-1 | img_url:'master' }}">
+                </div>
+                <div class="col-cust">
+                    {% if section.settings.heading2 %}
+                        <h2 class="heading2 mobile-hide">{{ section.settings.heading2 }}</h2>
+                    {% endif %}
+                    <p>{{ section.settings.paragraph }}</p>
+                    {% for block in section.blocks %}
+                        <div class="row-custom-2" {{ block.shopify_attributes }}>
+                            <img src="{{ block.settings.icon | img_url:'master' }}">
+                            <p>{{ block.settings.info }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "image with text custom",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image-1",
+            "label": "Select an image"
+        },
+      {
+        "type": "text",
+        "id": "heading1",
+        "label": "Enter top Heading Here :"
+      },{
+            "type": "text",
+            "id": "heading2",
+            "label": "Enter Heading 1 here : "
+      },{
+            "type": "richtext",
+            "id": "paragraph",
+            "label": "Enter an Information: "
+        },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+    ],
+     "max_blocks": 10,
+    "blocks":[
+      {
+        "type":"text",
+        "name":"Accordian item",
+        "settings":[
+            {
+                "type": "image_picker",
+                "id": "icon",
+                "label": "Select left Logo"
+            },  
+          {
+            "type": "text",
+            "id": "info",
+            "label": "Enter information Here : "
+          }
+        ]  
+      }
+    ],
+    "presets": [
+      {
+        "name": "image with text custom oil"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+
+    
+  #image-with-text-custom {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    #image-with-text-custom {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+    #image-with-text-custom .row-cust {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    #image-with-text-custom .container{
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+    
+    #image-with-text-custom .image-1{
+        max-width: 609px;
+        border-radius: 30px;
+        width: 100%;
+    }
+    #image-with-text-custom .heading2{
+        font-size: 50px;
+        font-weight: 800;
+    }
+    #image-with-text-custom .col-cust p{
+        font-size: 18px;
+        max-width: 586px;
+    }
+    #image-with-text-custom .row-custom-2 {
+        display: flex;
+        line-height: 18px;
+        align-items: center;
+        height: 30px;
+        gap: 10px;
+    }
+    #image-with-text-custom .row-custom-2 img{
+        width: 20px;
+    }
+    #image-with-text-custom .mobile-visible{
+        display: none;
+    }
+@media screen and (max-width: 768px){
+  #image-with-text-custom .mobile-hide{
+    display: none;
+  }
+
+  #image-with-text-custom .heading2{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #image-with-text-custom .mobile-visible{
+    display: block;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #image-with-text-custom .row-cust{
+    flex-direction: column;
+    gap: 24px;
+  }
+  #image-with-text-custom .col-cust p{
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+section#image-with-text-custom .page-width {
+    max-width: 1320px !important;
+}
+section#image-with-text-custom .col-cust {
+    width: 50%;
+}
+
+@media screen and (max-width:768px){
+section#image-with-text-custom .col-cust {
+    width: 100%;
+}
+
+@media screen and (max-width:600px){
+#image-with-text-custom .row-custom-2{
+padding-left:20px;
+}
+}
+</style>

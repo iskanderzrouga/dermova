@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_text_bN4RHr": {
+          "type": "image-text",
+          "settings": {
+            "image": "shopify://shop_images/Group_1321315241.png",
+            "image_width": 300,
+            "text": "<p>ผลิตภัณฑ์นี้ได้รับการรับรองจาก อย. ประเทศไทยแล้ว<br/><br/>ไม่มีวัตถุประสงค์เพื่อวินิจฉัย รักษา บรรเทา หรือป้องกันโรค</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_text_bN4RHr"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "show-copyrights": false,
+        "margin_top": 0,
+        "padding_top": 68,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

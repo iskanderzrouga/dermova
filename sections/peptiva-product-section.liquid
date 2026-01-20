@@ -1,0 +1,407 @@
+<style>
+  /* === Hero Section Redesign - Clean DTC Style === */
+
+  /* Hide announcement bar on LP */
+  .peptiva-lp ~ .announcement-bar-section,
+  body:has(.peptiva-lp) .announcement-bar-section {
+    display: none !important;
+  }
+
+  /* Simplify header on LP */
+  body:has(.peptiva-lp) .header {
+    padding: 12px 0;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Global focus states for accessibility */
+  .peptiva-lp *:focus-visible {
+    outline: 2px solid #39585B;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  .peptiva-lp *:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    .peptiva-lp *,
+    .peptiva-lp *::before,
+    .peptiva-lp *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* === Hero Section === */
+  .peptiva-hero {
+    padding: 60px 0 50px;
+    background: #fff;
+  }
+
+  .peptiva-hero__container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .peptiva-hero__content {
+    flex: 1;
+    max-width: 520px;
+  }
+
+  /* Subtle Trust Badge */
+  .peptiva-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: rgba(57, 88, 91, 0.06);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #39585B;
+  }
+
+  .peptiva-hero__star {
+    flex-shrink: 0;
+  }
+
+  /* Title with Italic Emphasis */
+  .peptiva-hero__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #1a1a1a;
+    margin: 0 0 16px;
+  }
+
+  .peptiva-hero__title em {
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* Subtitle */
+  .peptiva-hero__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    margin: 0 0 32px;
+    max-width: 460px;
+  }
+
+  /* Clean CTA Button - No Animations */
+  .peptiva-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 40px;
+    background: #39585B;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .peptiva-hero__cta:hover {
+    background: #2d4649;
+    transform: translateY(-2px);
+  }
+
+  .peptiva-hero__cta:active {
+    transform: translateY(0);
+  }
+
+  /* Trust Indicator */
+  .peptiva-hero__trust {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .peptiva-hero__trust img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  /* Product Image */
+  .peptiva-hero__media {
+    flex: 0 0 48%;
+    max-width: 520px;
+  }
+
+  .peptiva-hero__media img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+    object-fit: contain;
+  }
+
+  /* === Mobile Styles === */
+  @media (max-width: 768px) {
+    .peptiva-hero {
+      padding: 32px 0;
+    }
+
+    .peptiva-hero__container {
+      flex-direction: column;
+      gap: 24px;
+      padding: 0 20px;
+    }
+
+    .peptiva-hero__media {
+      order: -1;
+      flex: none;
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .peptiva-hero__content {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .peptiva-hero__badge {
+      font-size: 11px;
+      padding: 5px 12px;
+      margin-bottom: 16px;
+    }
+
+    .peptiva-hero__title {
+      font-size: 28px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .peptiva-hero__subtitle {
+      font-size: 15px;
+      margin-bottom: 24px;
+      max-width: 100%;
+    }
+
+    .peptiva-hero__cta {
+      width: 100%;
+      padding: 18px 24px;
+      font-size: 16px;
+      min-height: 56px;
+    }
+
+    .peptiva-hero__cta:active {
+      transform: scale(0.98);
+    }
+
+    .peptiva-hero__trust {
+      justify-content: center;
+      font-size: 13px;
+    }
+
+    .peptiva-hero__media img {
+      border-radius: 12px;
+    }
+  }
+</style>
+
+<section class="peptiva-hero peptiva-lp" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="peptiva-hero__container">
+    <div class="peptiva-hero__content">
+      <!-- Subtle Trust Badge -->
+      <div class="peptiva-hero__badge">
+        <svg class="peptiva-hero__star" width="14" height="14" viewBox="0 0 24 24" fill="#E6B616" aria-hidden="true">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        <span>{{ section.settings.rating_value }} | {{ section.settings.review_text }}</span>
+      </div>
+
+      <!-- Headline with Italic Emphasis -->
+      <h1 class="peptiva-hero__title">
+        {{ section.settings.title_line1 }}<br>
+        <em>{{ section.settings.title_line2 }}</em>
+      </h1>
+
+      <!-- Short Subheadline -->
+      <p class="peptiva-hero__subtitle">
+        {{ section.settings.subtitle }}
+      </p>
+
+      <!-- Clean CTA -->
+      <a href="{{ section.settings.cta_link }}" class="peptiva-hero__cta">
+        {{ section.settings.cta_text }}
+      </a>
+
+      <!-- Trust Indicator -->
+      {% if section.settings.trust_icon != blank or section.settings.trust_text != blank %}
+        <div class="peptiva-hero__trust">
+          {% if section.settings.trust_icon != blank %}
+            <img
+              src="{{ section.settings.trust_icon | image_url: width: 48 }}"
+              width="24"
+              height="24"
+              alt=""
+              loading="eager"
+            >
+          {% endif %}
+          {% if section.settings.trust_text != blank %}
+            <span>{{ section.settings.trust_text }}</span>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="peptiva-hero__media">
+      {% if section.settings.product_image != blank %}
+        <img
+          src="{{ section.settings.product_image | image_url: width: 1000 }}"
+          srcset="{{ section.settings.product_image | image_url: width: 400 }} 400w,
+                  {{ section.settings.product_image | image_url: width: 600 }} 600w,
+                  {{ section.settings.product_image | image_url: width: 800 }} 800w,
+                  {{ section.settings.product_image | image_url: width: 1000 }} 1000w"
+          sizes="(max-width: 768px) 280px, 45vw"
+          alt="{{ section.settings.product_title | default: 'Peptiva Hair Serum' }}"
+          loading="eager"
+          width="500"
+          height="500"
+        >
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Peptiva Hero Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Trust Badge"
+    },
+    {
+      "type": "text",
+      "id": "rating_value",
+      "label": "Rating Value",
+      "default": "4.9/5"
+    },
+    {
+      "type": "text",
+      "id": "review_text",
+      "label": "Review Text",
+      "default": "จาก 6,200+ รีวิว"
+    },
+    {
+      "type": "header",
+      "content": "Headline"
+    },
+    {
+      "type": "text",
+      "id": "title_line1",
+      "label": "Headline Line 1",
+      "default": "หยุดวงจรผมร่วง"
+    },
+    {
+      "type": "text",
+      "id": "title_line2",
+      "label": "Headline Line 2 (Italic)",
+      "default": "พร้อมกระตุ้นผมงอกใหม่"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subheadline",
+      "default": "เซรั่มบำรุงรากผม ฟื้นฟูระบบไหลเวียนเลือดบนหนังศีรษะ จาก Dermova™"
+    },
+    {
+      "type": "header",
+      "content": "Call to Action"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "สั่ง Peptiva ลด 50% วันนี้"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Link"
+    },
+    {
+      "type": "header",
+      "content": "Trust Indicator"
+    },
+    {
+      "type": "image_picker",
+      "id": "trust_icon",
+      "label": "Trust Icon"
+    },
+    {
+      "type": "text",
+      "id": "trust_text",
+      "label": "Trust Text",
+      "default": "ไม่พอใจภายใน 90 วัน ยินดีคืนเงินทุกบาท"
+    },
+    {
+      "type": "header",
+      "content": "Product Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "text",
+      "id": "product_title",
+      "label": "Image Alt Text",
+      "default": "Peptiva Hair Serum"
+    },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Peptiva Hero"
+    }
+  ]
+}
+{% endschema %}

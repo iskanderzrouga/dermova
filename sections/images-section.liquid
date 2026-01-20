@@ -1,0 +1,339 @@
+<style>
+/* === Infinite Marquee Image Section === */
+
+.peptiva-marquee-section {
+  width: 100%;
+  overflow: hidden;
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  background: {{ section.settings.background_color }};
+}
+
+/* Marquee Row Container */
+.marquee-row {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.marquee-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Marquee Track - holds images */
+.marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Animation Keyframes */
+@keyframes marquee-scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Row 1: Left scroll, 30s */
+.marquee-row-1 .marquee-track {
+  animation: marquee-scroll-left 30s linear infinite;
+}
+
+/* Row 2: Right scroll, 35s */
+.marquee-row-2 .marquee-track {
+  animation: marquee-scroll-right 35s linear infinite;
+}
+
+/* Row 3: Left scroll, 32s */
+.marquee-row-3 .marquee-track {
+  animation: marquee-scroll-left 32s linear infinite;
+}
+
+/* Pause on hover - accessibility for older users */
+.marquee-row:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Individual Image Items */
+.marquee-item {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.marquee-item:hover {
+  box-shadow: 0 8px 24px rgba(57, 88, 91, 0.2);
+  transform: scale(1.02);
+}
+
+.marquee-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* === Tablet Responsive (768-1023px) === */
+@media (max-width: 1023px) {
+  .marquee-item {
+    width: 120px;
+    height: 120px;
+  }
+
+  .marquee-track {
+    gap: 12px;
+  }
+
+  .marquee-row {
+    margin-bottom: 12px;
+  }
+
+  /* Faster animation for tablet (less distance) */
+  .marquee-row-1 .marquee-track {
+    animation-duration: 25s;
+  }
+  .marquee-row-2 .marquee-track {
+    animation-duration: 30s;
+  }
+  .marquee-row-3 .marquee-track {
+    animation-duration: 27s;
+  }
+}
+
+/* === Mobile Responsive (<768px) === */
+@media (max-width: 767px) {
+  .marquee-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+
+  .marquee-track {
+    gap: 10px;
+  }
+
+  .marquee-row {
+    margin-bottom: 10px;
+  }
+
+  /* Faster animation for mobile */
+  .marquee-row-1 .marquee-track {
+    animation-duration: 20s;
+  }
+  .marquee-row-2 .marquee-track {
+    animation-duration: 24s;
+  }
+  .marquee-row-3 .marquee-track {
+    animation-duration: 22s;
+  }
+
+  /* No hover effects on mobile */
+  .marquee-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transform: none;
+  }
+}
+
+/* === Accessibility: Reduced Motion === */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+  }
+
+  /* Stack images in static grid when motion reduced */
+  .marquee-row {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+</style>
+
+{% comment %}
+  Split blocks into 3 rows:
+  - Row 1: blocks 0-12 (13 images)
+  - Row 2: blocks 13-25 (13 images)
+  - Row 3: blocks 26-39 (14 images)
+{% endcomment %}
+
+{% assign total_blocks = section.blocks.size %}
+{% assign row1_end = 13 %}
+{% assign row2_end = 26 %}
+
+<section class="peptiva-marquee-section peptiva-lp">
+
+  <!-- Row 1: Scroll Left -->
+  <div class="marquee-row marquee-row-1">
+    <div class="marquee-track">
+      {% comment %} First set of images {% endcomment %}
+      {% for block in section.blocks limit: row1_end %}
+        {% if block.settings.image != blank %}
+          <div class="marquee-item" {{ block.shopify_attributes }}>
+            <img
+              src="{{ block.settings.image | img_url: '300x300', crop: 'center' }}"
+              alt="{{ block.settings.image.alt | default: 'Customer result' }}"
+              loading="lazy"
+              width="140"
+              height="140"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      {% comment %} Duplicate for seamless loop {% endcomment %}
+      {% for block in section.blocks limit: row1_end %}
+        {% if block.settings.image != blank %}
+          <div class="marquee-item" aria-hidden="true">
+            <img
+              src="{{ block.settings.image | img_url: '300x300', crop: 'center' }}"
+              alt=""
+              loading="lazy"
+              width="140"
+              height="140"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Row 2: Scroll Right -->
+  <div class="marquee-row marquee-row-2">
+    <div class="marquee-track">
+      {% comment %} First set of images (blocks 13-25) {% endcomment %}
+      {% for block in section.blocks offset: row1_end limit: 13 %}
+        {% if block.settings.image != blank %}
+          <div class="marquee-item" {{ block.shopify_attributes }}>
+            <img
+              src="{{ block.settings.image | img_url: '300x300', crop: 'center' }}"
+              alt="{{ block.settings.image.alt | default: 'Customer result' }}"
+              loading="lazy"
+              width="140"
+              height="140"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      {% comment %} Duplicate for seamless loop {% endcomment %}
+      {% for block in section.blocks offset: row1_end limit: 13 %}
+        {% if block.settings.image != blank %}
+          <div class="marquee-item" aria-hidden="true">
+            <img
+              src="{{ block.settings.image | img_url: '300x300', crop: 'center' }}"
+              alt=""
+              loading="lazy"
+              width="140"
+              height="140"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Row 3: Scroll Left -->
+  <div class="marquee-row marquee-row-3">
+    <div class="marquee-track">
+      {% comment %} First set of images (blocks 26+) {% endcomment %}
+      {% for block in section.blocks offset: row2_end %}
+        {% if block.settings.image != blank %}
+          <div class="marquee-item" {{ block.shopify_attributes }}>
+            <img
+              src="{{ block.settings.image | img_url: '300x300', crop: 'center' }}"
+              alt="{{ block.settings.image.alt | default: 'Customer result' }}"
+              loading="lazy"
+              width="140"
+              height="140"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      {% comment %} Duplicate for seamless loop {% endcomment %}
+      {% for block in section.blocks offset: row2_end %}
+        {% if block.settings.image != blank %}
+          <div class="marquee-item" aria-hidden="true">
+            <img
+              src="{{ block.settings.image | img_url: '300x300', crop: 'center' }}"
+              alt=""
+              loading="lazy"
+              width="140"
+              height="140"
+            >
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Marquee Image Grid",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Grid Image",
+      "limit": 40,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Upload image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Marquee Image Grid"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,277 @@
+<style>
+  .{{ section.id }} .save-time-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+  }
+ .{{ section.id }} .main-time-save{
+    display:flex;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    gap: 95px;
+}
+  /* Left Side Styling */
+  .{{ section.id }} .left-side {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .{{ section.id }} .left-side .main-title {
+    font-size: 50px;
+    font-weight: 800;
+    color: #333;
+    Line-height:100%;
+  }
+
+  /* Enhanced CTA Button - Consistent with other sections */
+  .{{ section.id }} .left-side .cta-button {
+    background: linear-gradient(135deg, #39585B 0%, #4a6d70 50%, #39585B 100%);
+    background-size: 200% auto;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(57, 88, 91, 0.25);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .{{ section.id }} .left-side .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(57, 88, 91, 0.35);
+    background-position: right center;
+  }
+
+  .{{ section.id }} .left-side .cta-button:active {
+    transform: translateY(-1px);
+  }
+
+  /* Right Side Styling */
+  .{{ section.id }} .right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .{{ section.id }} .right-side .content-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .{{ section.id }} .right-side .content-item span {
+    font-weight: 400;
+    color: #666;
+    font-size: 18px;
+  }
+  .{{ section.id }} .time-block {
+    background: #E6F4F5;
+    text-align: center;
+    font-size: 18px;
+    /* line-height: 100%; */
+    font-weight: 700;
+}
+.{{ section.id }} .content-item:nth-child(1){
+  padding-left:30px;
+}
+.{{ section.id }} .content-item:nth-child(2) {
+  padding-left:15px;
+}
+/* Mobile CTA Button */
+  .{{ section.id }} .cta-button.mobile{
+    display: none !important;
+    background: linear-gradient(135deg, #39585B 0%, #4a6d70 50%, #39585B 100%);
+    background-size: 200% auto;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(57, 88, 91, 0.25);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    margin: 16px auto 0;
+    min-height: 56px;
+  }
+  @media (max-width: 767px) {
+    
+   .{{ section.id }} .save-time-section {
+      flex-direction: column !important;
+      text-align: center;
+    }
+
+    .{{ section.id }} .main-title p {
+        font-size: 26px;
+        line-height: 100%;
+    }
+    .{{ section.id }} .main-time-save {
+      flex-direction: column !important;
+      gap: 30px;
+    }
+    .{{ section.id }} .cta-button.mobile{
+      display:flex !important;
+              margin-top: 10px;
+    }
+
+    .{{ section.id }} .left-side,
+    .{{ section.id }} .right-side {
+      width: 100% !important;
+    }
+
+    
+    .{{ section.id }} .cta-button {
+      display: none !important;
+    }
+
+    .{{ section.id }} .right-side .content-item span {
+      font-size:15px;
+    }
+    .{{ section.id }} .time-block {
+      font-size:15px;
+    }
+    
+    .{{ section.id }} .left-side .main-title {
+      font-size: 28px;
+    }
+
+    .{{ section.id }} .left-side .cta-button {
+      font-size: 16px;
+      padding: 12px 30px;
+    }
+
+.{{ section.id }} .content-item:nth-child(1){
+  padding-left:0 !important;
+}
+.{{ section.id }} .content-item:nth-child(2) {
+  padding-left:0 !important;
+}
+}
+</style>
+
+{% if section.settings.show_section %}
+<section class="save-time-section {{ section.id }}" style="padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;">
+ <div class="page-width">
+    <div class="main-time-save">
+  <div class="left-side">
+    <div class="main-title">{{ section.settings.title }}</div>
+    <a href="{{ section.settings.cta_link }}" class="cta-button">{{ section.settings.cta_text }}</a>
+  </div>
+
+  <!-- Right Side -->
+  <div class="right-side">
+    <div class="name-price">
+    {% for block in section.blocks %}
+      <div class="content-item">
+        <span>{{ block.settings.item_name }}</span>
+        <span>{{ block.settings.item_price }}</span>
+      </div>
+    {% endfor %}
+    </div>
+    <div class="time-block">{{ section.settings.save_block }}</div>
+  </div>
+  </div>
+    <a href="{{ section.settings.cta_link }}" class="cta-button mobile">{{ section.settings.cta_text }}</a>
+  </div>
+</section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Pricing section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_section",
+      "label": "Show Section",
+      "default": true
+    },
+    {
+      "type": "richtext",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "text",
+      "label": "Call-to-Action Text",
+      "id": "cta_text",
+      "default": "I WANT FULLER-LOOKING HAIR"
+    },
+    {
+      "type": "url",
+      "label": "Call-to-Action Link",
+      "id": "cta_link",
+     
+    },
+    {
+       "type": "richtext",
+        "label": "block",
+        "id": "save_block"
+    },
+    {
+     "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40
+    }
+          
+  ],
+  "blocks": [
+    {
+      "type": "content_item",
+      "name": "Pricing Item",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Item Name",
+          "id": "item_name",
+          "default": "Shampoo Bar / Salon Programs"
+        },
+        {
+          "type": "text",
+          "label": "Item Price",
+          "id": "item_price",
+          "default": "฿1,500 – ฿3,000 / month"
+        },
+        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pricing section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

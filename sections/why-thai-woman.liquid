@@ -1,0 +1,170 @@
+<style>
+  #image-with-text-custom .container {
+  display: flex;
+  gap: 50px;
+}
+
+#image-with-text-custom .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#image-with-text-custom .right-side {
+  flex: 1;
+}
+
+#image-with-text-custom .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#image-with-text-custom .feature-item img {
+  width: 40px;
+  height: 40px;
+}
+
+#image-with-text-custom .feature-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#image-with-text-custom .comparison-block {
+  background-color: #39585B;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#image-with-text-custom .comparison-table {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#image-with-text-custom .comparison-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+#image-with-text-custom .checkmark {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  #image-with-text-custom .container {
+    flex-direction: column;
+  }
+
+  #image-with-text-custom .feature-item {
+    justify-content: center;
+  }
+}
+
+</style>
+
+<section id="image-with-text-custom ">
+  <div class="page-width">
+    <div class="main-title">{{ section.settings.main_title }}</div>
+    <div class="description-text">{{ section.settings.description_text }}</div>
+  </div>
+
+  <div class="container">
+    <div class="row-cust">
+      <div class="col-cust left-side">
+        {% for block in section.blocks %}
+          <div class="feature-item">
+            <img src="{{ block.settings.icon | img_url: 'small' }}" alt="{{ block.settings.feature_title }}">
+            <div class="feature-text">
+              <h3>{{ block.settings.feature_title }}</h3>
+              <p>{{ block.settings.feature_description }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="col-cust right-side">
+        <div class="comparison-block">
+          <div class="comparison-title">
+            <h3>{{ section.settings.comparison_title }}</h3>
+          </div>
+          <div class="comparison-table">
+            {% for item in section.blocks %}
+              <div class="comparison-item">
+                <span class="item-title">{{ item.settings.feature_title }}</span>
+                <span class="checkmark">
+                  {% if item.settings.is_available %}
+                    ✔
+                  {% else %}
+                    ✘
+                  {% endif %}
+                </span>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Comparison table Custom",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Main Title",
+      "id": "main_title"
+    },
+    {
+      "type": "richtext",
+      "label": "Description Text",
+      "id": "description_text"
+    },
+    {
+      "type": "richtext",
+      "label": "Comparison Title",
+      "id": "comparison_title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_block",
+      "name": "Feature Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Icon",
+          "id": "icon"
+        },
+        {
+          "type": "text",
+          "label": "Feature Title",
+          "id": "feature_title"
+        },
+        {
+          "type": "richtext",
+          "label": "Feature Description",
+          "id": "feature_description"
+        },
+        {
+          "type": "checkbox",
+          "label": "Is Available",
+          "id": "is_available"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison table Custom",
+      "category": "Custom"
+    }
+  ]
+}
+
+{% endschema %}

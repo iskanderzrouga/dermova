@@ -1,0 +1,246 @@
+<style>
+  .{{ section.id }} .custom-text-image-section {
+    display: flex;
+    gap: 40px;
+  }
+
+  .{{ section.id }} .main-container {
+    display: flex;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    gap: 50px;
+    flex-direction: {% if section.settings.reverse_rows %} row-reverse {% else %} row {% endif %};
+  }
+
+  .{{ section.id }} .description-text p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .{{ section.id }} .left-column {
+    width: 100%;
+    max-width: 553px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content:center;
+  }
+
+  .{{ section.id }} .section-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+  }
+.{{ section.id }} .title-text p{
+     margin:0;
+}
+  .{{ section.id }} .description-text {
+    font-size: 18px;
+  }
+
+  .{{ section.id }} .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .{{ section.id }} .icon-text-block {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+    border-radius: 8px;
+  }
+
+  .{{ section.id }} .icon-text-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .{{ section.id }} .block-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .{{ section.id }} .block-text p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+
+.{{ section.id }} .title-text {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    max-width: 80%;
+    margin: auto;
+    line-height: 100%;
+    margin-bottom:15px;
+}
+
+
+  @media (max-width: 767px) {
+    .{{ section.id }} .main-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+   .{{ section.id }} .title-text {
+        font-size: 27px;
+        text-align: center;
+        line-height: 100%;
+    }
+    .{{ section.id }} .left-column {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .{{ section.id }} .right-column {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .{{ section.id }} .section-title {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .{{ section.id }} .product-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .{{ section.id }} .icon-text-blocks {
+      gap: 20px;
+    }
+
+    .{{ section.id }} .block-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .{{ section.id }} .block-text p {
+      font-size: 16px;
+    }
+
+    .{{ section.id }} .description-text p {
+      font-size: 16px;
+    }
+
+    .{{ section.id }} .description-text {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width:600px){
+.{{ section.id }} .icon-text-blocks {
+padding-left:20px;
+}
+}
+</style>
+
+<div class="custom-text-image-section {{ section.id }}" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="title-text">{{ section.settings.title }}</div>
+  
+  <div class="main-container page-width">
+     <div class="right-column">
+      <div class="product-image">
+        <img src="{{ section.settings.product_image | img_url: 'master' }}" alt="Product Image">
+      </div>
+    </div>
+    <div class="left-column">
+      <div class="description">
+        <div class="description-text">
+          {{ section.settings.description }}
+        </div>
+      </div>
+      
+      
+      <div class="icon-text-blocks">
+        {% for block in section.blocks %}
+          <div class="icon-text-block">
+            <img src="{{ block.settings.icon | img_url: 'small' | default: '/path/to/default-icon.jpg' }}" alt="Icon" class="block-icon">
+            <div class="block-text">{{ block.settings.block_text }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+   
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Facility custom section",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "richtext",
+      "label": "Description",
+      "id": "description"
+    },
+    {
+      "type": "image_picker",
+      "label": "Product Image",
+      "id": "product_image"
+    },
+    {
+      "type": "checkbox",
+      "label": "Reverse Rows",
+      "id": "reverse_rows",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon_text_block",
+      "name": "Icon and Text Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Icon",
+          "id": "icon"
+        },
+        {
+          "type": "richtext",
+          "label": "Block Text",
+          "id": "block_text",
+          "default": "<p>Text for the block. You can <strong>bold</strong> and <em>italicize</em> text, or add <a href='#'>links</a>.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Facility custom section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

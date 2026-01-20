@@ -1,0 +1,496 @@
+<section
+  class="lo-section {{ section.id }}"
+  style="background-color: {{ section.settings.section_bg_color }};"
+>
+    <div class="page-width">
+  <div
+    class="lo-card"
+    style="background-color: {{ section.settings.card_bg_color }};"
+  >
+    <h2 class="lo-heading">
+      {{ section.settings.heading_text }}
+    </h2>
+
+    <div class="lo-progress-wrapper">
+      <div class="lo-progress-bar">
+        <div
+          class="lo-progress-fill"
+          style="width: {{ section.settings.progress_percent }}%; background-color: {{ section.settings.progress_fill_color }};"
+        ></div>
+      </div>
+
+      <div class="lo-progress-percent">
+        {{ section.settings.progress-percent-text }} {{ section.settings.progress_percent }}%
+      </div>
+    </div>
+
+    <p class="lo-remaining-text">
+      {{ section.settings.remaining_text }}
+    </p>
+
+    <p class="lo-mobile-text">
+      {{ section.settings.mobile_text }}
+    </p>
+
+    <div class="lo-discount-text">
+      {% if section.settings.discount_icon %}
+        <img
+          src="{{ section.settings.discount_icon | image_url: width: 40 }}"
+          alt=""
+        >
+      {% endif %}
+      <span>{{ section.settings.discount_text }}</span>
+    </div>
+  </div>
+
+  <div class="lo-button-wrapper">
+    <a href="{{ section.settings.button_link }}" class="lo-button">
+      {{ section.settings.button_text }}
+    </a>
+  </div>
+
+  <div class="lo-trust-wrapper">
+    {% for block in section.blocks %}
+      <div class="lo-trust-item">
+        {% if block.settings.icon %}
+          <img
+            src="{{ block.settings.icon | image_url: width: 40 }}"
+            alt=""
+          >
+        {% endif %}
+        <span>{{ block.settings.text }}</span>
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+</section>
+
+<style>
+/* === PHASE 1: Enhanced Progress Bar & Trust Elements === */
+
+/* Progress bar shine animation */
+@keyframes progress-shine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Urgency pulse */
+@keyframes urgency-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+/* Shimmer for button */
+@keyframes lo-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Button pulse */
+@keyframes lo-pulse {
+  0%, 100% { box-shadow: 0 4px 15px rgba(57, 88, 91, 0.3), 0 0 0 0 rgba(57, 88, 91, 0.4); }
+  50% { box-shadow: 0 6px 20px rgba(57, 88, 91, 0.4), 0 0 0 8px rgba(57, 88, 91, 0); }
+}
+
+    .{{ section.id }}.lo-section .page-width {
+    max-width: 1320px !important;
+}
+
+  .{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+.lo-section {
+  text-align: center;
+}
+
+/* Premium Card Styling */
+.lo-card {
+  padding: 50px 45px;
+  border-radius: 50px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(57, 88, 91, 0.08);
+  transition: all 0.3s ease;
+}
+
+.lo-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.lo-heading {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 20px;
+  animation: urgency-pulse 2s ease-in-out infinite;
+}
+
+.lo-progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Enhanced Progress Bar with Shine Effect */
+.lo-progress-bar {
+  height: 33px;
+  width: 100%;
+  max-width: 976px;
+  background: linear-gradient(90deg, #e8f0f0 0%, #dde8e8 50%, #e8f0f0 100%);
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.lo-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, #39585B 0%, #4a6d70 50%, #39585B 100%);
+  background-size: 200% auto;
+  animation: lo-shimmer 3s ease-in-out infinite;
+}
+
+.lo-progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: progress-shine 2s ease-in-out infinite;
+}
+
+.lo-progress-percent {
+  font-size: 36px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #39585B;
+}
+
+.lo-remaining-text {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 10px;
+  color: #333;
+}
+
+.lo-discount-text {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+.lo-discount-text img,
+.lo-trust-item img {
+  width: 28px;
+  height: 28px;
+}
+
+.lo-button-wrapper {
+  margin-top: 40px;
+}
+
+/* Enhanced CTA Button */
+.lo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #39585B 0%, #4a6d70 50%, #39585B 100%);
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 50px;
+  width: 652px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(57, 88, 91, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: lo-pulse 3s ease-in-out infinite;
+}
+
+.lo-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: lo-shimmer 3s ease-in-out infinite;
+}
+
+.lo-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(57, 88, 91, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-position: right center;
+  animation: none;
+}
+
+.lo-button:active {
+  transform: translateY(-1px);
+}
+
+/* Enhanced Trust Items with Background Pills */
+.lo-trust-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.lo-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #f8fafa 0%, #f0f4f4 100%);
+  padding: 10px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(57, 88, 91, 0.1);
+  transition: all 0.2s ease;
+}
+
+.lo-trust-item:hover {
+  background: linear-gradient(135deg, #f0f4f4 0%, #e8ecec 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.lo-mobile-text {
+  display: none;
+}
+
+{% comment %} Responsive {% endcomment %}
+
+@media (max-width: 768px) {
+    .lo-button {
+    width: 100%;
+
+  }
+}
+@media (max-width: 480px) {
+
+  .lo-card {
+    padding: 30px 20px;
+    border-radius: 30px;
+  }
+
+  .lo-heading {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .lo-progress-bar {
+    height: 14px;
+  }
+
+  .lo-progress-percent {
+    font-size: 16px;
+  }
+
+  .lo-remaining-text,
+  .lo-discount-text {
+    display: none;
+  }
+
+  .lo-mobile-text {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  /* Enhanced Mobile CTA - Larger Touch Target (min 44px) */
+  .lo-button {
+    width: 100%;
+    height: 56px; /* Larger than 44px minimum */
+    min-height: 56px;
+    font-size: 18px;
+    font-weight: 600;
+    animation: none; /* Reduce animation on mobile for performance */
+  }
+
+  .lo-button:active {
+    transform: scale(0.98);
+  }
+
+  .lo-trust-wrapper {
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  /* Enhanced Mobile Trust Items - Larger Touch Target */
+  .lo-trust-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 10px;
+    min-height: 60px;
+    font-size: 11px;
+    justify-content: center;
+}
+
+}
+.lo-progress-fill {
+    display: block !important;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Limited Offer Progress",
+  "settings": [
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section Background Color",
+      "default": "#f5faf9"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading Text",
+      "default": "50% OFF - LIMITED STOCK"
+    },
+    {
+      "type": "text",
+      "id": "mobile_text",
+      "label": "Mobile Text",
+      "default": "Fewer than 20 bottles remaining at this price"
+    },
+    {
+      "type": "range",
+      "id": "progress_percent",
+      "label": "Progress Percentage",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 96
+    },
+    {
+        "type": "text",
+        "id": "progress-percent-text",
+        "label": "Text with progress percentage"
+    },
+    {
+      "type": "color",
+      "id": "progress_fill_color",
+      "label": "Progress Fill Color",
+      "default": "#3d5556"
+    },
+    {
+      "type": "text",
+      "id": "remaining_text",
+      "label": "Remaining Text",
+      "default": "Less than 20 bottles remaining"
+    },
+    {
+      "type": "image_picker",
+      "id": "discount_icon",
+      "label": "Discount Icon"
+    },
+    {
+      "type": "text",
+      "id": "discount_text",
+      "label": "Discount Text",
+      "default": "Discount ends when we sell out"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Get Peptiva at 50% Off →"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "trust",
+      "name": "Trust Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Secure Checkout"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Limited Offer Progress",
+      "blocks": [
+        { "type": "trust" },
+        { "type": "trust" },
+        { "type": "trust" }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,1922 @@
+{% assign ai_gen_id = section.id | replace: '_', '' | downcase %}
+
+{% style %}
+     /* .tabbed-section-wrapper-{{ ai_gen_id }} {
+         display: block;
+         width: 100%;
+         padding: {{ section.settings.section_padding_top }}px 20px {{ section.settings.section_padding_bottom }}px;
+         background-color: {{ section.settings.background_color }};
+       } */
+
+       #section-{{ ai_gen_id }}{
+         display: block;
+         width: 100%;
+         padding: {{ section.settings.section_padding_top }}px 0px {{ section.settings.section_padding_bottom }}px;
+         background-color: {{ section.settings.background_color }};
+       }
+
+       .ai-tabbed-section__container-{{ ai_gen_id }} {
+         max-width: {{ section.settings.container_width }}px;
+         margin: 0 auto;
+       }
+
+       .ai-tabbed-section__header-{{ ai_gen_id }} {
+         text-align: {{ section.settings.text_alignment }};
+         margin-bottom: 40px;
+       }
+
+       .ai-tabbed-section__heading-{{ ai_gen_id }} {
+         font-size: {{ section.settings.heading_size }}px;
+         color: {{ section.settings.heading_color }};
+         margin: 0 0 12px;
+         font-weight: 600;
+       }
+
+       .ai-tabbed-section__subheading-{{ ai_gen_id }} {
+         font-size: {{ section.settings.subheading_size }}px;
+         color: {{ section.settings.subheading_color }};
+         margin: 0;
+       }
+
+       .ai-tabbed-section__content-{{ ai_gen_id }} {
+         display: flex;
+         gap: 60px;
+         align-items: flex-start;
+       }
+
+       .ai-tabbed-section__sidebar-{{ ai_gen_id }} {
+         flex-shrink: 0;
+         width: 25%;
+       }
+
+       .ai-tabbed-section__tabs-{{ ai_gen_id }} {
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+         margin-bottom: 24px;
+       }
+       .ai-tabbed-section__tabs-{{ ai_gen_id }} button {
+     text-align:center;
+     font-size:18px;
+
+     }
+       .ai-tabbed-section__tab-{{ ai_gen_id }} {
+         padding: 16px 20px;
+         background-color: {{ section.settings.tab_bg_color }};
+         color: {{ section.settings.tab_text_color }};
+         border: 1px solid {{ section.settings.tab_border_color }};
+         border-radius: {{ section.settings.tab_border_radius }}px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         font-size: 16px;
+         text-align: left;
+       }
+
+
+
+       .ai-tabbed-section__tab-{{ ai_gen_id }}.active {
+         background-color: {{ section.settings.tab_active_bg_color }};
+         color: {{ section.settings.tab_active_text_color }};
+         border-color: {{ section.settings.tab_active_border_color }};
+       }
+
+       .ai-tabbed-section__slider-controls-{{ ai_gen_id }} {
+         display: flex;
+         gap: 64px;
+         justify-content: center;
+       }
+
+       .ai-tabbed-section__slider-btn-{{ ai_gen_id }} {
+         width: 44px;
+         height: 44px;
+         border-radius: 50%;
+         background-color: {{ section.settings.slider_btn_bg_color }};
+         color: {{ section.settings.slider_btn_icon_color }};
+         border: 1px solid {{ section.settings.slider_btn_border_color }};
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition: all 0.3s ease;
+       }
+
+       {% comment %} .ai-tabbed-section__slider-btn-{{ ai_gen_id }}:hover:not(:disabled) {
+         background-color: {{ section.settings.slider_btn_hover_bg_color }};
+         color: {{ section.settings.slider_btn_hover_icon_color }};
+       } {% endcomment %}
+
+       .ai-tabbed-section__slider-btn-{{ ai_gen_id }}:disabled {
+         opacity: 0.4;
+         cursor: not-allowed;
+       }
+
+       .ai-tabbed-section__slider-btn-{{ ai_gen_id }} svg {
+         width: 20px;
+         height: 20px;
+       }
+
+       .ai-tabbed-section__cards-container-{{ ai_gen_id }} {
+         flex: 1;
+         width:75%;
+       }
+
+       .ai-tabbed-section__cards-wrapper-{{ ai_gen_id }} {
+         display: flex;
+         transition: transform 0.4s ease;
+       }
+
+       .ai-tabbed-section__tab-content-{{ ai_gen_id }} {
+         min-width: 100%;
+         display: none;
+       }
+
+       .ai-tabbed-section__tab-content-{{ ai_gen_id }}.active {
+         display: block;
+         overflow: hidden;
+         padding: 10px;
+       }
+
+
+     .ai-tabbed-section__card-{{ ai_gen_id }} {
+       /* min-width: calc(33.33% - 16px); 3 cards per row default */
+       flex: 0 0 calc(50% - 12px);
+     }
+
+       .ai-tabbed-section__card-{{ ai_gen_id }} {
+         background-color: {{ section.settings.card_bg_color }};
+         border-radius: {{ section.settings.card_border_radius }}px;
+         overflow: hidden;
+        box-shadow: 3px 6px 5.8px #39585B;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+       }
+
+
+       .ai-tabbed-section__card-image-{{ ai_gen_id }} {
+         width: 100%;
+         aspect-ratio: {{ section.settings.card_image_aspect_ratio }};
+
+
+         max-height: 200px;
+         overflow: hidden;
+       }
+
+       .ai-tabbed-section__card-image-{{ ai_gen_id }} img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+
+       }
+
+       .ai-tabbed-section__card-image-placeholder-{{ ai_gen_id }} {
+         width: 100%;
+         height: 100%;
+         background-color: #f4f4f4;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+       }
+
+       .ai-tabbed-section__card-image-placeholder-{{ ai_gen_id }} svg {
+         width: 60%;
+         height: 60%;
+         opacity: 0.3;
+       }
+
+       .ai-tabbed-section__card-content-{{ ai_gen_id }} {
+         padding: 24px;
+       }
+
+       .ai-tabbed-section__card-heading-{{ ai_gen_id }} {
+         font-size: {{ section.settings.card_heading_size }}px;
+         color: {{ section.settings.card_heading_color }};
+         margin: 0 0 8px;
+         font-weight: 600;
+       }
+
+       .ai-tabbed-section__card-subheading-{{ ai_gen_id }} {
+         font-size: {{ section.settings.card_subheading_size }}px;
+         color: {{ section.settings.card_subheading_color }};
+         margin: 0 0 12px;
+         font-weight: 900;
+       }
+
+       .ai-tabbed-section__card-description-{{ ai_gen_id }} {
+         font-size: {{ section.settings.card_description_size }}px;
+         color: {{ section.settings.card_description_color }};
+         line-height: 1.6;
+         margin: 0 0 16px;
+         font-weight: normal;
+       }
+
+       .ai-tabbed-section__card-link-{{ ai_gen_id }} {
+         display: inline-block;
+         padding: 10px 0px;
+         background-color: {{ section.settings.card_link_bg_color }};
+         color: {{ section.settings.card_link_text_color }};
+         text-decoration: underline;
+         border-radius: {{ section.settings.card_link_border_radius }}px;
+         font-size: 16px;
+         transition: all 0.3s ease;
+       }
+
+       {% comment %} .ai-tabbed-section__card-link-{{ ai_gen_id }}:hover {
+         background-color: {{ section.settings.card_link_hover_bg_color }};
+         color: {{ section.settings.card_link_hover_text_color }};
+       } {% endcomment %}
+
+       @media screen and (max-width: 989px) {
+         .ai-tabbed-section__content-{{ ai_gen_id }} {
+           flex-direction: column;
+         }
+
+         .ai-tabbed-section__sidebar-{{ ai_gen_id }} {
+           width: 100%;
+         }
+
+         .ai-tabbed-section__tabs-{{ ai_gen_id }} {
+           flex-direction: row;
+           overflow-x: auto;
+           margin-bottom: 20px;
+         }
+
+         .ai-tabbed-section__tab-{{ ai_gen_id }} {
+           white-space: nowrap;
+         }
+
+         .ai-tabbed-section__cards-{{ ai_gen_id }} {
+           grid-template-columns: repeat(2, 1fr);
+         }
+       }
+
+       @media screen and (max-width: 749px) {
+         .ai-tabbed-section__cards-{{ ai_gen_id }} {
+           grid-template-columns: 1fr;
+         }
+
+         .ai-tabbed-section__heading-{{ ai_gen_id }} {
+           font-size: calc({{ section.settings.heading_size }}px * 0.55);
+         }
+
+         .ai-tabbed-section__subheading-{{ ai_gen_id }} {
+           font-size: calc({{ section.settings.subheading_size }}px * 0.75);
+         }
+       }
+       .ai-tabbed-section__cards-{{ ai_gen_id }} {
+       display: flex;
+       gap: 24px;
+       transition: transform .4s ease;
+       will-change: transform;
+     }
+     /* viewport */
+     .ai-tabbed-section__cards-container-{{ ai_gen_id }}{
+       overflow: hidden;
+     }
+
+
+
+     /* show EXACTLY 2 cards per view */
+     .ai-tabbed-section__card-{{ ai_gen_id }} {
+       flex: 0 0 calc(50% - 12px);
+     }
+
+
+     /* ============================= */
+     /* MOBILE RESPONSIVE FIX */
+     /* ============================= */
+
+     @media screen and (max-width: 768px) {
+
+       /* Stack sidebar + cards */
+       .ai-tabbed-section__content-{{ ai_gen_id }} {
+         flex-direction: column;
+         gap: 24px;
+       }
+
+       /* Sidebar full width */
+       .ai-tabbed-section__sidebar-{{ ai_gen_id }} {
+         width: 100%;
+       }
+
+       /* Tabs scroll horizontally */
+       .ai-tabbed-section__tabs-{{ ai_gen_id }} {
+         flex-direction: row;
+         overflow-x: auto;
+         gap: 12px;
+         padding-bottom: 8px;
+         display: grid;
+             grid-template-columns: auto auto;
+       }
+
+
+
+       /* Cards container full width */
+       .ai-tabbed-section__cards-container-{{ ai_gen_id }} {
+         width: 100%;
+         overflow: hidden;
+       }
+
+       /* Slider track */
+       .ai-tabbed-section__cards-{{ ai_gen_id }} {
+         display: flex;
+         gap: 40px;
+         flex-direction:column;
+       }
+
+       /* 🔥 ONLY ONE CARD PER VIEW */
+       .ai-tabbed-section__card-{{ ai_gen_id }} {
+         flex: 0 0 100%;
+       }
+
+       /* Card spacing */
+       .ai-tabbed-section__card-content-{{ ai_gen_id }} {
+         padding: 16px;
+       }
+
+       /* Smaller text */
+       .ai-tabbed-section__card-heading-{{ ai_gen_id }} {
+         font-size: 18px;
+       }
+
+       .ai-tabbed-section__card-subheading-{{ ai_gen_id }} {
+         font-size: 14px;
+       }
+
+       .ai-tabbed-section__card-description-{{ ai_gen_id }} {
+         font-size: 14px;
+       }
+
+       /* Slider arrows at bottom center */
+       .ai-tabbed-section__slider-controls-{{ ai_gen_id }} {
+         margin-top: 16px;
+         justify-content: center;
+         gap: 32px;
+       }
+
+       .ai-tabbed-section__slider-btn-{{ ai_gen_id }} {
+         width: 40px;
+         height: 40px;
+       }
+
+      .ai-tabbed-section__tab-{{ ai_gen_id }} {
+         width: 100%;
+        height: 50px;             /* FIXED HEIGHT */
+        padding: 0 16px;
+        border-radius: 999px;
+        border: 1px solid #bbb;
+        background: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px !important;
+        line-height: 1.2;
+        white-space: normal;       /* allow text wrap */
+        word-break: break-word;
+       }
+     }
+
+
+    .mobile-view{
+     display:none;
+    }
+    .ai-tabbed-section__card-link-{{ ai_gen_id }} {
+      font-size:14px;
+    }
+
+
+
+  @media screen and (max-width: 768px) {
+    .mobile-view {
+      /* display: flex; */
+      justify-content: center;
+      gap: 32px;
+      margin-top: 20px;
+    }
+
+    .desktop-view {
+      display: none;
+    }
+  }
+{% endstyle %}
+<section
+  id="section-{{ ai_gen_id }}"
+  class="tabbed-section-wrapper "
+  {{ section.shopify_attributes }}
+>
+  <div class="page-width">
+    <div class="ai-tabbed-section__container-{{ ai_gen_id }}">
+      {% if section.settings.heading != blank or section.settings.subheading != blank %}
+        <div class="ai-tabbed-section__header-{{ ai_gen_id }}">
+          {% if section.settings.heading != blank %}
+            <h2 class="ai-tabbed-section__heading-{{ ai_gen_id }}">{{ section.settings.heading }}</h2>
+          {% endif %}
+          {% if section.settings.subheading != blank %}
+            <p class="ai-tabbed-section__subheading-{{ ai_gen_id }}">{{ section.settings.subheading }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="ai-tabbed-section__content-{{ ai_gen_id }}">
+        <div class="ai-tabbed-section__sidebar-{{ ai_gen_id }}">
+          <div class="ai-tabbed-section__tabs-{{ ai_gen_id }}">
+            {% for i in (1..4) %}
+              {% liquid
+                assign tab_title_key = 'tab_' | append: i | append: '_title'
+                assign tab_title = section.settings[tab_title_key]
+              %}
+
+              <button
+                class="ai-tabbed-section__tab-{{ ai_gen_id }} {% if forloop.first %}active{% endif %}"
+                data-tab="{{ i }}"
+              >
+                {{ tab_title }}
+              </button>
+            {% endfor %}
+          </div>
+
+          <div class="ai-tabbed-section__slider-controls-{{ ai_gen_id }} desktop-view">
+            <button
+              class="ai-tabbed-section__slider-btn-{{ ai_gen_id }} ai-tabbed-section__slider-prev-{{ ai_gen_id }}"
+              aria-label="Previous tab"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button
+              class="ai-tabbed-section__slider-btn-{{ ai_gen_id }} ai-tabbed-section__slider-next-{{ ai_gen_id }}"
+              aria-label="Next tab"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="ai-tabbed-section__cards-container-{{ ai_gen_id }}">
+          {% for i in (1..4) %}
+            <div
+              class="ai-tabbed-section__tab-content-{{ ai_gen_id }} {% if forloop.first %}active{% endif %}"
+              data-content="{{ i }}"
+            >
+              <div class="ai-tabbed-section__cards-{{ ai_gen_id }}">
+                {% for j in (1..3) %}
+                  {% liquid
+                    assign card_image_key = 'tab_' | append: i | append: '_card_' | append: j | append: '_image'
+                    assign card_heading_key = 'tab_' | append: i | append: '_card_' | append: j | append: '_heading'
+                    assign card_subheading_key = 'tab_' | append: i | append: '_card_' | append: j | append: '_subheading'
+                    assign card_description_key = 'tab_' | append: i | append: '_card_' | append: j | append: '_description'
+                    assign card_link_text_key = 'tab_' | append: i | append: '_card_' | append: j | append: '_link_text'
+                    assign card_link_url_key = 'tab_' | append: i | append: '_card_' | append: j | append: '_link_url'
+
+                    assign card_image = section.settings[card_image_key]
+                    assign card_heading = section.settings[card_heading_key]
+                    assign card_subheading = section.settings[card_subheading_key]
+                    assign card_description = section.settings[card_description_key]
+                    assign card_link_text = section.settings[card_link_text_key]
+                    assign card_link_url = section.settings[card_link_url_key]
+
+                    assign has_content = false
+                    if card_image != blank or card_heading != blank or card_subheading != blank or card_description != blank or card_link_text != blank
+                      assign has_content = true
+                    endif
+                  %}
+
+                  {% if has_content %}
+                    <div class="ai-tabbed-section__card-{{ ai_gen_id }}">
+                      <div class="ai-tabbed-section__card-image-{{ ai_gen_id }}">
+                        {% if card_image %}
+                          <img
+                            src="{{ card_image | image_url: width: 600 }}"
+                            alt="{{ card_image.alt | escape }}"
+                            loading="lazy"
+                            width="600"
+                            height="{{ 600 | divided_by: section.settings.card_image_aspect_ratio }}"
+                          >
+                        {% else %}
+                          <div class="ai-tabbed-section__card-image-placeholder-{{ ai_gen_id }}">
+                            {{ 'image' | placeholder_svg_tag }}
+                          </div>
+                        {% endif %}
+                      </div>
+                      <div class="ai-tabbed-section__card-content-{{ ai_gen_id }}">
+                        {% if card_heading != blank %}
+                          <h3 class="ai-tabbed-section__card-heading-{{ ai_gen_id }}">{{ card_heading }}</h3>
+                        {% endif %}
+                        {% if card_subheading != blank %}
+                          <p class="ai-tabbed-section__card-subheading-{{ ai_gen_id }}">{{ card_subheading }}</p>
+                        {% endif %}
+                        {% if card_description != blank %}
+                          <div class="ai-tabbed-section__card-description-{{ ai_gen_id }}">{{ card_description }}</div>
+                        {% endif %}
+                        {% if card_link_text != blank and card_link_url != blank %}
+                          <a href="{{ card_link_url }}" class="ai-tabbed-section__card-link-{{ ai_gen_id }}">
+                            {{- card_link_text -}}
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="ai-tabbed-section__slider-controls-{{ ai_gen_id }} mobile-view">
+        <button
+          class="ai-tabbed-section__slider-btn-{{ ai_gen_id }} ai-tabbed-section__slider-prev-{{ ai_gen_id }}"
+          aria-label="Previous tab"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button
+          class="ai-tabbed-section__slider-btn-{{ ai_gen_id }} ai-tabbed-section__slider-next-{{ ai_gen_id }}"
+          aria-label="Next tab"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %}
+  <script>
+  (function() {
+    class TabbedSection{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentTabIndex = 0;
+      }
+
+      connectedCallback() {
+        this.tabs = this.querySelectorAll('.ai-tabbed-section__tab-{{ ai_gen_id }}');
+        this.tabContents = this.querySelectorAll('.ai-tabbed-section__tab-content-{{ ai_gen_id }}');
+        this.prevBtn = this.querySelector('.ai-tabbed-section__slider-prev-{{ ai_gen_id }}');
+        this.nextBtn = this.querySelector('.ai-tabbed-section__slider-next-{{ ai_gen_id }}');
+
+        this.setupTabs();
+        this.setupSlider();
+        this.updateSliderButtons();
+      }
+
+      setupTabs() {
+        this.tabs.forEach((tab, index) => {
+          tab.addEventListener('click', () => {
+            const tabNumber = tab.getAttribute('data-tab');
+            this.currentTabIndex = index;
+            this.switchTab(tabNumber);
+          });
+        });
+      }
+
+      switchTab(tabNumber) {
+        this.tabs.forEach(tab => {
+          tab.classList.remove('active');
+          if (tab.getAttribute('data-tab') === tabNumber) {
+            tab.classList.add('active');
+          }
+        });
+
+        this.tabContents.forEach(content => {
+          content.classList.remove('active');
+          if (content.getAttribute('data-content') === tabNumber) {
+            content.classList.add('active');
+          }
+        });
+
+        this.updateSliderButtons();
+      }
+
+      setupSlider() {
+        if (!this.prevBtn || !this.nextBtn) return;
+
+        this.prevBtn.addEventListener('click', () => {
+          if (this.currentTabIndex > 0) {
+            this.currentTabIndex--;
+            const targetTab = this.tabs[this.currentTabIndex];
+            this.switchTab(targetTab.getAttribute('data-tab'));
+          }
+        });
+
+        this.nextBtn.addEventListener('click', () => {
+          if (this.currentTabIndex < this.tabs.length - 1) {
+            this.currentTabIndex++;
+            const targetTab = this.tabs[this.currentTabIndex];
+            this.switchTab(targetTab.getAttribute('data-tab'));
+          }
+        });
+      }
+
+      updateSliderButtons() {
+        if (!this.prevBtn || !this.nextBtn) return;
+
+        this.prevBtn.disabled = this.currentTabIndex === 0;
+        this.nextBtn.disabled = this.currentTabIndex === this.tabs.length - 1;
+      }
+    }
+
+    customElements.define('tabbed-section-{{ ai_gen_id }}', TabbedSection{{ ai_gen_id }});
+  })();
+  </script>
+{% endcomment %}
+
+{% comment %}
+  <script>
+  (function () {
+
+    class TabbedSection{{ ai_gen_id }} extends HTMLElement {
+
+      constructor() {
+        super();
+        this.currentTab = 0;
+        this.tabSliders = {};
+      }
+
+      connectedCallback() {
+        this.tabs = this.querySelectorAll('.ai-tabbed-section__tab-{{ ai_gen_id }}');
+        this.contents = this.querySelectorAll('.ai-tabbed-section__tab-content-{{ ai_gen_id }}');
+
+        this.prevBtn = this.querySelector('.ai-tabbed-section__slider-prev-{{ ai_gen_id }}');
+        this.nextBtn = this.querySelector('.ai-tabbed-section__slider-next-{{ ai_gen_id }}');
+
+        this.initTabs();
+        this.activateTab(0);
+      }
+
+      /* ------------------------------
+         TAB SETUP
+      ------------------------------ */
+      initTabs() {
+        this.tabs.forEach((tab, index) => {
+          tab.addEventListener('click', () => {
+            this.activateTab(index);
+          });
+        });
+      }
+
+      activateTab(index) {
+        this.currentTab = index;
+
+        /* Activate tab button */
+        this.tabs.forEach(t => t.classList.remove('active'));
+        this.tabs[index].classList.add('active');
+
+        /* Activate tab content */
+        this.contents.forEach(c => c.classList.remove('active'));
+        this.contents[index].classList.add('active');
+
+        /* Prepare slider for this tab */
+        this.setupSliderForTab(index);
+      }
+
+      /* ------------------------------
+         PER-TAB SLIDER LOGIC
+      ------------------------------ */
+      setupSliderForTab(index) {
+
+        const tabContent = this.contents[index];
+        const track = tabContent.querySelector('.ai-tabbed-section__cards-{{ ai_gen_id }}');
+        const cards = tabContent.querySelectorAll('.ai-tabbed-section__card-{{ ai_gen_id }}');
+
+        if (!track || !cards.length) return;
+
+        /* Create state for this tab if not exists */
+        if (!this.tabSliders[index]) {
+          this.tabSliders[index] = {
+            index: 0,
+            track,
+            cards
+          };
+        }
+
+        const slider = this.tabSliders[index];
+
+        /* Show / hide slider buttons */
+        const shouldSlide = cards.length > 2;
+
+        this.prevBtn.style.display = shouldSlide ? 'flex' : 'none';
+        this.nextBtn.style.display = shouldSlide ? 'flex' : 'none';
+
+        /* Reset position when switching tabs */
+        slider.index = 0;
+        this.updateSlidePosition(slider);
+
+        /* Re-bind button events to this tab */
+        this.prevBtn.onclick = () => {
+          if (slider.index > 0) {
+            slider.index--;
+            this.updateSlidePosition(slider);
+          }
+        };
+
+        this.nextBtn.onclick = () => {
+          if (slider.index < cards.length - 2) {
+            slider.index++;
+            this.updateSlidePosition(slider);
+          }
+        };
+      }
+
+      /* ------------------------------
+         APPLY SLIDE TRANSFORM
+      ------------------------------ */
+      updateSlidePosition(slider) {
+
+        const cardWidth = slider.cards[0].offsetWidth + 24; // 24 = gap
+        const offset = slider.index * cardWidth;
+
+        slider.track.style.transform = `translateX(-${offset}px)`;
+      }
+
+    }
+
+    customElements.define('tabbed-section-{{ ai_gen_id }}', TabbedSection{{ ai_gen_id }});
+
+  })();
+  </script>
+{% endcomment %}
+
+{% comment %}
+  <script>
+  (function () {
+
+    class TabbedSection{{ ai_gen_id }} extends HTMLElement {
+
+      constructor() {
+        super();
+        this.currentTab = 0;
+        this.tabSliders = {};
+      }
+
+      connectedCallback() {
+
+        this.tabs = this.querySelectorAll('.ai-tabbed-section__tab-{{ ai_gen_id }}');
+        this.contents = this.querySelectorAll('.ai-tabbed-section__tab-content-{{ ai_gen_id }}');
+
+        this.prevBtn = this.querySelector('.ai-tabbed-section__slider-prev-{{ ai_gen_id }}');
+        this.nextBtn = this.querySelector('.ai-tabbed-section__slider-next-{{ ai_gen_id }}');
+
+        this.initTabs();
+        this.activateTab(0);
+      }
+
+      /* ---------------- TAB LOGIC ---------------- */
+      initTabs() {
+        this.tabs.forEach((tab, index) => {
+          tab.addEventListener('click', () => {
+            this.activateTab(index);
+          });
+        });
+      }
+
+      activateTab(index) {
+        this.currentTab = index;
+
+        this.tabs.forEach(t => t.classList.remove('active'));
+        this.tabs[index].classList.add('active');
+
+        this.contents.forEach(c => c.classList.remove('active'));
+        this.contents[index].classList.add('active');
+
+        this.setupSliderForTab(index);
+      }
+
+      /* ---------------- SLIDER PER TAB ---------------- */
+      setupSliderForTab(index) {
+
+        const tabContent = this.contents[index];
+        const track = tabContent.querySelector('.ai-tabbed-section__cards-{{ ai_gen_id }}');
+        const cards = tabContent.querySelectorAll('.ai-tabbed-section__card-{{ ai_gen_id }}');
+
+        if (!track || !cards.length) return;
+
+        if (!this.tabSliders[index]) {
+          this.tabSliders[index] = {
+            index: 0,
+            track,
+            cards
+          };
+        }
+
+        const slider = this.tabSliders[index];
+
+        // Reset when switching tabs
+        slider.index = 0;
+        this.updateSlidePosition(slider);
+
+        /* Arrow click handlers (ALWAYS visible) */
+        this.prevBtn.onclick = () => {
+          if (slider.index > 0) {
+            slider.index--;
+            this.updateSlidePosition(slider);
+          }
+        };
+
+        this.nextBtn.onclick = () => {
+
+          // allow sliding ONLY when cards exist beyond visible range
+          if (slider.index < slider.cards.length - 2) {
+            slider.index++;
+            this.updateSlidePosition(slider);
+          }
+
+        };
+      }
+
+      /* ---------------- APPLY CARD SLIDE ---------------- */
+      updateSlidePosition(slider) {
+
+        const cardWidth = slider.cards[0].offsetWidth + 24; // gap
+        const offset = slider.index * cardWidth;
+
+        slider.track.style.transform = `translateX(-${offset}px)`;
+      }
+
+    }
+
+    customElements.define('tabbed-section-{{ ai_gen_id }}', TabbedSection{{ ai_gen_id }});
+
+  })();
+  </script>
+{% endcomment %}
+{% comment %}
+  <script>
+  (function() {
+    class TabbedSection{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+
+        this.currentTabIndex = 0;
+        this.sliderIndex = 0;
+        this.visibleCards = 2; // show 2 cards at a time — slider activates when 3+ cards
+      }
+
+      connectedCallback() {
+        this.tabs = this.querySelectorAll('.ai-tabbed-section__tab-{{ ai_gen_id }}');
+        this.tabContents = this.querySelectorAll('.ai-tabbed-section__tab-content-{{ ai_gen_id }}');
+
+        this.prevBtn = this.querySelector('.ai-tabbed-section__slider-prev-{{ ai_gen_id }}');
+        this.nextBtn = this.querySelector('.ai-tabbed-section__slider-next-{{ ai_gen_id }}');
+
+        this.setupTabs();
+        this.attachSliderEvents();
+        this.switchTab(0);
+      }
+
+      /* -------------------- TABS -------------------- */
+      setupTabs() {
+        this.tabs.forEach((tab, index) => {
+          tab.addEventListener('click', () => {
+            this.currentTabIndex = index;
+            this.switchTab(index);
+          });
+        });
+      }
+
+      switchTab(index) {
+        // reset slider when switching tab
+        this.sliderIndex = 0;
+
+        // activate tab button
+        this.tabs.forEach(t => t.classList.remove('active'));
+        this.tabs[index].classList.add('active');
+
+        // show respective tab content
+        this.tabContents.forEach(c => c.classList.remove('active'));
+        this.tabContents[index].classList.add('active');
+
+        // refresh slider
+        this.updateSlider();
+      }
+
+      /* -------------------- SLIDER LOGIC -------------------- */
+      getActiveCardsWrapper() {
+        const activeContent = this.tabContents[this.currentTabIndex];
+        return activeContent?.querySelector('.ai-tabbed-section__cards-{{ ai_gen_id }}');
+      }
+
+      getCards() {
+        const wrapper = this.getActiveCardsWrapper();
+        return wrapper ? wrapper.querySelectorAll('.ai-tabbed-section__card-{{ ai_gen_id }}') : [];
+      }
+
+      attachSliderEvents() {
+        this.prevBtn.addEventListener('click', () => {
+          if (this.sliderIndex > 0) {
+            this.sliderIndex--;
+            this.updateSlider();
+          }
+        });
+
+        this.nextBtn.addEventListener('click', () => {
+          const cards = this.getCards();
+          const maxIndex = Math.max(0, cards.length - this.visibleCards);
+
+          if (this.sliderIndex < maxIndex) {
+            this.sliderIndex++;
+            this.updateSlider();
+          }
+        });
+      }
+
+      updateSlider() {
+        const wrapper = this.getActiveCardsWrapper();
+        const cards = this.getCards();
+
+        if (!wrapper || cards.length === 0) return;
+
+        // card width + gap
+        const cardWidth = cards[0].offsetWidth + 24;
+
+        // clamp slider index
+        const maxIndex = Math.max(0, cards.length - this.visibleCards);
+        this.sliderIndex = Math.min(this.sliderIndex, maxIndex);
+
+        // slide transform
+        wrapper.style.transform = `translateX(-${this.sliderIndex * cardWidth}px)`;
+
+        // ---- BUTTON STATE RULES ----
+        // keep icons visible — only disable when needed
+
+        // disable when no sliding is possible
+        const slidingPossible = cards.length > this.visibleCards;
+
+        this.prevBtn.disabled = !slidingPossible || this.sliderIndex === 0;
+        this.nextBtn.disabled = !slidingPossible || this.sliderIndex >= maxIndex;
+      }
+    }
+
+    customElements.define('tabbed-section-{{ ai_gen_id }}', TabbedSection{{ ai_gen_id }});
+  })();
+  </script>
+{% endcomment %}
+
+{% comment %}
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const section = document.querySelector('#section-{{ ai_gen_id }}');
+    if (!section) return;
+
+    const tabs = section.querySelectorAll('[data-tab]');
+    const contents = section.querySelectorAll('[data-content]');
+    const prevBtn = section.querySelector('.ai-tabbed-section__slider-prev-{{ ai_gen_id }}');
+    const nextBtn = section.querySelector('.ai-tabbed-section__slider-next-{{ ai_gen_id }}');
+
+    let activeTab = 1;
+    let slideIndex = 0;
+    const visibleCards = 2;
+
+    function switchTab(tabId) {
+      activeTab = tabId;
+      slideIndex = 0;
+
+      tabs.forEach(t =>
+        t.classList.toggle('active', t.dataset.tab === tabId)
+      );
+
+      contents.forEach(c =>
+        c.classList.toggle('active', c.dataset.content === tabId)
+      );
+
+      updateSlider();
+    }
+
+    function getActiveTrack() {
+      return section.querySelector(`[data-content="${activeTab}"] .ai-tabbed-section__cards-{{ ai_gen_id }}`);
+    }
+
+    function getCards() {
+      return section.querySelectorAll(
+        `[data-content="${activeTab}"] .ai-tabbed-section__card-{{ ai_gen_id }}`
+      );
+    }
+
+    function updateSlider() {
+      const track = getActiveTrack();
+      const cards = getCards();
+      if (!track || !cards.length) return;
+
+      const cardWidth = cards[0].offsetWidth + 24;
+      const maxIndex = Math.max(0, cards.length - visibleCards);
+
+      slideIndex = Math.min(slideIndex, maxIndex);
+      track.style.transform = `translateX(-${slideIndex * cardWidth}px)`;
+
+      prevBtn.disabled = slideIndex === 0;
+      nextBtn.disabled = slideIndex >= maxIndex;
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        switchTab(tab.dataset.tab);
+      });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (slideIndex > 0) {
+        slideIndex--;
+        updateSlider();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      slideIndex++;
+      updateSlider();
+    });
+
+    switchTab('1');
+  });
+  </script>
+{% endcomment %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('#section-{{ ai_gen_id }}');
+    if (!section) return;
+
+    const tabs = section.querySelectorAll('[data-tab]');
+    const contents = section.querySelectorAll('[data-content]');
+    const prevBtns = section.querySelectorAll('.ai-tabbed-section__slider-prev-{{ ai_gen_id }}');
+    const nextBtns = section.querySelectorAll('.ai-tabbed-section__slider-next-{{ ai_gen_id }}');
+
+
+    let activeTab = '1';
+    let slideIndex = 0;
+    const visibleCards = 2;
+
+    function switchTab(tabId) {
+      activeTab = tabId;
+      slideIndex = 0;
+
+      tabs.forEach((tab) => tab.classList.toggle('active', tab.dataset.tab === tabId));
+
+      contents.forEach((content) => content.classList.toggle('active', content.dataset.content === tabId));
+
+      updateSlider();
+    }
+
+    function getTrack() {
+      return section.querySelector(`[data-content="${activeTab}"] .ai-tabbed-section__cards-{{ ai_gen_id }}`);
+    }
+
+    function getCards() {
+      return section.querySelectorAll(`[data-content="${activeTab}"] .ai-tabbed-section__card-{{ ai_gen_id }}`);
+    }
+
+    {% comment %} function updateSlider() {
+      const track = getTrack();
+      const cards = getCards();
+      if (!track || !cards.length) return;
+
+      const cardWidth = cards[0].offsetWidth + 24; // 24 = gap
+      const maxIndex = Math.max(0, cards.length - visibleCards);
+
+      slideIndex = Math.min(slideIndex, maxIndex);
+      track.style.transform = `translateX(-${slideIndex * cardWidth}px)`;
+
+      prevBtn.disabled = slideIndex === 0;
+      nextBtn.disabled = slideIndex >= maxIndex;
+    } {% endcomment %}
+
+    function updateSlider() {
+  const track = getTrack();
+  const cards = getCards();
+  if (!track || !cards.length) return;
+
+  const visibleCards = window.innerWidth <= 768 ? 1 : 2;
+  const gap = window.innerWidth <= 768 ? 16 : 24;
+
+  const cardWidth = cards[0].offsetWidth + gap;
+  const maxIndex = Math.max(0, cards.length - visibleCards);
+
+  slideIndex = Math.min(slideIndex, maxIndex);
+  track.style.transform = `translateX(-${slideIndex * cardWidth}px)`;
+
+  prevBtns.forEach(btn => btn.disabled = slideIndex === 0);
+  nextBtns.forEach(btn => btn.disabled = slideIndex >= maxIndex);
+}
+
+window.addEventListener('resize', updateSlider);
+
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        switchTab(tab.dataset.tab);
+      });
+    });
+
+    prevBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (slideIndex > 0) {
+        slideIndex--;
+        updateSlider();
+      }
+    });
+  });
+
+  nextBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      slideIndex++;
+      updateSlider();
+    });
+  });
+
+
+    switchTab('1');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Tab with content",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Explore our collections"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Browse through our curated selection"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Container width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "cards_per_row",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Cards per row",
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Tabs"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_title",
+      "label": "Tab 1 title",
+      "default": "Featured"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_title",
+      "label": "Tab 2 title",
+      "default": "New arrivals"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_title",
+      "label": "Tab 3 title",
+      "default": "Best sellers"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_title",
+      "label": "Tab 4 title",
+      "default": "Sale"
+    },
+    {
+      "type": "color",
+      "id": "tab_bg_color",
+      "label": "Tab background",
+      "default": "#f3f3f3"
+    },
+    {
+      "type": "color",
+      "id": "tab_text_color",
+      "label": "Tab text",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "tab_border_color",
+      "label": "Tab border",
+      "default": "#e0e0e0"
+    },
+
+    {
+      "type": "color",
+      "id": "tab_active_bg_color",
+      "label": "Active tab background",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_text_color",
+      "label": "Active tab text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_border_color",
+      "label": "Active tab border",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "tab_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Tab border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Slider controls"
+    },
+    {
+      "type": "color",
+      "id": "slider_btn_bg_color",
+      "label": "Button background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "slider_btn_icon_color",
+      "label": "Button icon",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "slider_btn_border_color",
+      "label": "Button border",
+      "default": "#e0e0e0"
+    },
+
+    {
+      "type": "header",
+      "content": "Tab 1 - Card 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_1_card_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_card_1_heading",
+      "label": "Heading",
+      "default": "Product title"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_card_1_subheading",
+      "label": "Subheading",
+      "default": "Category"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_1_card_1_description",
+      "label": "Description",
+      "default": "Discover our amazing product with exceptional quality and design."
+    },
+    {
+      "type": "text",
+      "id": "tab_1_card_1_link_text",
+      "label": "Link text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "tab_1_card_1_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 1 - Card 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_1_card_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_card_2_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_card_2_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_1_card_2_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_card_2_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_1_card_2_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 1 - Card 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_1_card_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_card_3_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_card_3_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_1_card_3_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_card_3_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_1_card_3_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 2 - Card 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_2_card_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_card_1_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_card_1_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_2_card_1_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_card_1_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_2_card_1_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 2 - Card 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_2_card_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_card_2_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_card_2_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_2_card_2_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_card_2_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_2_card_2_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 2 - Card 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_2_card_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_card_3_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_card_3_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_2_card_3_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_card_3_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_2_card_3_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 3 - Card 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_3_card_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_card_1_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_card_1_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_3_card_1_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_card_1_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_3_card_1_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 3 - Card 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_3_card_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_card_2_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_card_2_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_3_card_2_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_card_2_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_3_card_2_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 3 - Card 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_3_card_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_card_3_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_card_3_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_3_card_3_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_card_3_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_3_card_3_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 4 - Card 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_4_card_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_card_1_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_card_1_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_4_card_1_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_card_1_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_4_card_1_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 4 - Card 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_4_card_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_card_2_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_card_2_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_4_card_2_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_card_2_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_4_card_2_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Tab 4 - Card 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "tab_4_card_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_card_3_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_card_3_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_4_card_3_description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_card_3_link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "tab_4_card_3_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 8
+    },
+    {
+      "type": "select",
+      "id": "card_image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        {
+          "value": "1",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "1.33",
+          "label": "Landscape (4:3)"
+        },
+        {
+          "value": "1.5",
+          "label": "Portrait (2:3)"
+        },
+        {
+          "value": "1.78",
+          "label": "Widescreen (16:9)"
+        }
+      ],
+      "default": "1.33"
+    },
+    {
+      "type": "range",
+      "id": "card_heading_size",
+      "min": 14,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_subheading_size",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "card_description_size",
+      "min": 12,
+      "max": 25,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "card_heading_color",
+      "label": "Heading color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "card_subheading_color",
+      "label": "Subheading color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "card_description_color",
+      "label": "Description color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "card_link_bg_color",
+      "label": "Link background",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "card_link_text_color",
+      "label": "Link text",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "range",
+      "id": "card_link_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Link border radius",
+      "default": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tab with content "
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,282 @@
+
+<style>
+/* === PHASE 2: Enhanced Four Blocks Section === */
+
+  .custom-info-section {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background: linear-gradient(180deg, #F2F6F6 0%, #E8EFEF 100%);
+    text-align: center;
+    position: relative;
+    min-height: 500px;
+  }
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+  .main-title p{
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0 !important;
+    color: black;
+    line-height: 1.2;
+  }
+ .description-text {
+    font-size: 25px;
+    line-height: 1.4;
+    color: black;
+    max-width: 702px;
+}
+.main-contaner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.blocks-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 24px;
+  column-gap: 32px;
+}
+
+/* Enhanced Block Cards with Hover Effects */
+.icon-text-block-four {
+    background: linear-gradient(180deg, #ffffff 0%, #fafcfc 100%);
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 635px;
+    text-align: start;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    border: 1px solid rgba(57, 88, 91, 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-text-block-four:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(57, 88, 91, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-color: rgba(57, 88, 91, 0.12);
+}
+
+  .block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Enhanced Icon with Background Circle */
+  .icon {
+    flex-shrink: 0;
+  }
+
+  .icon img {
+    max-width: 60px;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(57, 88, 91, 0.08) 0%, rgba(57, 88, 91, 0.04) 100%);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .icon-text-block-four:hover .icon img {
+    transform: scale(1.05);
+  }
+
+  .block-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: #1a1a1a;
+  }
+
+  .block-description p {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin: 0;
+    line-height: 1.5;
+  }
+.description-text_end p{
+    color: black;
+    margin: 0;
+    line-height: 1.4;
+
+}
+
+/* === PHASE 6: Enhanced Mobile Optimization === */
+  @media (max-width: 767px) {
+    .blocks-container {
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .main-contaner {
+      gap: 24px;
+    }
+
+    /* Enhanced Mobile Card - Better Touch Target */
+    .icon-text-block-four {
+      width: 100%;
+      padding: 16px;
+      border-radius: 12px;
+    }
+
+    .icon-text-block-four:hover {
+      transform: none; /* Disable hover lift on mobile */
+    }
+
+    .icon-text-block-four:active {
+      transform: scale(0.98);
+      background: linear-gradient(180deg, #f8fafa 0%, #f0f4f4 100%);
+    }
+
+    .icon img {
+      max-width: 48px;
+      padding: 8px;
+    }
+
+    .block-description p {
+      line-height: 1.4;
+    }
+
+    .block-title {
+      font-size: 18px;
+    }
+
+    .block-description p {
+      font-size: 14px;
+    }
+
+    .main-title p {
+      font-size: 28px;
+      line-height: 1.3;
+    }
+
+    .description-text {
+      font-size: 16px;
+    }
+
+    .description-text p {
+      margin: 0;
+    }
+
+    .description-text_end p {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+}
+</style>
+
+<section class="custom-info-section" style="	padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;" >
+  <div class="page-width">
+    <div class="main-contaner">
+  <div class="section-content">
+    <div class="main-title">{{ section.settings.main_title }}</div>
+    <div class="description-text">{{ section.settings.description_text }}</div>
+  </div>
+
+  <div class="blocks-container">
+    {% for block in section.blocks %}
+      <div class="icon-text-block-four">
+        <div class="icon">
+          <img src="{{ block.settings.icon_1 | img_url: 'small' }}" alt="{{ block.settings.block_title_1 }}">
+        </div>
+        <div class="block-content">
+          <h3 class="block-title">{{ block.settings.block_title_1 }}</h3>
+          <div class="block-description">{{ block.settings.block_description_1 }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="description-text_end">{{ section.settings.description_text_end }}</div>
+  </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": " Section with Blocks",
+  "settings": [
+  
+    {
+      "type": "richtext",
+      "label": "Main Title",
+      "id": "main_title",
+     
+    },
+    {
+      "type": "richtext",
+      "label": "Description Text",
+      "id": "description_text",
+     
+    },
+     {
+      "type": "richtext",
+      "label": "Description Text",
+      "id": "description_text_end",
+     
+    },
+    {
+     "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon_text_block",
+      "name": "Block 1",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Icon",
+          "id": "icon_1"
+        },
+        {
+          "type": "text",
+          "label": "Block Title",
+          "id": "block_title_1",
+          "default": "แชมพูป้องกันร่วง"
+        },
+        {
+          "type": "richtext",
+          "label": "Block Description",
+          "id": "block_description_1",
+          
+        }
+      ]
+    },
+    
+  ],
+  "presets": [
+    {
+      "name": "Section with blocks",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

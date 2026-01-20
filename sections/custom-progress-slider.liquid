@@ -1,0 +1,417 @@
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  
+<section class="custom-progress {{ section.id }}">
+  <div class="page-width">
+
+    {% if section.settings.heading != blank %}
+      <h2 class="custom-progress__heading">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+
+    {% if section.settings.subheading != blank %}
+      <div class="custom-progress__subheading">
+        {{ section.settings.subheading }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.helper_text != blank %}
+      <p class="custom-progress__helper">
+        {{ section.settings.helper_text }}
+      </p>
+    {% endif %}
+
+    <div class="custom-progress__slider-wrapper">
+      <div class="custom-progress__slider">
+
+        {% for block in section.blocks %}
+          <div class="custom-progress__card" {{ block.shopify_attributes }}>
+            
+            {% if block.settings.badge != blank %}
+              <span class="custom-progress__badge">
+                {{ block.settings.badge }}
+              </span>
+            {% endif %}
+
+            {% if block.settings.image %}
+              <div class="custom-progress__image">
+                {{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.title, widths: '300, 400, 500, 600' }}
+              </div>
+            {% endif %}
+
+            <div class="custom-progress__content">
+              {% if block.settings.title != blank %}
+                <h3 class="custom-progress__title">
+                  {{ block.settings.title }}
+                </h3>
+              {% endif %}
+
+              {% if block.settings.text != blank %}
+                <div class="custom-progress__text">
+                  {{ block.settings.text }}
+                </div>
+              {% endif %}
+            </div>
+
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+    {% if section.settings.bottom_text != blank %}
+        <div class="custom-progress__bottom">
+          {{ section.settings.bottom_text }}
+        </div>
+      {% endif %}
+    
+     {% if section.settings.swipe_text != blank %}
+    <div class="custom-progress__swipe">
+      <button class="custom-progress__swipe-prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 60 60" fill="none">
+          <circle cx="30" cy="30" r="30" transform="matrix(-1 0 0 1 60 0)" fill="#39585B"/>
+          <path d="M37 19.6725L26.8016 30L37 40.3275L33.8603 43.5L20.5 30L33.8603 16.5L37 19.6725Z" fill="white"/>
+        </svg>
+      </button>
+    
+      <span>{{ section.settings.swipe_text }}</span>
+    
+      <button class="custom-progress__swipe-next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 68 68" fill="none">
+          <g filter="">
+            <circle cx="34" cy="30" r="30" fill="#39585B"/>
+            <path d="M27 19.6725L37.1984 30L27 40.3275L30.1397 43.5L43.5 30L30.1397 16.5L27 19.6725Z" fill="white"/>
+          </g>
+        </svg>
+      </button>
+    </div>
+    {% endif %}
+
+
+  </div>
+</section>
+
+<script>
+(function () {
+  var slider = document.querySelector('.{{ section.id }} .custom-progress__slider');
+  if (slider && !slider.classList.contains('slick-initialized')) {
+
+    var totalSlides = slider.children.length;
+
+    $(slider).slick({
+      slidesToShow: totalSlides > 3 ? 3 : totalSlides,
+      slidesToScroll: 1,
+      arrows: false, // hide default arrows
+      dots: false,
+      infinite: totalSlides > 1,
+      variableWidth: false,
+      responsive: [
+        { breakpoint: 990, settings: { slidesToShow: totalSlides > 1 ? 2 : 1 } },
+        { breakpoint: 749, settings: { slidesToShow: 1 } }
+      ]
+    });
+
+    // Custom swipe buttons
+    var prevBtn = document.querySelector('.{{ section.id }} .custom-progress__swipe-prev');
+    var nextBtn = document.querySelector('.{{ section.id }} .custom-progress__swipe-next');
+
+    if(prevBtn) prevBtn.addEventListener('click', function() {
+      $(slider).slick('slickPrev');
+    });
+
+    if(nextBtn) nextBtn.addEventListener('click', function() {
+      $(slider).slick('slickNext');
+    });
+
+  }
+})();
+
+</script>
+
+<style>
+/* Section wrapper */
+
+.custom-progress .page-width {
+    max-width: 1242px !important;
+}
+
+
+  .{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+/* Headings */
+.{{ section.id }} .custom-progress__heading {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 14px !important;
+  font-size: {{ section.settings.heading_size_desktop }}px;
+  max-width: 75%;
+  width: 100%;
+  margin: auto;
+  line-height: 1.2;
+}
+
+.{{ section.id }} .custom-progress__subheading,
+.{{ section.id }} .custom-progress__helper {
+  text-align: center;
+  font-size: 14px;
+}
+
+.{{ section.id }} .custom-progress__subheading p{
+  font-size: {{ section.settings.subheading_size_desktop }}px;
+}
+
+/* Slider */
+.{{ section.id }} .custom-progress__slider-wrapper {
+  position: relative;
+}
+.{{ section.id }} .custom-progress__slider {
+  margin-top: 40px;
+  display: flex;
+}
+
+/* Slick equal height fix */
+.{{ section.id }} .slick-list {
+  display: flex;
+}
+
+.{{ section.id }} .slick-track {
+  display: flex !important;
+  align-items: stretch;
+}
+
+.{{ section.id }} .slick-slide {
+  display: flex !important;
+  height: inherit !important;
+}
+
+.{{ section.id }} .slick-slide > div {
+  display: flex;
+  width: 100%;
+}
+
+/* Card */
+.{{ section.id }} .custom-progress__card {
+  position: relative;
+  background: #fff;
+  border: 2px solid #39585B;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 12px 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 3px 6px 5.8px #39585B;
+}
+
+/* Badge */
+.{{ section.id }} .custom-progress__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #fff;
+    border: 1px solid #39585B;
+    color: #000;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 10px;
+    letter-spacing: 0;
+    border-radius: 999px;
+}
+
+/* Image */
+.{{ section.id }} .custom-progress__image img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+}
+
+/* Content */
+.{{ section.id }} .custom-progress__content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Title & Text */
+.{{ section.id }} .custom-progress__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;    
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.{{ section.id }} .custom-progress__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.{{ section.id }} .custom-progress__text p {
+    margin-top: 7px;
+    font-size: 16px;
+    letter-spacing:0px;
+}
+
+/* Bottom / swipe text */
+.{{ section.id }} .custom-progress__bottom {
+  text-align: center;
+  margin-top: 26px;
+  font-weight: 500;
+}
+
+.{{ section.id }} .custom-progress__bottom p {
+  font-size: {{ section.settings.bottom_text_desktop }}px;
+      line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.{{ section.id }} .custom-progress__swipe {
+  text-align: center;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.{{ section.id }} .custom-progress__swipe span {
+    font-size: {{ section.settings.progress_swipe_desktop }}px;
+    line-height:100%;
+}
+
+/* Slick custom arrows */
+.{{ section.id }} .slick-prev,
+.{{ section.id }} .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.{{ section.id }} .slick-prev { left: -20px; }
+.{{ section.id }} .slick-next { right: -20px; }
+
+@media (max-width: 749px) {
+  .{{ section.id }} .custom-progress__heading {
+    font-size: {{ section.settings.heading_size_mobile }}px;
+    max-width:98%;
+  }
+  
+  .{{ section.id }} .custom-progress__subheading p{
+    font-size: {{ section.settings.subheading_size_mobile }}px;
+  }
+
+.{{ section.id }} .custom-progress__bottom p {
+  font-size: {{ section.settings.bottom_text_mobille }}px;
+}
+
+.{{ section.id }} .custom-progress__swipe span {
+    font-size: {{ section.settings.progress_swipe_mobile }}px;
+}
+
+  .{{ section.id }} .slick-prev, 
+  .{{ section.id }} .slick-next {
+    display: none;
+  }
+
+  .{{ section.id }} .custom-progress__title {
+    font-size: 18px !important;
+}
+.{{ section.id }} .custom-progress__text p {
+    font-size: 14px !important;
+}
+
+}
+
+.{{ section.id }} .custom-progress__swipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* space between arrows and text */
+  font-size: 12px;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+.{{ section.id }} .custom-progress__swipe button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+</style>
+
+{% schema %}
+{
+  "name": "Progress Timeline Slider",
+  "settings": [
+    { "type": "inline_richtext", "id": "heading", "label": "Heading" },
+
+    { "type": "range", "id": "heading_size_desktop", "label": "Heading size (desktop)", "min": 18, "max": 56, "step": 1, "default": 32 },
+    { "type": "range", "id": "heading_size_mobile", "label": "Heading size (mobile)", "min": 16, "max": 40, "step": 1, "default": 24 },
+{
+            "type": "header",
+            "content": "Subheading"
+        },
+    { "type": "richtext", "id": "subheading", "label": "Subheading" },
+
+    { "type": "range", "id": "subheading_size_desktop", "label": "Subheading size (desktop)", "min": 10, "max": 60, "step": 1, "default": 24 },
+    { "type": "range", "id": "subheading_size_mobile", "label": "Subheading size (mobile)", "min": 10, "max": 60, "step": 1, "default": 15 },
+    
+    { "type": "text", "id": "helper_text", "label": "Helper text" },
+    {
+            "type": "header",
+            "content": "Bottom text"
+        },
+    { "type": "richtext", "id": "bottom_text", "label": "Bottom text" },
+    
+        { "type": "range", "id": "bottom_text_desktop", "label": "Bottom text size (desktop)", "min": 10, "max": 60, "step": 1, "default": 24 },
+        { "type": "range", "id": "bottom_text_mobille", "label": "Bottom text size (mobile)", "min": 10, "max": 60, "step": 1, "default": 15 },
+        
+        {
+            "type": "header",
+            "content": "Swipe text"
+        },
+        { "type": "inline_richtext", "id": "swipe_text", "label": "Swipe helper text", "default": "เลื่อนดูผลลัพธ์ในแต่ละสัปดาห์กันเลย" },
+        
+            { "type": "range", "id": "progress_swipe_desktop", "label": "Swipe text size (desktop)", "min": 10, "max": 60, "step": 1, "default": 24 },
+            { "type": "range", "id": "progress_swipe_mobile", "label": "Swipe text size (mobile)", "min": 10, "max": 60, "step": 1, "default": 18 },
+
+    { "type": "range", "id": "padding_top", "label": "Padding top", "min": 0, "max": 160, "step": 4, "default": 64 },
+    { "type": "range", "id": "padding_bottom", "label": "Padding bottom", "min": 0, "max": 160, "step": 4, "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Progress step",
+      "settings": [
+        { "type": "text", "id": "badge", "label": "Top badge text" },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "title", "label": "Card title" },
+        { "type": "richtext", "id": "text", "label": "Card description" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Progress Timeline Slider" }
+  ]
+}
+{% endschema %}

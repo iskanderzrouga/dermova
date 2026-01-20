@@ -1,0 +1,474 @@
+<section class="comparison-section {{ section.id }}">
+  <div class="page-width">
+
+    {% if section.settings.heading != blank %}
+      <h2 class="comparison-section__heading">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+
+    <div class="comparison-table">
+
+      <!-- LEFT COLUMN -->
+      <div class="comparison-col comparison-col--features">
+        <div class="comparison-col__title title-left" style="visibility:hidden;">
+           DERMOVA PEPTIVA <span class="extra-title-text">DERMOVA PEPTIVA</span>
+        </div>
+
+        {% for block in section.blocks %}
+          <div class="comparison-row left-column">
+            {% if block.settings.icon-img %}
+                <img src="{{ block.settings.icon-img | img_url:'master' }}" style="width:25px;height:25px;">
+            {% endif %}
+
+            <span class="comparison-feature">
+              {{ block.settings.feature }}
+            </span>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- MIDDLE COLUMN -->
+      <div class="comparison-col comparison-col--highlight">
+        <div class="comparison-col__title">
+          {{ section.settings.center_title }}
+        </div>
+
+        {% for block in section.blocks %}
+          <div class="comparison-row center-column">
+
+            
+
+            {% case block.settings.center-icon %}
+            {% when 'tickmark' %}
+              {% render 'icon-tickmark' %}
+            {% when 'cross' %}
+              {% render 'icon-cross' %}
+            {% when 'warning' %}
+              {% render 'icon-warning' %}
+            {% else %}
+              
+            {% endcase %}
+
+            <span class="comparison-value">
+              {{ block.settings.center_value }}
+            </span>
+            <span class="comparison-value">
+              &nbsp;
+            </span>
+          </div>
+        {% endfor %}
+        <div class="comparison-row center-column empty-row">
+        </div>
+        
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="comparison-col comparison-col--normal">
+        <div class="comparison-col__title title-right">
+          {{ section.settings.right_title }}
+        </div>
+
+        {% for block in section.blocks %}
+          <div class="comparison-row right-column">
+
+
+            {% case block.settings.right-icon %}
+            {% when 'tickmark' %}
+              {% render 'icon-tickmark' %}
+            {% when 'cross' %}
+              {% render 'icon-cross' %}
+            {% when 'warning' %}
+              {% render 'icon-warning' %}
+            {% else %}
+
+            {% endcase %}
+              
+
+            <span class="comparison-value">
+              {{ block.settings.right_value }}
+            </span>
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<style>
+/* === PHASE 2: Enhanced Comparison Table === */
+
+    .comparison-section .page-width {
+    max-width: 1320px;
+}
+
+/* ===== SECTION ===== */
+.{{ section.id }} {
+  padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  background: {{ section.settings.background }};
+}
+
+.{{ section.id }} .comparison-section__heading {
+  text-align: center;
+  font-size: {{ section.settings.heading_size_desktop }}px;
+  font-weight: {{ section.settings.heading_weight }};
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+/* ===== TABLE ===== */
+.{{ section.id }} .comparison-table {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== COLUMNS ===== */
+.{{ section.id }} .comparison-col {
+  background: linear-gradient(180deg, #ffffff 0%, #fafcfc 100%);
+}
+
+/* Premium Highlight Column with Gradient */
+.{{ section.id }} .comparison-col--highlight {
+  background: linear-gradient(180deg, #39585B 0%, #2d4648 100%);
+  color: #fff;
+  box-shadow: 0 0 40px rgba(57, 88, 91, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.{{ section.id }} .comparison-col__title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding: 24px 10px;
+}
+
+/* Premium Header Styling for Highlight */
+.{{ section.id }} .comparison-col--highlight .comparison-col__title {
+  background: linear-gradient(135deg, #4a6d70 0%, #39585B 100%);
+  position: relative;
+}
+
+/* ===== ROWS ===== */
+.{{ section.id }} .comparison-row {
+  padding: 18px;
+  border: 1px solid #E3ECEC;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  transition: background-color 0.2s ease;
+}
+
+.{{ section.id }} .comparison-row:hover {
+  background-color: rgba(57, 88, 91, 0.02);
+}
+
+.{{ section.id }} .comparison-col--highlight .comparison-row {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.{{ section.id }} .comparison-col--highlight .comparison-row:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.{{ section.id }} .comparison-feature {
+  font-weight: 500;
+}
+
+.{{ section.id }} .comparison-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comparison-row.left-column {
+    gap: 5px;
+}
+
+.comparison-row.left-column {
+    border-left: 1px solid #39585B !important;
+}
+
+.comparison-col--features 
+.comparison-row.left-column:nth-child(2) {
+    border-top: 1px solid #39585B;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.comparison-col--features 
+.comparison-row.left-column:last-of-type {
+    border-radius: 0px 0px 0px 20px;
+    border-bottom: 1px solid #39585B;
+}
+
+.comparison-row.right-column {
+    border-right: 1px solid #39585B !important;
+}
+
+.comparison-col--normal 
+.comparison-row.right-column:nth-child(2) {
+    border-radius: 0px 20px 0px 0px;
+    border-top: 1px solid #39585B;
+}
+
+.comparison-col--normal 
+.comparison-row.right-column:last-of-type {
+    border-radius: 0px 0px 20px 0px;
+    border-bottom: 1px solid #39585B;
+}
+
+.comparison-col--highlight{
+border-radius: 20px;
+}
+
+.comparison-row.center-column {
+    gap: 5px;
+    padding-left: 30px;
+}
+.comparison-row.center-column {
+    border-color: transparent !important;
+}
+
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .{{ section.id }} .comparison-table {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
+  .{{ section.id }} .comparison-row.center-column, .comparison-row.right-column {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+  .{{ section.id }} .comparison-col {
+    margin-bottom: 16px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .{{ section.id }} .comparison-col__title {
+    font-size: 16px;
+  }
+
+
+  .{{ section.id }} .extra-title-text {
+    display: none;
+  }
+  
+
+  .{{ section.id }} .comparison-row {
+    font-size: 12px;
+  }
+
+  .{{ section.id }} .comparison-section__heading {
+    font-size: {{ section.settings.heading_size_mobile }}px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .comparison-row.left-column {
+    padding: 10px;
+}
+  .comparison-col--normal .comparison-col__title{
+    padding:13px;
+  }
+
+  .{{ section.id }} .comparison-row.center-column, .comparison-row.right-column {
+    padding:17px 10px;
+  }
+  .comparison-col__title.title-left {
+    width: 166px;
+}
+  .comparison-col__title.title-left {
+        padding-bottom: 26px;
+}
+
+}
+</style>
+
+{% schema %}
+{
+  "name": "Comparison Table",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "Why 6,200+ Thai Women Switched To Dermova"
+    },
+    {
+      "type": "text",
+      "id": "center_title",
+      "label": "Center column title",
+      "default": "DERMOVA PEPTIVA"
+    },
+    {
+      "type": "text",
+      "id": "right_title",
+      "label": "Right column title",
+      "default": "PILLS & SERUMS"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Heading size desktop",
+      "min": 20,
+      "max": 56,
+      "step": 1,
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading size mobile",
+      "min": 18,
+      "max": 36,
+      "step": 1,
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading font weight",
+      "default": "700",
+      "options": [
+        { "value": "400", "label": "Regular" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "default": 80
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Comparison Row",
+      "settings": [
+        {
+            "type": "header",
+            "content": "Left column"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon-img",
+            "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature (left column)",
+          "default": "Reaches Roots (3–4mm Deep)"
+        },
+        {
+            "type": "header",
+            "content": "Center value"
+        },
+        {
+            "type": "select",
+            "id": "center-icon",
+            "label": "Icon",
+            "options": [
+                {
+                    "value": "tickmark",
+                    "label": "Tickmark"
+                },
+                {
+                    "value": "cross",
+                    "label": "Cross"
+                },
+                {
+                    "value": "Warning",
+                    "label": "warning"
+                },
+                {
+                    "value": "none",
+                    "label": "None"
+                }
+            ],
+            "default":"tickmark"
+        },
+        {
+          "type": "html",
+          "id": "center_value",
+          "label": "Center value",
+          "default": "Yes"
+        },
+        {
+            "type": "header",
+            "content": "Right value"
+        },
+        {
+            "type": "select",
+            "id": "right-icon",
+            "label": "Icon",
+            "options": [
+                {
+                    "value": "tickmark",
+                    "label": "Tickmark"
+                },
+                {
+                    "value": "cross",
+                    "label": "Cross"
+                },
+                {
+                    "value": "Warning",
+                    "label": "warning"
+                },
+                {
+                    "value": "none",
+                    "label": "None"
+                }
+            ],
+            "default":"cross"
+        },
+        {
+          "type": "html",
+          "id": "right_value",
+          "label": "Right value",
+          "default": "No"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dermova Comparison Table"
+    }
+  ]
+}
+{% endschema %}
