@@ -443,6 +443,7 @@
         "trust_AcX6Wb",
         "trust_PUrDPK"
       ],
+      "disabled": true,
       "name": "Limited Offer Progress",
       "settings": {
         "section_bg_color": "#f5faf9",
@@ -568,6 +569,7 @@
         "testimonial_exPAtF",
         "testimonial_JQqxHd"
       ],
+      "disabled": true,
       "name": "Testimonial Slider",
       "settings": {
         "section-bg": "#f2f6f6",
