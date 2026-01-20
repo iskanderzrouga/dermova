@@ -726,8 +726,8 @@
       "type": "bacground-img-section",
       "name": "backgroundImage Section",
       "settings": {
-        "background_image": "shopify://shop_images/doctor-with-product.jpg",
-        "mobile_background_image": "shopify://shop_images/doctor-with-product.jpg",
+        "background_image": "shopify://shop_images/doctor-desktop-v2.jpg",
+        "mobile_background_image": "shopify://shop_images/doctor-mobile-v2.jpg",
         "quote_text": "\"แท้จริงแล้ว ผมร่วงเกิดจากเส้นเลือดบนหนังศีรษะที่ตีบลงตามอายุ ทำให้รากผมขาดสารอาหารสำคัญ ไม่เกี่ยวกับกรรมพันธุ์\"",
         "doctor_name": "นพ.พลอย ศรีสวัสดิ์",
         "quote_text_2": "แพทย์ผู้เชี่ยวชาญด้านผิวหนัง ประสบการณ์กว่า 12 ปี",
