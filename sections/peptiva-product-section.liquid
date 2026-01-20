@@ -44,8 +44,8 @@
 
   /* === Hero Section === */
   .peptiva-hero {
-    padding: 60px 0 50px;
-    background: #fff;
+    padding: 30px 0;
+    background: linear-gradient(180deg, #fafbfc 0%, #fff 100%);
   }
 
   /* Mobile-only image - hidden on desktop */
@@ -56,15 +56,15 @@
   .peptiva-hero__container {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 48px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 32px;
   }
 
   .peptiva-hero__content {
     flex: 1;
-    max-width: 520px;
+    max-width: 540px;
   }
 
   /* Subtle Trust Badge */
@@ -73,9 +73,9 @@
     align-items: center;
     gap: 6px;
     padding: 6px 14px;
-    background: rgba(57, 88, 91, 0.06);
+    background: rgba(57, 88, 91, 0.08);
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: 13px;
     font-weight: 500;
     color: #39585B;
@@ -87,11 +87,11 @@
 
   /* Title with Italic Emphasis */
   .peptiva-hero__title {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.15;
     color: #1a1a1a;
-    margin: 0 0 16px;
+    margin: 0 0 12px;
   }
 
   .peptiva-hero__title em {
@@ -101,15 +101,61 @@
 
   /* Subtitle */
   .peptiva-hero__subtitle {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.5;
     color: #555;
-    margin: 0 0 32px;
+    margin: 0 0 20px;
     max-width: 460px;
   }
 
-  /* Clean CTA Button - No Animations */
+  /* === Trust Highlights Row === */
+  .peptiva-hero__highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .peptiva-hero__highlight {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #fff;
+    border: 1px solid #e8eaed;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .peptiva-hero__highlight:hover {
+    border-color: #39585B;
+    box-shadow: 0 2px 8px rgba(57,88,91,0.08);
+  }
+
+  .peptiva-hero__highlight-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .peptiva-hero__highlight--cod .peptiva-hero__highlight-icon {
+    color: #2d8a5e;
+  }
+
+  .peptiva-hero__highlight--shipping .peptiva-hero__highlight-icon {
+    color: #2563eb;
+  }
+
+  .peptiva-hero__highlight--natural .peptiva-hero__highlight-icon {
+    color: #16a34a;
+  }
+
+  /* Clean CTA Button */
   .peptiva-hero__cta {
     display: inline-flex;
     align-items: center;
@@ -138,21 +184,21 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 16px;
-    font-size: 14px;
+    margin-top: 14px;
+    font-size: 13px;
     color: #666;
   }
 
   .peptiva-hero__trust img {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     flex-shrink: 0;
   }
 
   /* Product Image */
   .peptiva-hero__media {
-    flex: 0 0 48%;
-    max-width: 520px;
+    flex: 0 0 46%;
+    max-width: 500px;
   }
 
   .peptiva-hero__media img {
@@ -166,13 +212,13 @@
   /* === Mobile Styles === */
   @media (max-width: 768px) {
     .peptiva-hero {
-      padding: 32px 0;
+      padding: 20px 0 16px;
     }
 
     .peptiva-hero__container {
       flex-direction: column;
-      gap: 24px;
-      padding: 0 20px;
+      gap: 20px;
+      padding: 0 16px;
     }
 
     /* Hide desktop media on mobile */
@@ -184,8 +230,8 @@
     .peptiva-hero__media-mobile {
       display: block;
       width: 100%;
-      max-width: 320px;
-      margin: 0 auto 24px;
+      max-width: 280px;
+      margin: 0 auto 20px;
     }
 
     .peptiva-hero__media-mobile img {
@@ -202,26 +248,44 @@
     .peptiva-hero__badge {
       font-size: 11px;
       padding: 5px 12px;
-      margin-bottom: 16px;
-    }
-
-    .peptiva-hero__title {
-      font-size: 28px;
-      line-height: 1.2;
       margin-bottom: 12px;
     }
 
+    .peptiva-hero__title {
+      font-size: 26px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
     .peptiva-hero__subtitle {
-      font-size: 15px;
-      margin-bottom: 24px;
+      font-size: 14px;
+      margin-bottom: 16px;
       max-width: 100%;
+    }
+
+    /* Mobile Highlights - horizontal scroll or wrap */
+    .peptiva-hero__highlights {
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .peptiva-hero__highlight {
+      padding: 8px 12px;
+      font-size: 11px;
+      gap: 6px;
+    }
+
+    .peptiva-hero__highlight-icon {
+      width: 16px;
+      height: 16px;
     }
 
     .peptiva-hero__cta {
       width: 100%;
-      padding: 18px 24px;
+      padding: 16px 24px;
       font-size: 16px;
-      min-height: 56px;
+      min-height: 52px;
     }
 
     .peptiva-hero__cta:active {
@@ -230,7 +294,28 @@
 
     .peptiva-hero__trust {
       justify-content: center;
-      font-size: 13px;
+      font-size: 12px;
+      margin-top: 12px;
+    }
+  }
+
+  /* Tablet adjustments */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .peptiva-hero__container {
+      gap: 32px;
+    }
+
+    .peptiva-hero__title {
+      font-size: 34px;
+    }
+
+    .peptiva-hero__highlights {
+      gap: 8px;
+    }
+
+    .peptiva-hero__highlight {
+      padding: 8px 12px;
+      font-size: 12px;
     }
   }
 </style>
@@ -257,15 +342,42 @@
         {{ section.settings.subtitle }}
       </p>
 
-      <!-- Mobile-only image placeholder (shows only on mobile, between subtitle and CTA) -->
+      <!-- Trust Highlights: COD, Free Shipping, Natural -->
+      <div class="peptiva-hero__highlights">
+        <div class="peptiva-hero__highlight peptiva-hero__highlight--cod">
+          <svg class="peptiva-hero__highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+            <line x1="1" y1="10" x2="23" y2="10"></line>
+          </svg>
+          <span>{{ section.settings.cod_text | default: 'จ่ายเงินปลายทาง' }}</span>
+        </div>
+        <div class="peptiva-hero__highlight peptiva-hero__highlight--shipping">
+          <svg class="peptiva-hero__highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+          <span>{{ section.settings.shipping_text | default: 'จัดส่งฟรีทั่วไทย' }}</span>
+        </div>
+        <div class="peptiva-hero__highlight peptiva-hero__highlight--natural">
+          <svg class="peptiva-hero__highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+          <span>{{ section.settings.natural_text | default: 'สารธรรมชาติ 100%' }}</span>
+        </div>
+      </div>
+
+      <!-- Mobile-only image placeholder (shows only on mobile, between highlights and CTA) -->
       <div class="peptiva-hero__media-mobile">
         {% if section.settings.product_image != blank %}
           <img
             src="{{ section.settings.product_image | image_url: width: 600 }}"
             alt="{{ section.settings.product_title | default: 'Peptiva Hair Serum' }}"
             loading="eager"
-            width="320"
-            height="320"
+            width="280"
+            height="280"
           >
         {% endif %}
       </div>
@@ -372,6 +484,28 @@
     },
     {
       "type": "header",
+      "content": "Trust Highlights"
+    },
+    {
+      "type": "text",
+      "id": "cod_text",
+      "label": "COD Payment Text",
+      "default": "จ่ายเงินปลายทาง"
+    },
+    {
+      "type": "text",
+      "id": "shipping_text",
+      "label": "Free Shipping Text",
+      "default": "จัดส่งฟรีทั่วไทย"
+    },
+    {
+      "type": "text",
+      "id": "natural_text",
+      "label": "Natural Ingredients Text",
+      "default": "สารธรรมชาติ 100%"
+    },
+    {
+      "type": "header",
       "content": "Trust Indicator"
     },
     {
@@ -411,7 +545,7 @@
       "min": 0,
       "max": 100,
       "step": 5,
-      "default": 60
+      "default": 30
     },
     {
       "type": "range",
@@ -420,7 +554,7 @@
       "min": 0,
       "max": 100,
       "step": 5,
-      "default": 50
+      "default": 30
     }
   ],
   "presets": [
