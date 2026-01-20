@@ -1,1 +1,0 @@
-# Dermova Shopify Theme
