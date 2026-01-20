@@ -22,10 +22,10 @@
       "settings": {
         "rating_value": "4.88/5",
         "review_text": "จาก 6,200+ รีวิว",
-        "title_line1": "หยุดวงจรผมร่วง",
-        "title_line2": "พร้อมกระตุ้นผมงอกใหม่",
-        "subtitle": "เซรั่มบำรุงรากผม ฟื้นฟูระบบไหลเวียนเลือดบนหนังศีรษะ จาก Dermova™",
-        "cta_text": "ดูวิธีแก้ปัญหา",
+        "title_line1": "ผมร่วงทุกครั้งที่หวี?",
+        "title_line2": "แท้จริงแล้วเกิดจากเลือดไหลเวียนไม่ถึงรากผม",
+        "subtitle": "ผู้หญิงกว่า 80% หลังอายุ 30 ปี เผชิญปัญหาผมร่วงเพราะรากผมไม่ได้รับสารอาหารที่เพียงพอ Peptiva ช่วยกระตุ้นการไหลเวียนเลือด ส่งสารอาหารตรงสู่รากผมโดยตรง",
+        "cta_text": "รับส่วนลดพิเศษ 50% วันนี้",
         "cta_link": "#shopify-section-template--28661701706077__1767877168b2c8d5a1",
         "trust_icon": "shopify://shop_images/image_1744.png",
         "trust_text": "ไม่พอใจภายใน 90 วัน ยินดีคืนเงินทุกบาท",
@@ -485,7 +485,7 @@
         "heading": "Peptiva การันตี หากไม่พอใจ ยืนดีคืนเงินภายใน 90 วัน",
         "heading_size": "extra_large",
         "image_icon": "shopify://shop_images/Vector_17.png",
-        "description": "<p>เราเชื่อมั่นในคุณภาพของ Peptiva และพร้อมรับประกันว่าคุณจะไม่ต้องเสียเงินสักบาท จนกว่าคุณจะมั่นใจว่าผลิตภัณฑ์ได้ผล 100%</p><p>เราแนะนำให้ลองใช้ Peptiva ทุกวันเป็นเวลา 90 วัน ถ้าผมคุณไม่หนาขึ้น ผมร่วงยังไม่ลดลง หรือแนวแสกผมยังคงกว้างอยู่เท่าเดิม เรายินดีคืนเงินทันที แบบไม่ต้องถามเหตุผล คุณไม่ต้องส่งสินค้าคืนด้วยซ้ำ</p><p>เราจะยอมให้คุณจ่ายก็ต่อเมื่อสินค้าของเราได้ผลเท่านั้น</p><p>ผู้ใช้กว่า 6,200 คน เห็นผลแล้ว เรามั่นใจว่าคุณเองก็จะได้ผลลัพธ์ที่ดีไม่ต่างกัน</p>",
+        "description": "<p>เราเชื่อมั่นในคุณภาพของ Peptiva และพร้อมรับประกันความพึงพอใจ 100%</p><p>ลองใช้ Peptiva ทุกวันเป็นเวลา 90 วัน ถ้าผมคุณไม่หนาขึ้น ผมร่วงยังไม่ลดลง หรือแนวแสกผมยังคงกว้างอยู่เท่าเดิม เรายินดีคืนเงินทันที แบบไม่ต้องถามเหตุผล คุณไม่ต้องส่งสินค้าคืนด้วยซ้ำ</p><p>ผู้ใช้กว่า 6,200 คน เห็นผลแล้ว เรามั่นใจว่าคุณเองก็จะได้ผลลัพธ์ที่ดีไม่ต่างกัน</p>",
         "padding_top": 42,
         "padding_bottom": 42
       }
@@ -690,21 +690,21 @@
           "type": "icon_text_block",
           "settings": {
             "icon": "shopify://shop_images/Group_1321315178.png",
-            "block_text": "<p>— <strong>หลังอายุ 30 หนังศีรษะเริ่มเปลี่ยนไป<br/></strong>หลังวัย 30 ความเครียดและฮอร์โมนที่แปรปรวนส่งผลโดยตรงต่อหนังศีรษะ </p><p>สิ่งนี้เกิดขึ้นกับผู้หญิงจำนวนมาก และนั่นไม่ใช่ความผิดของคุณ</p>"
+            "block_text": "<p>— <strong>ผมร่วงติดหวี มือเต็มไปด้วยผมทุกครั้งที่สระผม</strong><br/>พบเส้นผมบนหมอน พื้นห้อง และท่อระบายน้ำทุกวัน</p>"
           }
         },
         "icon_text_block_ayAAyY": {
           "type": "icon_text_block",
           "settings": {
             "icon": "shopify://shop_images/Group_1321315179_2470629c-b8ab-4aeb-8aaa-b03dfed38675.png",
-            "block_text": "<p>— <strong>เส้นเลือดหดเกร็ง รากผมจึงขาดสารอาหาร<br/></strong>เส้นเลือดฝอยขนาดเล็กเกิดการหดตัว<br/>สารอาหารส่งไปไม่ถึงรากผม เส้นผมจึงเริ่มอ่อนแอและหลุดร่วง<br/></p>"
+            "block_text": "<p>— <strong>แสกผมกว้างขึ้นชัดเจน</strong><br/>ไม่มั่นใจเวลาออกจากบ้าน</p>"
           }
         },
         "icon_text_block_8TNg4H": {
           "type": "icon_text_block",
           "settings": {
             "icon": "shopify://shop_images/Group_1321315180_0e023fc2-eea2-4b15-b5e0-5bdddef82e22.png",
-            "block_text": "<p><strong>— แม้เส้นผมจะร่วงหลุดไป แต่รากผมยังคงอยู่<br/></strong>เมื่อขาดสารอาหารที่จำเป็น รากผมจะเข้าสู่ภาวะ “หยุดทำงาน”<br/>แต่พวกมันยังไม่ตาย เพียงแค่กำลังหลับใหล เหมือนเมล็ดพืชที่เฝ้ารอโอกาสในการเติบโตใหม่อีกครั้ง<br/>คำถาม คือ เราจะปลุกรากผมเหล่านั้นให้กลับมาทำงานได้อย่างไร?<br/></p>"
+            "block_text": "<p>— <strong>ลองแชมพู เซรั่ม และวิตามินราคาแพงแล้ว</strong><br/>แต่ผมก็ยังไม่หยุดร่วง</p>"
           }
         }
       },
@@ -715,8 +715,8 @@
       ],
       "name": "Custom Text Image Section",
       "settings": {
-        "title": "<p>สาเหตุที่แท้จริงของภาวะผมร่วง<br/></p>",
-        "description": "<p>ผมร่วงไม่ใช่เรื่องของโชคชะตาหรือกรรมพันธุ์ แต่เป็นเพราะรากผมของคุณกำลังขาดสารอาหาร</p>",
+        "title": "<p><strong>ปัญหาผมร่วงของคุณมีอาการเหล่านี้หรือไม่?</strong></p>",
+        "description": "",
         "product_image": "shopify://shop_images/blood-flow-diagram-thai.jpg",
         "padding_top": 25,
         "padding_bottom": 50
@@ -728,9 +728,9 @@
       "settings": {
         "background_image": "shopify://shop_images/doctor-with-product.jpg",
         "mobile_background_image": "shopify://shop_images/doctor-with-product.jpg",
-        "quote_text": "“ตลอด 12 ปีที่ผ่านมากับการดูแลปัญหาผมร่วงในผู้หญิงไทย เราพบสาเหตุที่แท้จริงคือ ภาวะเส้นเลือดหดเกร็งที่ทำให้รากผมขาดสารอาหาร Peptiva จึงถูกคิดค้นมาเพื่อกระตุ้นการไหลเวียนเลือดโดยเฉพาะ เพื่อส่งสารอาหารเข้าถึงรากผมโดยตรง พร้อมเสริมแรงยึดเกาะให้เส้นผมแข็งแรง ไม่หลุดร่วงง่าย นี่คือกุญแจสำคัญสู่ผลลัพธ์ที่เห็นผลจริงและยั่งยืน”",
+        "quote_text": "\"แท้จริงแล้ว ผมร่วงเกิดจากเส้นเลือดบนหนังศีรษะที่ตีบลงตามอายุ ทำให้รากผมขาดสารอาหารสำคัญ ไม่เกี่ยวกับกรรมพันธุ์\"",
         "doctor_name": "นพ.พลอย ศรีสวัสดิ์",
-        "quote_text_2": "แพทย์ผู้เชี่ยวชาญด้านผิวหนังเฉพาะทางประสบการณ์กว่า 12 ปี ด้านการฟื้นฟูเส้นผมเพื่อผู้หญิงไทย",
+        "quote_text_2": "แพทย์ผู้เชี่ยวชาญด้านผิวหนัง ประสบการณ์กว่า 12 ปี",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -743,31 +743,31 @@
           "settings": {
             "icon_1": "shopify://shop_images/image_468.png",
             "block_title_1": "แชมพูป้องกันผมร่วง",
-            "block_description_1": "<p>ล้างออกในไม่กี่นาที จึงทำได้เพียงทำความสะอาดหนังศีรษะ แต่เข้าไม่ถึงเส้นเลือดที่หดเกร็งอยู่ด้านล่างหนังศรีษะะ</p>"
+            "block_description_1": "<p>ล้างออกเร็ว ไม่ทันซึมถึงรากผม</p>"
           }
         },
         "icon_text_block_pR4afR": {
           "type": "icon_text_block",
           "settings": {
             "icon_1": "shopify://shop_images/image_469.png",
-            "block_title_1": " ไบโอตินและอาหารเสริม",
-            "block_description_1": "<p>สารอาหารถูกส่งไปเลี้ยงอวัยวะสำคัญก่อน เส้นผมจึงได้รับสารอาหารเพียงส่วนน้อย และไม่ได้ช่วยให้การไหลเวียนเลือดบนหนังศีรษะดีขึ้น</p>"
+            "block_title_1": "อาหารเสริม / วิตามิน",
+            "block_description_1": "<p>ร่างกายส่งไปเลี้ยงอวัยวะอื่นก่อน เส้นผมได้รับทีหลัง</p>"
           }
         },
         "icon_text_block_VUtR6n": {
           "type": "icon_text_block",
           "settings": {
             "icon_1": "shopify://shop_images/image_470.png",
-            "block_title_1": "เซรั่มราคาแพง และทรีตเมนต์ซาลอน",
-            "block_description_1": "<p>ทำได้เพียงเคลือบอยู่บนพื้นผิว ไม่สามารถซึมลึกไปถึงบริเวณที่เส้นเลือดหดเกร็งได้</p>"
+            "block_title_1": "เซรั่มราคาแพง",
+            "block_description_1": "<p>เคลือบแค่ผิว ไม่ซึมลึกถึงราก</p>"
           }
         },
         "icon_text_block_qbaMNb": {
           "type": "icon_text_block",
           "settings": {
             "icon_1": "shopify://shop_images/image_471.png",
-            "block_title_1": "Minoxidil และยาจากคลินิก",
-            "block_description_1": "<p>เร่งการงอกของเส้นผมโดยไม่ได้แก้ที่ต้นเหตุ หากหยุดใช้ ปัญหาผมร่วงมักจะกลับมาอีกครั้ง<br/><br/></p>"
+            "block_title_1": "ยาจากคลินิก",
+            "block_description_1": "<p>หยุดใช้เมื่อไหร่ ผมก็ร่วงอีก</p>"
           }
         }
       },
@@ -779,9 +779,9 @@
       ],
       "name": "Section with blocks",
       "settings": {
-        "main_title": "<p><strong>ทำไมทุกวิธีที่เคยลอง…ถึงไม่ได้ผล</strong></p>",
-        "description_text": "<p>การแก้ปัญหาทั่วไปมักโฟกัสแค่ที่เส้นผม แต่ไม่ได้แก้ปัญหา “เส้นเลือดหดเกร็ง” ใต้หนังศีรษะ ซึ่งเป็นจุดเริ่มต้นของปัญหาที่แท้จริง</p>",
-        "description_text_end": "<p>วิธีเหล่านี้เป็นการรักษาที่ปลายเหตุ เพราะไม่มีวิธีไหนที่ช่วย “เปิด” การไหลเวียนของเส้นเลือดใต้หนังศีรษะได้อย่างแท้จริง</p>",
+        "main_title": "<p><strong>ทำไมวิธีที่เคยลอง...ถึงไม่ได้ผล?</strong></p>",
+        "description_text": "<p>เพราะไม่ได้แก้ที่ต้นเหตุ คือ <strong>เลือดไหลเวียนไม่ถึงรากผม</strong></p>",
+        "description_text_end": "<p><strong>Peptiva แตกต่าง</strong> — ซึมลึก กระตุ้นการไหลเวียนเลือด ส่งสารอาหารตรงสู่รากผมอย่างตรงจุด</p>",
         "padding_top": 50,
         "padding_bottom": 50
       }
@@ -792,25 +792,25 @@
         "step_block_4MLKVg": {
           "type": "step_block",
           "settings": {
-            "step_title": "ขั้นตอนที่ 1: เปิดการไหลเวียนของเส้นเลือด",
-            "step_description": "<p>คาเฟอีนเข้มข้น + ไนอะซินาไมด์ + ขิงไทย ช่วยคลายเส้นเลือดที่หดเกร็งบนหนังศีรษะ เพื่อนำส่งออกซิเจนและสารอาหารไปสู่รากผมได้อีกครั้ง</p>",
-            "step_description_2": "<p>ผลลัพธ์ที่สัมผัสได้: หนังศีรษะรู้สึกผ่อนคลายและสบายขึ้น (สัปดาห์ที่ 1-2)</p>"
+            "step_title": "สัปดาห์ที่ 1-2",
+            "step_description": "<p>หนังศีรษะรู้สึกสบายขึ้น การไหลเวียนเลือดดีขึ้น</p>",
+            "step_description_2": ""
           }
         },
         "step_block_qUGQ7C": {
           "type": "step_block",
           "settings": {
-            "step_title": "ขั้นตอนที่ 2: เติมสารอาหารให้รากผม",
-            "step_description": "<p>สูตรเปปไทด์ซึมลึกพิเศษ นำส่งสารอาหารสู่รากผมใต้ชั้นหนังศีรษะโดยตรง เพื่อเสริมความแข็งแรงและการเติบโตจากภายใน</p>",
-            "step_description_2": "<p>ผลลัพธ์ที่สัมผัสได้: เส้นผมหลุดร่วงน้อยลงอย่างชัดเจน ทั้งตอนสระและตอนหวี (สัปดาห์ที่ 3-4)</p>"
+            "step_title": "สัปดาห์ที่ 3-4",
+            "step_description": "<p>ผมร่วงลดลงอย่างเห็นได้ชัด</p>",
+            "step_description_2": ""
           }
         },
         "step_block_x4ARWy": {
           "type": "step_block",
           "settings": {
-            "step_title": "ขั้นตอนที่ 3: ล็อกรากผมให้แข็งแรง",
-            "step_description": "<p>เปปไทด์คอมเพล็กซ์ + โปรตีนข้าว เสริมแรงยึดเกาะของรากผม พร้อมกระตุ้นรากผมที่หลับใหลให้กลับมาทำงาน ผสานคุณค่าจากว่านหางจระเข้ อัญชัน มะกรูด และโสม  ช่วยปรับสมดุลหนังศีรษะ พร้อมสร้างสภาพแวดล้อมที่สมบูรณ์สำหรับการงอกใหม่ของเส้นผม</p>",
-            "step_description_2": "<p>ผลลัพธ์ที่สัมผัสได้: แนวแสกผมเริ่มเติมเต็มและผมดูหนาขึ้นทั่วศีรษะ (สัปดาห์ที่ 8-12)</p>"
+            "step_title": "สัปดาห์ที่ 8-12",
+            "step_description": "<p>ผมหนาขึ้น แสกผมเติมเต็มชัดเจน</p>",
+            "step_description_2": ""
           }
         }
       },
@@ -821,11 +821,11 @@
       ],
       "name": "3-Step Process",
       "settings": {
-        "main_title": "<p>Peptiva ช่วยให้ผมงอกใหม่ในจุดที่เคยบางหรือหลุดร่วงได้อย่างไร</p>",
-        "description_text": "<p>ระบบ 3 ขั้นตอนที่ช่วยฟื้นฟูการไหลเวียนเลือด เติมสารอาหารให้รากผมที่หยุดทำงาน และช่วยให้เส้นผมงอกใหม่ในบริเวณที่เคยบางอย่างเห็นผล</p>",
+        "main_title": "<p><strong>การทำงานที่เห็นผลจริงของ Peptiva</strong></p>",
+        "description_text": "",
         "left_side_image": "shopify://shop_images/peptiva-3step-hair-follicle.png",
-        "title_bottom": "<p>ทำไมวิธีนี้ถึงได้ผล<br/></p>",
-        "description_text_bottom": "<p>การดูแลส่วนใหญ่มักให้ความสำคัญแค่ “เส้นผม” แต่ Peptiva ทำงานลึกลงไปใต้หนังศีรษะ ซึ่งเป็นจุดเริ่มต้นที่แท้จริงของปัญหาผมบาง ทุกขั้นตอนทำงานสอดประสานกัน เพื่อผลลัพธ์ที่ชัดเจนและยั่งยืน</p>",
+        "title_bottom": "<p><strong>ผลลัพธ์ที่คุณจะได้รับ</strong></p>",
+        "description_text_bottom": "<p>✓ ลดการหลุดร่วงของเส้นผมใน 2 สัปดาห์<br/>✓ แสกผมแคบลงภายใน 4-6 สัปดาห์<br/>✓ ผมหนาขึ้นอย่างเห็นได้ชัดใน 8-12 สัปดาห์</p>",
         "cta_text": "",
         "cta_link": "#shopify-section-template--28661701706077__1767877168b2c8d5a1",
         "padding_top": 50,
@@ -1461,24 +1461,24 @@
   "order": [
     "main",
     "peptiva_product_section_rLnN6r",
-    "images_section_EWjexj",
-    "custom_testimonial_slider_rXyNiP",
-    "progress_bar_DPTpXb",
-    "1767877168b2c8d5a1",
-    "money_back_gurantee_FJYTCG",
-    "custom_testimonial_slider_n3NQHU",
-    "comparison_gpt_jKGVGG",
     "text_img_section_3mdhPz",
     "bacground_img_section_gaNR7t",
     "four_blocks_section_GUrqqC",
     "step_process_section_6zqFqg",
+    "images_section_EWjexj",
+    "custom_testimonial_slider_rXyNiP",
     "custom_progress_slider_U3WJhU",
+    "progress_bar_DPTpXb",
+    "1767877168b2c8d5a1",
+    "money_back_gurantee_FJYTCG",
+    "comparison_gpt_jKGVGG",
+    "custom_testimonial_slider_n3NQHU",
     "custom_progress_slider_jxPHag",
     "custom_comparison_table_4LAtFH",
-    "tab_with_content_tHcEUn",
-    "custom_image_with_text_oil_bfrzbP",
     "facility_section_cCxmqx",
     "collapsible_content_EabrmW",
+    "tab_with_content_tHcEUn",
+    "custom_image_with_text_oil_bfrzbP",
     "save_time_mony_9iVyP7"
   ]
 }
