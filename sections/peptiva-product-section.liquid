@@ -343,6 +343,7 @@
       </p>
 
       <!-- Trust Highlights: COD, Free Shipping, Natural -->
+      {% if section.settings.show_highlights %}
       <div class="peptiva-hero__highlights">
         <div class="peptiva-hero__highlight peptiva-hero__highlight--cod">
           <svg class="peptiva-hero__highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -368,6 +369,7 @@
           <span>{{ section.settings.natural_text | default: 'สารธรรมชาติ 100%' }}</span>
         </div>
       </div>
+      {% endif %}
 
       <!-- Mobile-only image placeholder (shows only on mobile, between highlights and CTA) -->
       <div class="peptiva-hero__media-mobile">
@@ -485,6 +487,12 @@
     {
       "type": "header",
       "content": "Trust Highlights"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_highlights",
+      "label": "Show Trust Highlights",
+      "default": true
     },
     {
       "type": "text",
