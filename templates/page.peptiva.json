@@ -27,6 +27,7 @@
         "subtitle": "เซรั่มบำรุงรากผม ฟื้นฟูระบบไหลเวียนเลือดบนหนังศีรษะ จาก Dermova™",
         "cta_text": "สั่ง Peptiva ลด 50% วันนี้",
         "cta_link": "#shopify-section-template--28661701706077__1767877168b2c8d5a1",
+        "show_highlights": true,
         "cod_text": "จ่ายเงินปลายทาง",
         "shipping_text": "จัดส่งฟรีทั่วไทย",
         "natural_text": "สารธรรมชาติ 100%",
@@ -410,182 +411,6 @@
         "text_size_mobile": 13,
         "align-content": "center",
         "verified-buyer-text": "ผู้ซื้อที่ยืนยันตัวตนแล้ว",
-        "button_label": "",
-        "button_link": "#shopify-section-template--28554793484637__1767877168b2c8d5a1",
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "progress_bar_DPTpXb": {
-      "type": "progress-bar",
-      "blocks": {
-        "trust_KgKbRU": {
-          "type": "trust",
-          "settings": {
-            "icon": "shopify://shop_images/Group_48098609.png",
-            "text": "ชำระเงินปลอดภัย"
-          }
-        },
-        "trust_AcX6Wb": {
-          "type": "trust",
-          "settings": {
-            "icon": "shopify://shop_images/Group_1321314790.png",
-            "text": "มีบริการเก็บเงินปลายทาง (COD)"
-          }
-        },
-        "trust_PUrDPK": {
-          "type": "trust",
-          "settings": {
-            "icon": "shopify://shop_images/Ellipse_1304.png",
-            "text": "การันตีคืนเงินภายใน 90 วัน"
-          }
-        }
-      },
-      "block_order": [
-        "trust_KgKbRU",
-        "trust_AcX6Wb",
-        "trust_PUrDPK"
-      ],
-      "disabled": true,
-      "name": "Limited Offer Progress",
-      "settings": {
-        "section_bg_color": "#f5faf9",
-        "card_bg_color": "#ffffff",
-        "heading_text": "ลด 50% - หมดแล้วหมดเลย",
-        "mobile_text": "Fewer than 20 bottles remaining at this price",
-        "progress_percent": 96,
-        "progress-percent-text": "จำหน่ายแล้ว",
-        "progress_fill_color": "#3d5556",
-        "remaining_text": "ราคาพิเศษ เหลือไม่ถึง 20 ขวด!",
-        "discount_icon": "shopify://shop_images/image_466.png",
-        "discount_text": "สั่ง Peptiva วันนี้ ลด 50% - สินค้ามีจำนวนจำกัด",
-        "button_text": "สั่ง Peptiva ในราคาเพียง 50% →",
-        "button_link": "#shopify-section-template--28661701706077__1767877168b2c8d5a1",
-        "padding_top": 36,
-        "padding_bottom": 68
-      }
-    },
-    "1767877168b2c8d5a1": {
-      "type": "apps",
-      "blocks": {
-        "easysell_cod_form_app_block_E6pYJj": {
-          "type": "shopify://apps/easysell-cod-form/blocks/app-block/7bfd0a95-6839-4f02-b2ee-896832dbe67e",
-          "settings": {
-            "product": "peptiva-hair-growth-serum"
-          }
-        }
-      },
-      "block_order": [
-        "easysell_cod_form_app_block_E6pYJj"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "money_back_gurantee_FJYTCG": {
-      "type": "money-back-gurantee",
-      "name": "Money back gurantee",
-      "settings": {
-        "heading": "Peptiva การันตี หากไม่พอใจ ยืนดีคืนเงินภายใน 90 วัน",
-        "heading_size": "extra_large",
-        "image_icon": "shopify://shop_images/Vector_17.png",
-        "description": "<p>เราเชื่อมั่นในคุณภาพของ Peptiva และพร้อมรับประกันว่าคุณจะไม่ต้องเสียเงินสักบาท จนกว่าคุณจะมั่นใจว่าผลิตภัณฑ์ได้ผล 100%</p><p>เราแนะนำให้ลองใช้ Peptiva ทุกวันเป็นเวลา 90 วัน ถ้าผมคุณไม่หนาขึ้น ผมร่วงยังไม่ลดลง หรือแนวแสกผมยังคงกว้างอยู่เท่าเดิม เรายินดีคืนเงินทันที แบบไม่ต้องถามเหตุผล คุณไม่ต้องส่งสินค้าคืนด้วยซ้ำ</p><p>เราจะยอมให้คุณจ่ายก็ต่อเมื่อสินค้าของเราได้ผลเท่านั้น</p><p>ผู้ใช้กว่า 6,200 คน เห็นผลแล้ว เรามั่นใจว่าคุณเองก็จะได้ผลลัพธ์ที่ดีไม่ต่างกัน</p>",
-        "padding_top": 42,
-        "padding_bottom": 42
-      }
-    },
-    "custom_testimonial_slider_n3NQHU": {
-      "type": "custom-testimonial-slider",
-      "blocks": {
-        "testimonial_BAxFyz": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/21a43bdb-148b-4188-8d52-3cf247fc1111.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ทุกเช้าก่อนทำงาน ฉันใช้ตัวนี้ แค่ 30 วินาทีเท่านั้น ก่อนหน้านี้หนังศีรษะตึงและเจ็บมาก โดยเฉพาะเวลามัดผมทั้งวัน ตอนนี้รู้สึกปกติแล้ว ขมับก็เริ่มเต็มขึ้น หลังผมร่วงเยอะช่วงหลังคลอด คุ้มค่าทุกบาทจริงๆ”",
-            "name": " คุณปนิดา อายุ 32 ปี กรุงเทพ  ผู้จัดการออฟฟิศ",
-            "verified": true
-          }
-        },
-        "testimonial_6tamCY": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jan_13_2026_11_34_33_AM.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ไม่ค่อยเชื่อเพราะลองมาหลายอย่าง แต่ตัวนี้ไม่มีกลิ่นแปลกๆ ไม่ทำให้ผมเหนียว และเห็นผมใหม่งอกจริงๆ สามียังเห็นด้วยเลยนะ ทั้งที่เขาไม่เคยสังเกตเรื่องผมเลย! ใช้มา 9 สัปดาห์แล้ว กำลังสั่งเพิ่มค่ะ”",
-            "name": "— คุณศิริพร อายุ 38 ปี นนทบุรีครู",
-            "verified": true
-          }
-        },
-        "testimonial_VB3azD": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jan_13_2026_11_33_49_AM.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ส่วนที่ชอบที่สุดคือ ใช้แล้วจัดแต่งทรงผมได้เลย ไม่ต้องรอ และไม่เหนียว พี่จะสเปรย์ก่อนเป่าผมทุกครั้ง แล้วผมก็รู้สึกหนาขึ้นจริงๆ ช่างทำผมยังถามเลยว่าไปต่อผมมาหรือเปล่า พอยกขวดนี้ให้ดู เขาถึงกับถ่ายรูปเก็บไว้เลยแหละ!”",
-            "name": "— คุณวาสนา อายุ 45 ปี เชียงใหม่  เจ้าของธุรกิจ",
-            "verified": true
-          }
-        },
-        "testimonial_z46Wcn": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10166_2.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ใกล้ 50 แล้ว คิดว่าผมบางเป็นเรื่องปกติของชีวิต แม่ก็เป็น ป้าก็เป็น แต่หลังใช้เปปทิว่ามา 2 เดือน ผมขึ้นเยอะมาก แสกผมดูไม่กว้างเหมือนก่อน เดี๋ยวนี้ไม่ต้องใส่หมวกแล้ว อยากให้คนเห็นผมเยอะๆ ตัวนี้ทำให้เราได้ความมั่นใจกลับมาจริงๆ”",
-            "name": "— คุณกนกวรรณ อายุ 49 ปี ภูเก็ต  ผู้จัดการโรงแรม",
-            "verified": true
-          }
-        },
-        "testimonial_exPAtF": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10167_1.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“วัยทองโจมตีหนักมาก กระหม่อมนี่บางจนไฟส่องเห็นหนังศีรษะชัดเลย เคยลองกินไบโอตินเป็นเดือนๆ ก็ไม่เห็นผล แต่ตัวนี้ได้ผลภายในไม่กี่สัปดาห์ ไม่ต้องรอ เดี๋ยวนี้ไม่มีผมร่วงเกลื่อนหมอน หรือติดเต็มท่อระบายน้ำแล้ว ผมเส้นเล็กๆ ยังแย่งกันขึ้นอีกต่างหาก สูตรเขาดีจริง ทดสอบทางคลินิกแล้วด้วย”",
-            "name": "— คุณศิริวรรณ อายุ 53 ปี สมุทรปราการ  นักบัญชี",
-            "verified": true
-          }
-        },
-        "testimonial_JQqxHd": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10168_1.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ลูกสาวซื้อให้เพราะเห็นว่าเครียดเรื่องผมมาก อายุ 56 แล้วค่ะ คิดว่าไม่มีอะไรช่วยได้แล้ว แต่พอลองใช้ตัวนี้ทุกคืนก่อนนอน หลัง 10 สัปดาห์ ดันมีผมขึ้นในที่ที่ไม่เคยมีมาก่อน เวลามัดผมนี่ดูหนาขึ้นกว่าเดิม 2 เท่าแน่ะ ประทับใจมาก นี่แหละของขวัญที่ดีที่สุด”",
-            "name": "— คุณมาลินี อายุ 56 ปี อุดรธานี <br> ครูเกษียณ",
-            "verified": true
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_BAxFyz",
-        "testimonial_6tamCY",
-        "testimonial_VB3azD",
-        "testimonial_z46Wcn",
-        "testimonial_exPAtF",
-        "testimonial_JQqxHd"
-      ],
-      "disabled": true,
-      "name": "Testimonial Slider",
-      "settings": {
-        "section-bg": "#f2f6f6",
-        "heading": "อย่าเพิ่งเชื่อเรา แต่มาฟังเสียงยืนยันจากผู้ใช้จริงกันเลย",
-        "heading_size_desktop": 50,
-        "heading_size_mobile": 28,
-        "heading_weight": "700",
-        "title_size_desktop": 16,
-        "title_size_mobile": 15,
-        "text_size_desktop": 14,
-        "text_size_mobile": 13,
-        "align-content": "center",
-        "verified-buyer-text": " ผู้ซื้อที่ยืนยันตัวตนแล้ว",
         "button_label": "",
         "button_link": "#shopify-section-template--28554793484637__1767877168b2c8d5a1",
         "padding_top": 64,
@@ -1195,6 +1020,180 @@
         "card_link_border_radius": 4
       }
     },
+    "custom_testimonial_slider_n3NQHU": {
+      "type": "custom-testimonial-slider",
+      "blocks": {
+        "testimonial_BAxFyz": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/21a43bdb-148b-4188-8d52-3cf247fc1111.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“ทุกเช้าก่อนทำงาน ฉันใช้ตัวนี้ แค่ 30 วินาทีเท่านั้น ก่อนหน้านี้หนังศีรษะตึงและเจ็บมาก โดยเฉพาะเวลามัดผมทั้งวัน ตอนนี้รู้สึกปกติแล้ว ขมับก็เริ่มเต็มขึ้น หลังผมร่วงเยอะช่วงหลังคลอด คุ้มค่าทุกบาทจริงๆ”",
+            "name": " คุณปนิดา อายุ 32 ปี กรุงเทพ  ผู้จัดการออฟฟิศ",
+            "verified": true
+          }
+        },
+        "testimonial_6tamCY": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jan_13_2026_11_34_33_AM.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“ไม่ค่อยเชื่อเพราะลองมาหลายอย่าง แต่ตัวนี้ไม่มีกลิ่นแปลกๆ ไม่ทำให้ผมเหนียว และเห็นผมใหม่งอกจริงๆ สามียังเห็นด้วยเลยนะ ทั้งที่เขาไม่เคยสังเกตเรื่องผมเลย! ใช้มา 9 สัปดาห์แล้ว กำลังสั่งเพิ่มค่ะ”",
+            "name": "— คุณศิริพร อายุ 38 ปี นนทบุรีครู",
+            "verified": true
+          }
+        },
+        "testimonial_VB3azD": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jan_13_2026_11_33_49_AM.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“ส่วนที่ชอบที่สุดคือ ใช้แล้วจัดแต่งทรงผมได้เลย ไม่ต้องรอ และไม่เหนียว พี่จะสเปรย์ก่อนเป่าผมทุกครั้ง แล้วผมก็รู้สึกหนาขึ้นจริงๆ ช่างทำผมยังถามเลยว่าไปต่อผมมาหรือเปล่า พอยกขวดนี้ให้ดู เขาถึงกับถ่ายรูปเก็บไว้เลยแหละ!”",
+            "name": "— คุณวาสนา อายุ 45 ปี เชียงใหม่  เจ้าของธุรกิจ",
+            "verified": true
+          }
+        },
+        "testimonial_z46Wcn": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10166_2.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“ใกล้ 50 แล้ว คิดว่าผมบางเป็นเรื่องปกติของชีวิต แม่ก็เป็น ป้าก็เป็น แต่หลังใช้เปปทิว่ามา 2 เดือน ผมขึ้นเยอะมาก แสกผมดูไม่กว้างเหมือนก่อน เดี๋ยวนี้ไม่ต้องใส่หมวกแล้ว อยากให้คนเห็นผมเยอะๆ ตัวนี้ทำให้เราได้ความมั่นใจกลับมาจริงๆ”",
+            "name": "— คุณกนกวรรณ อายุ 49 ปี ภูเก็ต  ผู้จัดการโรงแรม",
+            "verified": true
+          }
+        },
+        "testimonial_exPAtF": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10167_1.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“วัยทองโจมตีหนักมาก กระหม่อมนี่บางจนไฟส่องเห็นหนังศีรษะชัดเลย เคยลองกินไบโอตินเป็นเดือนๆ ก็ไม่เห็นผล แต่ตัวนี้ได้ผลภายในไม่กี่สัปดาห์ ไม่ต้องรอ เดี๋ยวนี้ไม่มีผมร่วงเกลื่อนหมอน หรือติดเต็มท่อระบายน้ำแล้ว ผมเส้นเล็กๆ ยังแย่งกันขึ้นอีกต่างหาก สูตรเขาดีจริง ทดสอบทางคลินิกแล้วด้วย”",
+            "name": "— คุณศิริวรรณ อายุ 53 ปี สมุทรปราการ  นักบัญชี",
+            "verified": true
+          }
+        },
+        "testimonial_JQqxHd": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10168_1.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“ลูกสาวซื้อให้เพราะเห็นว่าเครียดเรื่องผมมาก อายุ 56 แล้วค่ะ คิดว่าไม่มีอะไรช่วยได้แล้ว แต่พอลองใช้ตัวนี้ทุกคืนก่อนนอน หลัง 10 สัปดาห์ ดันมีผมขึ้นในที่ที่ไม่เคยมีมาก่อน เวลามัดผมนี่ดูหนาขึ้นกว่าเดิม 2 เท่าแน่ะ ประทับใจมาก นี่แหละของขวัญที่ดีที่สุด”",
+            "name": "— คุณมาลินี อายุ 56 ปี อุดรธานี <br> ครูเกษียณ",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_BAxFyz",
+        "testimonial_6tamCY",
+        "testimonial_VB3azD",
+        "testimonial_z46Wcn",
+        "testimonial_exPAtF",
+        "testimonial_JQqxHd"
+      ],
+      "name": "Testimonial Slider",
+      "settings": {
+        "section-bg": "#f2f6f6",
+        "heading": "อย่าเพิ่งเชื่อเรา แต่มาฟังเสียงยืนยันจากผู้ใช้จริงกันเลย",
+        "heading_size_desktop": 50,
+        "heading_size_mobile": 28,
+        "heading_weight": "700",
+        "title_size_desktop": 16,
+        "title_size_mobile": 15,
+        "text_size_desktop": 14,
+        "text_size_mobile": 13,
+        "align-content": "center",
+        "verified-buyer-text": " ผู้ซื้อที่ยืนยันตัวตนแล้ว",
+        "button_label": "",
+        "button_link": "#shopify-section-template--28554793484637__1767877168b2c8d5a1",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "progress_bar_DPTpXb": {
+      "type": "progress-bar",
+      "blocks": {
+        "trust_KgKbRU": {
+          "type": "trust",
+          "settings": {
+            "icon": "shopify://shop_images/Group_48098609.png",
+            "text": "ชำระเงินปลอดภัย"
+          }
+        },
+        "trust_AcX6Wb": {
+          "type": "trust",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1321314790.png",
+            "text": "มีบริการเก็บเงินปลายทาง (COD)"
+          }
+        },
+        "trust_PUrDPK": {
+          "type": "trust",
+          "settings": {
+            "icon": "shopify://shop_images/Ellipse_1304.png",
+            "text": "การันตีคืนเงินภายใน 90 วัน"
+          }
+        }
+      },
+      "block_order": [
+        "trust_KgKbRU",
+        "trust_AcX6Wb",
+        "trust_PUrDPK"
+      ],
+      "name": "Limited Offer Progress",
+      "settings": {
+        "section_bg_color": "#f5faf9",
+        "card_bg_color": "#ffffff",
+        "heading_text": "ลด 50% - หมดแล้วหมดเลย",
+        "mobile_text": "Fewer than 20 bottles remaining at this price",
+        "progress_percent": 96,
+        "progress-percent-text": "จำหน่ายแล้ว",
+        "progress_fill_color": "#3d5556",
+        "remaining_text": "ราคาพิเศษ เหลือไม่ถึง 20 ขวด!",
+        "discount_icon": "shopify://shop_images/image_466.png",
+        "discount_text": "สั่ง Peptiva วันนี้ ลด 50% - สินค้ามีจำนวนจำกัด",
+        "button_text": "สั่ง Peptiva ในราคาเพียง 50% →",
+        "button_link": "#shopify-section-template--28661701706077__1767877168b2c8d5a1",
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    },
+    "1767877168b2c8d5a1": {
+      "type": "apps",
+      "blocks": {
+        "easysell_cod_form_app_block_E6pYJj": {
+          "type": "shopify://apps/easysell-cod-form/blocks/app-block/7bfd0a95-6839-4f02-b2ee-896832dbe67e",
+          "settings": {
+            "product": "peptiva-hair-growth-serum"
+          }
+        }
+      },
+      "block_order": [
+        "easysell_cod_form_app_block_E6pYJj"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "money_back_gurantee_FJYTCG": {
+      "type": "money-back-gurantee",
+      "name": "Money back gurantee",
+      "settings": {
+        "heading": "Peptiva การันตี หากไม่พอใจ ยืนดีคืนเงินภายใน 90 วัน",
+        "heading_size": "extra_large",
+        "image_icon": "shopify://shop_images/Vector_17.png",
+        "description": "<p>เราเชื่อมั่นในคุณภาพของ Peptiva และพร้อมรับประกันว่าคุณจะไม่ต้องเสียเงินสักบาท จนกว่าคุณจะมั่นใจว่าผลิตภัณฑ์ได้ผล 100%</p><p>เราแนะนำให้ลองใช้ Peptiva ทุกวันเป็นเวลา 90 วัน ถ้าผมคุณไม่หนาขึ้น ผมร่วงยังไม่ลดลง หรือแนวแสกผมยังคงกว้างอยู่เท่าเดิม เรายินดีคืนเงินทันที แบบไม่ต้องถามเหตุผล คุณไม่ต้องส่งสินค้าคืนด้วยซ้ำ</p><p>เราจะยอมให้คุณจ่ายก็ต่อเมื่อสินค้าของเราได้ผลเท่านั้น</p><p>ผู้ใช้กว่า 6,200 คน เห็นผลแล้ว เรามั่นใจว่าคุณเองก็จะได้ผลลัพธ์ที่ดีไม่ต่างกัน</p>",
+        "padding_top": 42,
+        "padding_bottom": 42
+      }
+    },
     "custom_image_with_text_oil_bfrzbP": {
       "type": "custom-image-with-text-oil",
       "blocks": {
@@ -1468,11 +1467,6 @@
     "peptiva_product_section_rLnN6r",
     "images_section_EWjexj",
     "custom_testimonial_slider_rXyNiP",
-    "progress_bar_DPTpXb",
-    "1767877168b2c8d5a1",
-    "money_back_gurantee_FJYTCG",
-    "custom_testimonial_slider_n3NQHU",
-    "comparison_gpt_jKGVGG",
     "text_img_section_3mdhPz",
     "bacground_img_section_gaNR7t",
     "four_blocks_section_GUrqqC",
@@ -1480,6 +1474,11 @@
     "custom_progress_slider_U3WJhU",
     "custom_progress_slider_jxPHag",
     "custom_comparison_table_4LAtFH",
+    "comparison_gpt_jKGVGG",
+    "custom_testimonial_slider_n3NQHU",
+    "progress_bar_DPTpXb",
+    "1767877168b2c8d5a1",
+    "money_back_gurantee_FJYTCG",
     "tab_with_content_tHcEUn",
     "custom_image_with_text_oil_bfrzbP",
     "facility_section_cCxmqx",
