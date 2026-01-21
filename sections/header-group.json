@@ -19,6 +19,7 @@
           "settings": {
             "text": "ลด 50% วันนี้ • สั่ง Peptiva เลย →",
             "span-text": "สั่งซื้อตอนนี้",
+            "span-text-url": "",
             "link": "#shopify-section-template--28661701706077__1767877168b2c8d5a1"
           }
         }
@@ -40,14 +41,14 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-left",
+        "logo_position": "top-center",
         "mobile_logo_position": "left",
-        "menu": "main-menu-new",
+        "menu": "",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "none",
         "show_line_separator": true,
-        "color_scheme": "scheme-1",
-        "menu_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "menu_color_scheme": "scheme-bc1138f4-49d2-479c-8053-87796a32ef5a",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "enable_customer_avatar": false,
