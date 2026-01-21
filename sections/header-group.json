@@ -40,6 +40,7 @@
     },
     "header": {
       "type": "header",
+      "disabled": true,
       "settings": {
         "logo_position": "top-center",
         "mobile_logo_position": "left",
