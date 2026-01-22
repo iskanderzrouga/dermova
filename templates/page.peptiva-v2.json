@@ -26,13 +26,165 @@
         "title_line2": "แท้จริงแล้วเกิดจากเลือดไหลเวียนไม่ถึงรากผม",
         "subtitle": "ผู้หญิงกว่า 80% หลังอายุ 30 ปี เผชิญปัญหาผมร่วงเพราะรากผมไม่ได้รับสารอาหารที่เพียงพอ Peptiva ช่วยกระตุ้นการไหลเวียนเลือด ส่งสารอาหารตรงสู่รากผมโดยตรง",
         "cta_text": "ดูรายละเอียดเพิ่มเติม",
-        "show_highlights": false,
         "cta_link": "#shopify-section-template--28661701706077__1767877168b2c8d5a1",
+        "show_highlights": true,
+        "cod_text": "จ่ายเงินปลายทาง",
+        "shipping_text": "จัดส่งฟรีทั่วไทย",
+        "natural_text": "สารธรรมชาติ 100%",
         "trust_icon": "shopify://shop_images/image_1744.png",
         "trust_text": "ไม่พอใจภายใน 90 วัน ยินดีคืนเงินทุกบาท",
         "product_image": "shopify://shop_images/97881059-c820-4f74-b9b6-e8d5d499b54b.png",
         "product_title": "Dermova Peptiva Hair Serum",
         "padding_top": 60,
+        "padding_bottom": 50
+      }
+    },
+    "text_img_section_3mdhPz": {
+      "type": "text-img-section",
+      "blocks": {
+        "icon_text_block_9YzcjX": {
+          "type": "icon_text_block",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1321315178.png",
+            "block_text": "<p>— <strong>ผมร่วงติดหวี มือเต็มไปด้วยผมทุกครั้งที่สระผม</strong><br/>พบเส้นผมบนหมอน พื้นห้อง และท่อระบายน้ำทุกวัน</p>"
+          }
+        },
+        "icon_text_block_ayAAyY": {
+          "type": "icon_text_block",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1321315179_2470629c-b8ab-4aeb-8aaa-b03dfed38675.png",
+            "block_text": "<p>— <strong>แสกผมกว้างขึ้นชัดเจน</strong><br/>ไม่มั่นใจเวลาออกจากบ้าน</p>"
+          }
+        },
+        "icon_text_block_8TNg4H": {
+          "type": "icon_text_block",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1321315180_0e023fc2-eea2-4b15-b5e0-5bdddef82e22.png",
+            "block_text": "<p>— <strong>ลองแชมพู เซรั่ม และวิตามินราคาแพงแล้ว</strong><br/>แต่ผมก็ยังไม่หยุดร่วง</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_block_9YzcjX",
+        "icon_text_block_ayAAyY",
+        "icon_text_block_8TNg4H"
+      ],
+      "name": "Custom Text Image Section",
+      "settings": {
+        "title": "<p><strong>ปัญหาผมร่วงของคุณมีอาการเหล่านี้หรือไม่?</strong></p>",
+        "description": "",
+        "product_image": "shopify://shop_images/blood-flow-diagram-thai.jpg",
+        "padding_top": 25,
+        "padding_bottom": 50
+      }
+    },
+    "bacground_img_section_gaNR7t": {
+      "type": "bacground-img-section",
+      "name": "backgroundImage Section",
+      "settings": {
+        "background_image": "shopify://shop_images/image_462.png",
+        "mobile_background_image": "shopify://shop_images/image_464.png",
+        "quote_text": "\"แท้จริงแล้ว ผมร่วงเกิดจากเส้นเลือดบนหนังศีรษะที่ตีบลงตามอายุ ทำให้รากผมขาดสารอาหารสำคัญ ไม่เกี่ยวกับกรรมพันธุ์\"",
+        "doctor_name": "นพ.พลอย ศรีสวัสดิ์",
+        "quote_text_2": "แพทย์ผู้เชี่ยวชาญด้านผิวหนัง ประสบการณ์กว่า 12 ปี",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "four_blocks_section_GUrqqC": {
+      "type": "four-blocks-section",
+      "blocks": {
+        "icon_text_block_TfxRXQ": {
+          "type": "icon_text_block",
+          "settings": {
+            "icon_1": "shopify://shop_images/image_468.png",
+            "block_title_1": "แชมพูป้องกันผมร่วง",
+            "block_description_1": "<p>ล้างออกเร็ว ไม่ทันซึมถึงรากผม</p>"
+          }
+        },
+        "icon_text_block_pR4afR": {
+          "type": "icon_text_block",
+          "settings": {
+            "icon_1": "shopify://shop_images/image_469.png",
+            "block_title_1": "อาหารเสริม / วิตามิน",
+            "block_description_1": "<p>ร่างกายส่งไปเลี้ยงอวัยวะอื่นก่อน เส้นผมได้รับทีหลัง</p>"
+          }
+        },
+        "icon_text_block_VUtR6n": {
+          "type": "icon_text_block",
+          "settings": {
+            "icon_1": "shopify://shop_images/image_470.png",
+            "block_title_1": "เซรั่มราคาแพง",
+            "block_description_1": "<p>เคลือบแค่ผิว ไม่ซึมลึกถึงราก</p>"
+          }
+        },
+        "icon_text_block_qbaMNb": {
+          "type": "icon_text_block",
+          "settings": {
+            "icon_1": "shopify://shop_images/image_471.png",
+            "block_title_1": "ยาจากคลินิก",
+            "block_description_1": "<p>หยุดใช้เมื่อไหร่ ผมก็ร่วงอีก</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_text_block_TfxRXQ",
+        "icon_text_block_pR4afR",
+        "icon_text_block_VUtR6n",
+        "icon_text_block_qbaMNb"
+      ],
+      "name": "Section with blocks",
+      "settings": {
+        "main_title": "<p><strong>ทำไมวิธีที่เคยลอง...ถึงไม่ได้ผล?</strong></p>",
+        "description_text": "<p>เพราะไม่ได้แก้ที่ต้นเหตุ คือ <strong>เลือดไหลเวียนไม่ถึงรากผม</strong></p>",
+        "description_text_end": "<p><strong>Peptiva แตกต่าง</strong> — ซึมลึก กระตุ้นการไหลเวียนเลือด ส่งสารอาหารตรงสู่รากผมอย่างตรงจุด</p>",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "step_process_section_6zqFqg": {
+      "type": "step-process-section",
+      "blocks": {
+        "step_block_4MLKVg": {
+          "type": "step_block",
+          "settings": {
+            "step_title": "สัปดาห์ที่ 1-2",
+            "step_description": "<p>หนังศีรษะรู้สึกสบายขึ้น การไหลเวียนเลือดดีขึ้น</p>",
+            "step_description_2": ""
+          }
+        },
+        "step_block_qUGQ7C": {
+          "type": "step_block",
+          "settings": {
+            "step_title": "สัปดาห์ที่ 3-4",
+            "step_description": "<p>ผมร่วงลดลงอย่างเห็นได้ชัด</p>",
+            "step_description_2": ""
+          }
+        },
+        "step_block_x4ARWy": {
+          "type": "step_block",
+          "settings": {
+            "step_title": "สัปดาห์ที่ 8-12",
+            "step_description": "<p>ผมหนาขึ้น แสกผมเติมเต็มชัดเจน</p>",
+            "step_description_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_block_4MLKVg",
+        "step_block_qUGQ7C",
+        "step_block_x4ARWy"
+      ],
+      "name": "3-Step Process",
+      "settings": {
+        "main_title": "<p><strong>การทำงานที่เห็นผลจริงของ Peptiva</strong></p>",
+        "description_text": "",
+        "left_side_image": "shopify://shop_images/peptiva-3step-hair-follicle.png",
+        "title_bottom": "<p><strong>ผลลัพธ์ที่คุณจะได้รับ</strong></p>",
+        "description_text_bottom": "<p>✓ ลดการหลุดร่วงของเส้นผมใน 2 สัปดาห์<br/>✓ แสกผมแคบลงภายใน 4-6 สัปดาห์<br/>✓ ผมหนาขึ้นอย่างเห็นได้ชัดใน 8-12 สัปดาห์</p>",
+        "cta_text": "",
+        "cta_link": "#shopify-section-template--28661701706077__1767877168b2c8d5a1",
+        "padding_top": 50,
         "padding_bottom": 50
       }
     },
@@ -414,6 +566,82 @@
         "padding_bottom": 64
       }
     },
+    "custom_progress_slider_U3WJhU": {
+      "type": "custom-progress-slider",
+      "blocks": {
+        "step_PzhTGq": {
+          "type": "step",
+          "settings": {
+            "badge": "สัปดาห์ที่ 1–3",
+            "image": "shopify://shop_images/peptiva-week1-hairbrush.png",
+            "title": "หนังศีรษะกลับมามีสุขภาพดีอีกครั้ง",
+            "text": "<p>ผมร่วงบนหมอนและแปรงหวีผมลดน้อยลง หนังศีรษะรู้สึกผ่อนคลาย ไม่ตึงหรือระคายเคือง<br/><br/><strong>สังเกตได้จาก:</strong> จำนวนเส้นผมหลุดร่วงในแปรงลดลง</p>"
+          }
+        },
+        "step_GjHc8j": {
+          "type": "step",
+          "settings": {
+            "badge": "สัปดาห์ที่ 4–6",
+            "image": "shopify://shop_images/peptiva-week4-drain.png",
+            "title": "ผมร่วงลดลงอย่างชัดเจน",
+            "text": "<p>ผมไม่หลุดร่วงเป็นกระจุกอีกต่อไป<br/>พื้นที่บริเวณที่สระผมและพื้นห้องสะอาดขึ้นอย่างเห็นได้ชัด<br/><br/><strong>สังเกตได้จาก:</strong> ปริมาณผมร่วงในแต่ละวันลดน้อยลง</p>"
+          }
+        },
+        "step_axiHX8": {
+          "type": "step",
+          "settings": {
+            "badge": "สัปดาห์ที่ 7–10",
+            "image": "shopify://shop_images/image_481.png",
+            "title": "เส้นผมใหม่เริ่มงอกขึ้นมา",
+            "text": "<p>เริ่มเห็นผมใหม่ขึ้นตามแนวไรผม<br/>รอยแสกผมค่อยๆ แคบลงอย่างเป็นธรรมชาติ<br/><br/><strong>สังเกตได้จาก: </strong>ลองถ่ายภาพเปรียบเทียบความเปลี่ยนแปลงที่เกิดขึ้นได้เลย</p>"
+          }
+        },
+        "step_RpinCm": {
+          "type": "step",
+          "settings": {
+            "badge": "สัปดาห์ที่ 10–12",
+            "image": "shopify://shop_images/image_482.png",
+            "title": "ผมกลับมาดูหนาและมีน้ำหนักอีกครั้ง",
+            "text": "<p>ผมดูหนาขึ้นในบริเวณที่เคยบาง<br/>จัดแต่งทรงผมง่ายขึ้น พร้อมผลลัพธ์สะดุดตาจนใครก็สังเกตเห็น<br/><br/><strong>สังเกตได้จาก:</strong> แนวแสกผมดูหนาและเต็มขึ้นอย่างชัดเจน</p>"
+          }
+        },
+        "step_aX8QQf": {
+          "type": "step",
+          "disabled": true,
+          "settings": {
+            "badge": "",
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_PzhTGq",
+        "step_GjHc8j",
+        "step_axiHX8",
+        "step_RpinCm",
+        "step_aX8QQf"
+      ],
+      "disabled": true,
+      "name": "Progress Timeline Slider",
+      "settings": {
+        "heading": "ผลลัพธ์ที่คุณจะสังเกตเห็นเมื่อใช้ Peptiva เป็นประจำทุกวัน",
+        "heading_size_desktop": 48,
+        "heading_size_mobile": 28,
+        "subheading": "<p><strong>82% พบความเปลี่ยนแปลงที่ชัดเจนภายในสัปดาห์ที่ 4 </strong><br/>อ้างอิงจากผู้หญิงไทยกว่า 6,200 คนที่ใช้ Peptiva อย่างต่อเนื่อง<br/></p>",
+        "subheading_size_desktop": 24,
+        "subheading_size_mobile": 15,
+        "helper_text": "",
+        "bottom_text": "<p>ความสม่ำเสมอคือหัวใจของผลลัพธ์ <br/>ใช้เป็นประจำทุกวันเพื่อความเปลี่ยนแปลงที่ชัดเจน</p>",
+        "bottom_text_desktop": 24,
+        "bottom_text_mobille": 18,
+        "swipe_text": "<strong>เลื่อนดูผลลัพธ์ในแต่ละสัปดาห์กันเลย</strong>",
+        "progress_swipe_desktop": 24,
+        "progress_swipe_mobile": 18,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
     "progress_bar_DPTpXb": {
       "type": "progress-bar",
       "blocks": {
@@ -489,103 +717,6 @@
         "description": "<p>เราเชื่อมั่นในคุณภาพของ Peptiva และพร้อมรับประกันความพึงพอใจ 100%</p><p>ลองใช้ Peptiva ทุกวันเป็นเวลา 90 วัน ถ้าผมคุณไม่หนาขึ้น ผมร่วงยังไม่ลดลง หรือแนวแสกผมยังคงกว้างอยู่เท่าเดิม เรายินดีคืนเงินทันที แบบไม่ต้องถามเหตุผล คุณไม่ต้องส่งสินค้าคืนด้วยซ้ำ</p><p>ผู้ใช้กว่า 6,200 คน เห็นผลแล้ว เรามั่นใจว่าคุณเองก็จะได้ผลลัพธ์ที่ดีไม่ต่างกัน</p>",
         "padding_top": 42,
         "padding_bottom": 42
-      }
-    },
-    "custom_testimonial_slider_n3NQHU": {
-      "type": "custom-testimonial-slider",
-      "blocks": {
-        "testimonial_BAxFyz": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/21a43bdb-148b-4188-8d52-3cf247fc1111.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ทุกเช้าก่อนทำงาน ฉันใช้ตัวนี้ แค่ 30 วินาทีเท่านั้น ก่อนหน้านี้หนังศีรษะตึงและเจ็บมาก โดยเฉพาะเวลามัดผมทั้งวัน ตอนนี้รู้สึกปกติแล้ว ขมับก็เริ่มเต็มขึ้น หลังผมร่วงเยอะช่วงหลังคลอด คุ้มค่าทุกบาทจริงๆ”",
-            "name": " คุณปนิดา อายุ 32 ปี กรุงเทพ  ผู้จัดการออฟฟิศ",
-            "verified": true
-          }
-        },
-        "testimonial_6tamCY": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jan_13_2026_11_34_33_AM.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ไม่ค่อยเชื่อเพราะลองมาหลายอย่าง แต่ตัวนี้ไม่มีกลิ่นแปลกๆ ไม่ทำให้ผมเหนียว และเห็นผมใหม่งอกจริงๆ สามียังเห็นด้วยเลยนะ ทั้งที่เขาไม่เคยสังเกตเรื่องผมเลย! ใช้มา 9 สัปดาห์แล้ว กำลังสั่งเพิ่มค่ะ”",
-            "name": "— คุณศิริพร อายุ 38 ปี นนทบุรีครู",
-            "verified": true
-          }
-        },
-        "testimonial_VB3azD": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jan_13_2026_11_33_49_AM.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ส่วนที่ชอบที่สุดคือ ใช้แล้วจัดแต่งทรงผมได้เลย ไม่ต้องรอ และไม่เหนียว พี่จะสเปรย์ก่อนเป่าผมทุกครั้ง แล้วผมก็รู้สึกหนาขึ้นจริงๆ ช่างทำผมยังถามเลยว่าไปต่อผมมาหรือเปล่า พอยกขวดนี้ให้ดู เขาถึงกับถ่ายรูปเก็บไว้เลยแหละ!”",
-            "name": "— คุณวาสนา อายุ 45 ปี เชียงใหม่  เจ้าของธุรกิจ",
-            "verified": true
-          }
-        },
-        "testimonial_z46Wcn": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10166_2.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ใกล้ 50 แล้ว คิดว่าผมบางเป็นเรื่องปกติของชีวิต แม่ก็เป็น ป้าก็เป็น แต่หลังใช้เปปทิว่ามา 2 เดือน ผมขึ้นเยอะมาก แสกผมดูไม่กว้างเหมือนก่อน เดี๋ยวนี้ไม่ต้องใส่หมวกแล้ว อยากให้คนเห็นผมเยอะๆ ตัวนี้ทำให้เราได้ความมั่นใจกลับมาจริงๆ”",
-            "name": "— คุณกนกวรรณ อายุ 49 ปี ภูเก็ต  ผู้จัดการโรงแรม",
-            "verified": true
-          }
-        },
-        "testimonial_exPAtF": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10167_1.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“วัยทองโจมตีหนักมาก กระหม่อมนี่บางจนไฟส่องเห็นหนังศีรษะชัดเลย เคยลองกินไบโอตินเป็นเดือนๆ ก็ไม่เห็นผล แต่ตัวนี้ได้ผลภายในไม่กี่สัปดาห์ ไม่ต้องรอ เดี๋ยวนี้ไม่มีผมร่วงเกลื่อนหมอน หรือติดเต็มท่อระบายน้ำแล้ว ผมเส้นเล็กๆ ยังแย่งกันขึ้นอีกต่างหาก สูตรเขาดีจริง ทดสอบทางคลินิกแล้วด้วย”",
-            "name": "— คุณศิริวรรณ อายุ 53 ปี สมุทรปราการ  นักบัญชี",
-            "verified": true
-          }
-        },
-        "testimonial_JQqxHd": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10168_1.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "",
-            "text": "“ลูกสาวซื้อให้เพราะเห็นว่าเครียดเรื่องผมมาก อายุ 56 แล้วค่ะ คิดว่าไม่มีอะไรช่วยได้แล้ว แต่พอลองใช้ตัวนี้ทุกคืนก่อนนอน หลัง 10 สัปดาห์ ดันมีผมขึ้นในที่ที่ไม่เคยมีมาก่อน เวลามัดผมนี่ดูหนาขึ้นกว่าเดิม 2 เท่าแน่ะ ประทับใจมาก นี่แหละของขวัญที่ดีที่สุด”",
-            "name": "— คุณมาลินี อายุ 56 ปี อุดรธานี <br> ครูเกษียณ",
-            "verified": true
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_BAxFyz",
-        "testimonial_6tamCY",
-        "testimonial_VB3azD",
-        "testimonial_z46Wcn",
-        "testimonial_exPAtF",
-        "testimonial_JQqxHd"
-      ],
-      "name": "Testimonial Slider",
-      "settings": {
-        "section-bg": "#f2f6f6",
-        "heading": "อย่าเพิ่งเชื่อเรา แต่มาฟังเสียงยืนยันจากผู้ใช้จริงกันเลย",
-        "heading_size_desktop": 50,
-        "heading_size_mobile": 28,
-        "heading_weight": "700",
-        "title_size_desktop": 16,
-        "title_size_mobile": 15,
-        "text_size_desktop": 14,
-        "text_size_mobile": 13,
-        "align-content": "center",
-        "verified-buyer-text": " ผู้ซื้อที่ยืนยันตัวตนแล้ว",
-        "button_label": "",
-        "button_link": "#shopify-section-template--28554793484637__1767877168b2c8d5a1",
-        "padding_top": 64,
-        "padding_bottom": 64
       }
     },
     "comparison_gpt_jKGVGG": {
@@ -684,227 +815,99 @@
         "padding_bottom": 80
       }
     },
-    "text_img_section_3mdhPz": {
-      "type": "text-img-section",
+    "custom_testimonial_slider_n3NQHU": {
+      "type": "custom-testimonial-slider",
       "blocks": {
-        "icon_text_block_9YzcjX": {
-          "type": "icon_text_block",
+        "testimonial_BAxFyz": {
+          "type": "testimonial",
           "settings": {
-            "icon": "shopify://shop_images/Group_1321315178.png",
-            "block_text": "<p>— <strong>ผมร่วงติดหวี มือเต็มไปด้วยผมทุกครั้งที่สระผม</strong><br/>พบเส้นผมบนหมอน พื้นห้อง และท่อระบายน้ำทุกวัน</p>"
-          }
-        },
-        "icon_text_block_ayAAyY": {
-          "type": "icon_text_block",
-          "settings": {
-            "icon": "shopify://shop_images/Group_1321315179_2470629c-b8ab-4aeb-8aaa-b03dfed38675.png",
-            "block_text": "<p>— <strong>แสกผมกว้างขึ้นชัดเจน</strong><br/>ไม่มั่นใจเวลาออกจากบ้าน</p>"
-          }
-        },
-        "icon_text_block_8TNg4H": {
-          "type": "icon_text_block",
-          "settings": {
-            "icon": "shopify://shop_images/Group_1321315180_0e023fc2-eea2-4b15-b5e0-5bdddef82e22.png",
-            "block_text": "<p>— <strong>ลองแชมพู เซรั่ม และวิตามินราคาแพงแล้ว</strong><br/>แต่ผมก็ยังไม่หยุดร่วง</p>"
-          }
-        }
-      },
-      "block_order": [
-        "icon_text_block_9YzcjX",
-        "icon_text_block_ayAAyY",
-        "icon_text_block_8TNg4H"
-      ],
-      "name": "Custom Text Image Section",
-      "settings": {
-        "title": "<p><strong>ปัญหาผมร่วงของคุณมีอาการเหล่านี้หรือไม่?</strong></p>",
-        "description": "",
-        "product_image": "shopify://shop_images/blood-flow-diagram-thai.jpg",
-        "padding_top": 25,
-        "padding_bottom": 50
-      }
-    },
-    "bacground_img_section_gaNR7t": {
-      "type": "bacground-img-section",
-      "name": "backgroundImage Section",
-      "settings": {
-        "background_image": "shopify://shop_images/image_462.png",
-        "mobile_background_image": "shopify://shop_images/image_464.png",
-        "quote_text": "\"แท้จริงแล้ว ผมร่วงเกิดจากเส้นเลือดบนหนังศีรษะที่ตีบลงตามอายุ ทำให้รากผมขาดสารอาหารสำคัญ ไม่เกี่ยวกับกรรมพันธุ์\"",
-        "doctor_name": "นพ.พลอย ศรีสวัสดิ์",
-        "quote_text_2": "แพทย์ผู้เชี่ยวชาญด้านผิวหนัง ประสบการณ์กว่า 12 ปี",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "four_blocks_section_GUrqqC": {
-      "type": "four-blocks-section",
-      "blocks": {
-        "icon_text_block_TfxRXQ": {
-          "type": "icon_text_block",
-          "settings": {
-            "icon_1": "shopify://shop_images/image_468.png",
-            "block_title_1": "แชมพูป้องกันผมร่วง",
-            "block_description_1": "<p>ล้างออกเร็ว ไม่ทันซึมถึงรากผม</p>"
-          }
-        },
-        "icon_text_block_pR4afR": {
-          "type": "icon_text_block",
-          "settings": {
-            "icon_1": "shopify://shop_images/image_469.png",
-            "block_title_1": "อาหารเสริม / วิตามิน",
-            "block_description_1": "<p>ร่างกายส่งไปเลี้ยงอวัยวะอื่นก่อน เส้นผมได้รับทีหลัง</p>"
-          }
-        },
-        "icon_text_block_VUtR6n": {
-          "type": "icon_text_block",
-          "settings": {
-            "icon_1": "shopify://shop_images/image_470.png",
-            "block_title_1": "เซรั่มราคาแพง",
-            "block_description_1": "<p>เคลือบแค่ผิว ไม่ซึมลึกถึงราก</p>"
-          }
-        },
-        "icon_text_block_qbaMNb": {
-          "type": "icon_text_block",
-          "settings": {
-            "icon_1": "shopify://shop_images/image_471.png",
-            "block_title_1": "ยาจากคลินิก",
-            "block_description_1": "<p>หยุดใช้เมื่อไหร่ ผมก็ร่วงอีก</p>"
-          }
-        }
-      },
-      "block_order": [
-        "icon_text_block_TfxRXQ",
-        "icon_text_block_pR4afR",
-        "icon_text_block_VUtR6n",
-        "icon_text_block_qbaMNb"
-      ],
-      "name": "Section with blocks",
-      "settings": {
-        "main_title": "<p><strong>ทำไมวิธีที่เคยลอง...ถึงไม่ได้ผล?</strong></p>",
-        "description_text": "<p>เพราะไม่ได้แก้ที่ต้นเหตุ คือ <strong>เลือดไหลเวียนไม่ถึงรากผม</strong></p>",
-        "description_text_end": "<p><strong>Peptiva แตกต่าง</strong> — ซึมลึก กระตุ้นการไหลเวียนเลือด ส่งสารอาหารตรงสู่รากผมอย่างตรงจุด</p>",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "step_process_section_6zqFqg": {
-      "type": "step-process-section",
-      "blocks": {
-        "step_block_4MLKVg": {
-          "type": "step_block",
-          "settings": {
-            "step_title": "สัปดาห์ที่ 1-2",
-            "step_description": "<p>หนังศีรษะรู้สึกสบายขึ้น การไหลเวียนเลือดดีขึ้น</p>",
-            "step_description_2": ""
-          }
-        },
-        "step_block_qUGQ7C": {
-          "type": "step_block",
-          "settings": {
-            "step_title": "สัปดาห์ที่ 3-4",
-            "step_description": "<p>ผมร่วงลดลงอย่างเห็นได้ชัด</p>",
-            "step_description_2": ""
-          }
-        },
-        "step_block_x4ARWy": {
-          "type": "step_block",
-          "settings": {
-            "step_title": "สัปดาห์ที่ 8-12",
-            "step_description": "<p>ผมหนาขึ้น แสกผมเติมเต็มชัดเจน</p>",
-            "step_description_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "step_block_4MLKVg",
-        "step_block_qUGQ7C",
-        "step_block_x4ARWy"
-      ],
-      "name": "3-Step Process",
-      "settings": {
-        "main_title": "<p><strong>การทำงานที่เห็นผลจริงของ Peptiva</strong></p>",
-        "description_text": "",
-        "left_side_image": "shopify://shop_images/peptiva-3step-hair-follicle.png",
-        "title_bottom": "<p><strong>ผลลัพธ์ที่คุณจะได้รับ</strong></p>",
-        "description_text_bottom": "<p>✓ ลดการหลุดร่วงของเส้นผมใน 2 สัปดาห์<br/>✓ แสกผมแคบลงภายใน 4-6 สัปดาห์<br/>✓ ผมหนาขึ้นอย่างเห็นได้ชัดใน 8-12 สัปดาห์</p>",
-        "cta_text": "",
-        "cta_link": "#shopify-section-template--28661701706077__1767877168b2c8d5a1",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "custom_progress_slider_U3WJhU": {
-      "type": "custom-progress-slider",
-      "blocks": {
-        "step_PzhTGq": {
-          "type": "step",
-          "settings": {
-            "badge": "สัปดาห์ที่ 1–3",
-            "image": "shopify://shop_images/peptiva-week1-hairbrush.png",
-            "title": "หนังศีรษะกลับมามีสุขภาพดีอีกครั้ง",
-            "text": "<p>ผมร่วงบนหมอนและแปรงหวีผมลดน้อยลง หนังศีรษะรู้สึกผ่อนคลาย ไม่ตึงหรือระคายเคือง<br/><br/><strong>สังเกตได้จาก:</strong> จำนวนเส้นผมหลุดร่วงในแปรงลดลง</p>"
-          }
-        },
-        "step_GjHc8j": {
-          "type": "step",
-          "settings": {
-            "badge": "สัปดาห์ที่ 4–6",
-            "image": "shopify://shop_images/peptiva-week4-drain.png",
-            "title": "ผมร่วงลดลงอย่างชัดเจน",
-            "text": "<p>ผมไม่หลุดร่วงเป็นกระจุกอีกต่อไป<br/>พื้นที่บริเวณที่สระผมและพื้นห้องสะอาดขึ้นอย่างเห็นได้ชัด<br/><br/><strong>สังเกตได้จาก:</strong> ปริมาณผมร่วงในแต่ละวันลดน้อยลง</p>"
-          }
-        },
-        "step_axiHX8": {
-          "type": "step",
-          "settings": {
-            "badge": "สัปดาห์ที่ 7–10",
-            "image": "shopify://shop_images/image_481.png",
-            "title": "เส้นผมใหม่เริ่มงอกขึ้นมา",
-            "text": "<p>เริ่มเห็นผมใหม่ขึ้นตามแนวไรผม<br/>รอยแสกผมค่อยๆ แคบลงอย่างเป็นธรรมชาติ<br/><br/><strong>สังเกตได้จาก: </strong>ลองถ่ายภาพเปรียบเทียบความเปลี่ยนแปลงที่เกิดขึ้นได้เลย</p>"
-          }
-        },
-        "step_RpinCm": {
-          "type": "step",
-          "settings": {
-            "badge": "สัปดาห์ที่ 10–12",
-            "image": "shopify://shop_images/image_482.png",
-            "title": "ผมกลับมาดูหนาและมีน้ำหนักอีกครั้ง",
-            "text": "<p>ผมดูหนาขึ้นในบริเวณที่เคยบาง<br/>จัดแต่งทรงผมง่ายขึ้น พร้อมผลลัพธ์สะดุดตาจนใครก็สังเกตเห็น<br/><br/><strong>สังเกตได้จาก:</strong> แนวแสกผมดูหนาและเต็มขึ้นอย่างชัดเจน</p>"
-          }
-        },
-        "step_aX8QQf": {
-          "type": "step",
-          "disabled": true,
-          "settings": {
-            "badge": "",
+            "image": "shopify://shop_images/091ab09e-1c74-467f-84fc-794bb76e831c.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
             "title": "",
-            "text": ""
+            "text": "“ลูกสาวซื้อให้เพราะเห็นว่าเครียดเรื่องผมมาก อายุ 56 แล้วค่ะ คิดว่าไม่มีอะไรช่วยได้แล้ว แต่พอลองใช้ตัวนี้ทุกคืนก่อนนอน หลัง 10 สัปดาห์ ดันมีผมขึ้นในที่ที่ไม่เคยมีมาก่อน เวลามัดผมนี่ดูหนาขึ้นกว่าเดิม 2 เท่าแน่ะ ประทับใจมาก นี่แหละของขวัญที่ดีที่สุด”",
+            "name": "คุณปนิดา อายุ 61 ปี กรุงเทพ",
+            "verified": true
+          }
+        },
+        "testimonial_6tamCY": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_240648317_2.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“ไม่ค่อยเชื่อเพราะลองมาหลายอย่าง แต่ตัวนี้ไม่มีกลิ่นแปลกๆ ไม่ทำให้ผมเหนียว และเห็นผมใหม่งอกจริงๆ สามียังเห็นด้วยเลยนะ ทั้งที่เขาไม่เคยสังเกตเรื่องผมเลย! ใช้มา 9 สัปดาห์แล้ว กำลังสั่งเพิ่มค่ะ”",
+            "name": "— คุณศิริพร อายุ 38 ปี นนทบุรีครู",
+            "verified": true
+          }
+        },
+        "testimonial_VB3azD": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jan_13_2026_11_33_49_AM.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“ชอบตรงที่สเปรย์แล้วไม่เหนียวเลย ใช้ได้ทันที ไม่ต้องรอค่ะ\nปกติจะฉีดก่อนเป่าผมทุกครั้ง แล้วผมดูมีวอลลุ่มขึ้น จัดทรงง่ายขึ้นมาก\nคนรอบตัวทักว่าผมดูหนาขึ้นด้วยค่ะ”",
+            "name": "คุณฟารีดา อายุ 58 ปี ปัตตานี",
+            "verified": true
+          }
+        },
+        "testimonial_z46Wcn": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10166_2.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“ใกล้ 50 แล้ว คิดว่าผมบางเป็นเรื่องปกติของชีวิต แม่ก็เป็น ป้าก็เป็น แต่หลังใช้เปปทิว่ามา 2 เดือน ผมขึ้นเยอะมาก แสกผมดูไม่กว้างเหมือนก่อน เดี๋ยวนี้ไม่ต้องใส่หมวกแล้ว อยากให้คนเห็นผมเยอะๆ ตัวนี้ทำให้เราได้ความมั่นใจกลับมาจริงๆ”",
+            "name": "— คุณกนกวรรณ อายุ 49 ปี ภูเก็ต  ผู้จัดการโรงแรม",
+            "verified": true
+          }
+        },
+        "testimonial_exPAtF": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10167_1.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“วัยทองโจมตีหนักมาก กระหม่อมนี่บางจนไฟส่องเห็นหนังศีรษะชัดเลย เคยลองกินไบโอตินเป็นเดือนๆ ก็ไม่เห็นผล แต่ตัวนี้ได้ผลภายในไม่กี่สัปดาห์ ไม่ต้องรอ เดี๋ยวนี้ไม่มีผมร่วงเกลื่อนหมอน หรือติดเต็มท่อระบายน้ำแล้ว ผมเส้นเล็กๆ ยังแย่งกันขึ้นอีกต่างหาก สูตรเขาดีจริง ทดสอบทางคลินิกแล้วด้วย”",
+            "name": "— คุณศิริวรรณ อายุ 53 ปี สมุทรปราการ  นักบัญชี",
+            "verified": true
+          }
+        },
+        "testimonial_JQqxHd": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/7d2f1528-f767-41a4-a1b6-2d65598db226.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "",
+            "text": "“ทุกเช้าก่อนทำงาน ฉันใช้ตัวนี้ แค่ 30 วินาทีเท่านั้น ก่อนหน้านี้หนังศีรษะตึงและเจ็บมาก โดยเฉพาะเวลามัดผมทั้งวัน ตอนนี้รู้สึกปกติแล้ว ขมับก็เริ่มเต็มขึ้น หลังผมร่วงเยอะช่วงหลังคลอด คุ้มค่าทุกบาทจริงๆ”",
+            "name": "— คุณมาลินี อายุ 32 ปี อุดรธานี  ครูเกษียณ",
+            "verified": true
           }
         }
       },
       "block_order": [
-        "step_PzhTGq",
-        "step_GjHc8j",
-        "step_axiHX8",
-        "step_RpinCm",
-        "step_aX8QQf"
+        "testimonial_BAxFyz",
+        "testimonial_6tamCY",
+        "testimonial_VB3azD",
+        "testimonial_z46Wcn",
+        "testimonial_exPAtF",
+        "testimonial_JQqxHd"
       ],
-      "disabled": true,
-      "name": "Progress Timeline Slider",
+      "name": "Testimonial Slider",
       "settings": {
-        "heading": "ผลลัพธ์ที่คุณจะสังเกตเห็นเมื่อใช้ Peptiva เป็นประจำทุกวัน",
-        "heading_size_desktop": 48,
+        "section-bg": "#f2f6f6",
+        "heading": "อย่าเพิ่งเชื่อเรา แต่มาฟังเสียงยืนยันจากผู้ใช้จริงกันเลย",
+        "heading_size_desktop": 50,
         "heading_size_mobile": 28,
-        "subheading": "<p><strong>82% พบความเปลี่ยนแปลงที่ชัดเจนภายในสัปดาห์ที่ 4 </strong><br/>อ้างอิงจากผู้หญิงไทยกว่า 6,200 คนที่ใช้ Peptiva อย่างต่อเนื่อง<br/></p>",
-        "subheading_size_desktop": 24,
-        "subheading_size_mobile": 15,
-        "helper_text": "",
-        "bottom_text": "<p>ความสม่ำเสมอคือหัวใจของผลลัพธ์ <br/>ใช้เป็นประจำทุกวันเพื่อความเปลี่ยนแปลงที่ชัดเจน</p>",
-        "bottom_text_desktop": 24,
-        "bottom_text_mobille": 18,
-        "swipe_text": "<strong>เลื่อนดูผลลัพธ์ในแต่ละสัปดาห์กันเลย</strong>",
-        "progress_swipe_desktop": 24,
-        "progress_swipe_mobile": 18,
+        "heading_weight": "700",
+        "title_size_desktop": 16,
+        "title_size_mobile": 15,
+        "text_size_desktop": 14,
+        "text_size_mobile": 13,
+        "align-content": "center",
+        "verified-buyer-text": " ผู้ซื้อที่ยืนยันตัวตนแล้ว",
+        "button_label": "",
+        "button_link": "#shopify-section-template--28554793484637__1767877168b2c8d5a1",
         "padding_top": 64,
         "padding_bottom": 64
       }
@@ -1076,167 +1079,6 @@
         "heading_weight": "700",
         "padding_top": 80,
         "padding_bottom": 80
-      }
-    },
-    "tab_with_content_tHcEUn": {
-      "type": "tab-with-content",
-      "name": "Tab with content ",
-      "settings": {
-        "heading": "Peptiva: ที่สุดของส่วนผสม เพื่อรากผมแข็งแรง เส้นผมงอกใหม่อย่างต่อเนื่อง",
-        "subheading": "ส่วนผสมทั้งหมดใน Peptiva ผ่านการคัดสรรอย่างพิถีพิถัน เพื่อกระตุ้นการไหลเวียนของเลือดและเสริมความแข็งแรงให้รากผม พร้อมปกป้องหนังศีรษะอย่างอ่อนโยน ช่วยให้เส้นผมที่งอกใหม่แข็งแรงและสุขภาพดีอย่างต่อเนื่อง",
-        "text_alignment": "center",
-        "heading_size": 50,
-        "subheading_size": 24,
-        "heading_color": "#000000",
-        "subheading_color": "#000000",
-        "container_width": 1300,
-        "section_padding_top": 60,
-        "section_padding_bottom": 60,
-        "background_color": "#ffffff",
-        "cards_per_row": 3,
-        "tab_1_title": "กระตุ้นการไหลเวียนเลือด",
-        "tab_2_title": "ล็อกความแข็งแรงของรากผม",
-        "tab_3_title": "เร่งการงอกใหม่",
-        "tab_4_title": "ปลอบประโลมและปกป้องหนังศีรษะ",
-        "tab_bg_color": "#ffffff",
-        "tab_text_color": "#9a9a9a",
-        "tab_border_color": "#9a9a9a",
-        "tab_active_bg_color": "#39585b",
-        "tab_active_text_color": "#ffffff",
-        "tab_active_border_color": "#9a9a9a",
-        "tab_border_radius": 30,
-        "slider_btn_bg_color": "#39585b",
-        "slider_btn_icon_color": "#ffffff",
-        "slider_btn_border_color": "#e0e0e0",
-        "tab_1_card_1_image": "shopify://shop_images/caffeine_extract.png",
-        "tab_1_card_1_heading": "คาเฟอีนเข้มข้น",
-        "tab_1_card_1_subheading": "กระตุ้นการขยายตัวของเส้นเลือด",
-        "tab_1_card_1_description": "คลายเส้นเลือดที่หดตัวภายใน 7-14 นาที เพิ่มการไหลเวียนเลือดสูงถึง 300% ยับยั้งฮอร์โมน DHT ไม่ให้เข้าบีบรัดรากผม",
-        "tab_1_card_1_link_text": "Study: British Journal of Dermatology, 2007",
-        "tab_1_card_1_link_url": "#",
-        "tab_1_card_2_image": "shopify://shop_images/Niacinamide_Vitamin_B3.png",
-        "tab_1_card_2_heading": "ไนอะซินาไมด์ (วิตามินบี 3)",
-        "tab_1_card_2_subheading": "เสริมการไหลเวียนเลือด",
-        "tab_1_card_2_description": "เสริมความแข็งแรงให้ผนังเส้นเลือด เพิ่มการนำส่งสารอาหารไปสู่รากผม พร้อมลดการอักเสบ สาเหตุหนึ่งที่ขัดขวางการไหลเวียนเลือด",
-        "tab_1_card_2_link_text": "Study: Journal of Cosmetic Dermatology, 2005",
-        "tab_1_card_2_link_url": "#",
-        "tab_1_card_3_heading": "",
-        "tab_1_card_3_subheading": "",
-        "tab_1_card_3_description": "",
-        "tab_1_card_3_link_text": "",
-        "tab_1_card_3_link_url": "",
-        "tab_2_card_1_image": "shopify://shop_images/peptide.png",
-        "tab_2_card_1_heading": "เปปไทด์คอมเพล็กซ์ (Acetyl Tetrapeptide-3)",
-        "tab_2_card_1_subheading": "เปปไทด์ล็อกรากผม",
-        "tab_2_card_1_description": "ทำงานคล้ายซีเมนต์ที่เข้าประสานรอบรากผม ช่วยเสริมการยึดเกาะ ยับยั้งการหลุดร่วงก่อนเวลาอันควร",
-        "tab_2_card_1_link_text": "Study: International Journal of Cosmetic Science, 2011",
-        "tab_2_card_1_link_url": "#",
-        "tab_2_card_2_image": "shopify://shop_images/Hydrolyzed_Rice_Protein.png",
-        "tab_2_card_2_heading": "โปรตีนข้าวไฮโดรไลซ์",
-        "tab_2_card_2_subheading": "เสริมความแข็งแรงให้เส้นผม",
-        "tab_2_card_2_description": "เข้ายึดเกาะกับแกนผม ทำให้ผมแต่ละเส้นหนาและยืดหยุ่นทนทาน ผมงอกใหม่แข็งแรง",
-        "tab_2_card_2_link_text": "Study: Journal of Cosmetic Dermatology, 2018",
-        "tab_2_card_2_link_url": "#",
-        "tab_2_card_3_heading": "",
-        "tab_2_card_3_subheading": "",
-        "tab_2_card_3_description": "",
-        "tab_2_card_3_link_text": "",
-        "tab_2_card_3_link_url": "",
-        "tab_3_card_1_image": "shopify://shop_images/Thai_Ginger_Extract.png",
-        "tab_3_card_1_heading": "สารสกัดขิงไทย",
-        "tab_3_card_1_subheading": "เสริมการไหลเวียนและเร่งการงอกใหม่",
-        "tab_3_card_1_description": "ช่วยให้เส้นเลือดขยายตัวต่อเนื่องนาน 8-12 ชั่วโมง เพื่อให้สารอาหารไหลเวียนอย่างสม่ำเสมอ พร้อมส่งสัญญาณให้รากผมเจริญเติบโตอย่างรวดเร็ว",
-        "tab_3_card_1_link_text": "Study: Planta Medica, 2012",
-        "tab_3_card_1_link_url": "#",
-        "tab_3_card_2_image": "shopify://shop_images/Ginseng_Extract.png",
-        "tab_3_card_2_heading": "สารสกัดโสม",
-        "tab_3_card_2_subheading": "ตัวช่วยเติมพลังให้รากผม",
-        "tab_3_card_2_description": "กระตุ้นพลังงานให้เซลล์ในรากผม เร่งวงจรการเติบโต ทำให้เส้นผมเปลี่ยนจากระยะพักตัวไปสู่ระยะเจริญเติบโตได้เร็วขึ้น 30%",
-        "tab_3_card_2_link_text": "Study: Journal of Ginseng Research, 2015",
-        "tab_3_card_2_link_url": "#",
-        "tab_3_card_3_image": "shopify://shop_images/Butterfly_Pea.png",
-        "tab_3_card_3_heading": "ดอกอัญชันไทย",
-        "tab_3_card_3_subheading": "ปกป้องการเจริญเติบโต",
-        "tab_3_card_3_description": "อุดมด้วยสารแอนโทไซยานิน (Anthocyanins) ช่วยปกป้อง DNA ของรากผมในระหว่างการเจริญเติบโต ทำให้เส้นผมงอกใหม่มีสุขภาพดี เงางาม และแข็งแรงยิ่งขึ้น",
-        "tab_3_card_3_link_text": "Study: Pharmacognosy Journal, 2017",
-        "tab_3_card_3_link_url": "#",
-        "tab_4_card_1_image": "shopify://shop_images/Aloe_Vera.png",
-        "tab_4_card_1_heading": "ว่านหางจระเข้",
-        "tab_4_card_1_subheading": "บำรุงหนังศีรษะให้แข็งแรง",
-        "tab_4_card_1_description": "เติมความชุ่มชื้นอย่างล้ำลึก ลดการระคายเคืองและอักเสบที่ขัดขวางการเติบโตของเส้นผม พร้อมสร้างสภาพแวดล้อมที่เหมาะสำหรับการงอกใหม่",
-        "tab_4_card_1_link_text": "Study: Journal of Ethnopharmacology, 2009",
-        "tab_4_card_1_link_url": "",
-        "tab_4_card_2_image": "shopify://shop_images/Kaffir_Lime_Bergamot.png",
-        "tab_4_card_2_heading": "มะกรูด",
-        "tab_4_card_2_subheading": "คืนความสดชื่นให้หนังศีรษะ",
-        "tab_4_card_2_description": "ป้องกันการสะสมของสิ่งตกค้าง ปรับสมดุล pH ของหนังศีรษะ เพิ่มความเงางาม พร้อมทั้งรักษาความสะอาด เพื่อให้รากผมทำงานได้อย่างเต็มที่",
-        "tab_4_card_2_link_text": "Study: Asian Journal of Pharmaceutical Sciences, 2016",
-        "tab_4_card_2_link_url": "#",
-        "tab_4_card_3_heading": "",
-        "tab_4_card_3_subheading": "",
-        "tab_4_card_3_description": "",
-        "tab_4_card_3_link_text": "",
-        "tab_4_card_3_link_url": "",
-        "card_bg_color": "#ffffff",
-        "card_border_radius": 30,
-        "card_image_aspect_ratio": "1.78",
-        "card_heading_size": 24,
-        "card_subheading_size": 20,
-        "card_description_size": 18,
-        "card_heading_color": "#39585b",
-        "card_subheading_color": "#000000",
-        "card_description_color": "#000000",
-        "card_link_bg_color": "rgba(0,0,0,0)",
-        "card_link_text_color": "#39585b",
-        "card_link_border_radius": 4
-      }
-    },
-    "custom_image_with_text_oil_bfrzbP": {
-      "type": "custom-image-with-text-oil",
-      "blocks": {
-        "text_6MaCYH": {
-          "type": "text",
-          "settings": {
-            "icon": "shopify://shop_images/Vector_4.png",
-            "info": "ซึมซาบไวภายใน 30 วินาที"
-          }
-        },
-        "text_fX3QRH": {
-          "type": "text",
-          "settings": {
-            "icon": "shopify://shop_images/Vector_4.png",
-            "info": "สัมผัสเบาสบาย ไม่เหนียวเหนอะหนะ"
-          }
-        },
-        "text_eJELeG": {
-          "type": "text",
-          "settings": {
-            "icon": "shopify://shop_images/Vector_4.png",
-            "info": "ตอบโจทย์แม้ในสภาพอากาศร้อนชื้น"
-          }
-        },
-        "text_fYLpDT": {
-          "type": "text",
-          "settings": {
-            "icon": "shopify://shop_images/Vector_4.png",
-            "info": "จัดแต่งทรงผมได้ทันทีหลังใช้"
-          }
-        }
-      },
-      "block_order": [
-        "text_6MaCYH",
-        "text_fX3QRH",
-        "text_eJELeG",
-        "text_fYLpDT"
-      ],
-      "name": "image with text custom oil",
-      "settings": {
-        "image-1": "shopify://shop_images/heat_section.png",
-        "heading1": "",
-        "heading2": "สัมผัสเบาสบายหนังศีรษะ แม้ท่ามกลางอากาศร้อนของเมืองไทย",
-        "paragraph": "<p>แตกต่างจากออยล์บำรุงที่มักทิ้งความเหนอะหนะไว้บนผิว Peptiva ซึมซาบเข้าสู่หนังศีรษะอย่างรวดเร็วและให้ความรู้สึกเบาสบาย คุณจึงสามารถใช้ได้ทุกวันโดยไม่รู้สึกมันเยิ้มหรือหนักศีรษะ</p>",
-        "padding_top": 52,
-        "padding_bottom": 52
       }
     },
     "facility_section_cCxmqx": {
@@ -1415,6 +1257,167 @@
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "tab_with_content_tHcEUn": {
+      "type": "tab-with-content",
+      "name": "Tab with content ",
+      "settings": {
+        "heading": "Peptiva: ที่สุดของส่วนผสม เพื่อรากผมแข็งแรง เส้นผมงอกใหม่อย่างต่อเนื่อง",
+        "subheading": "ส่วนผสมทั้งหมดใน Peptiva ผ่านการคัดสรรอย่างพิถีพิถัน เพื่อกระตุ้นการไหลเวียนของเลือดและเสริมความแข็งแรงให้รากผม พร้อมปกป้องหนังศีรษะอย่างอ่อนโยน ช่วยให้เส้นผมที่งอกใหม่แข็งแรงและสุขภาพดีอย่างต่อเนื่อง",
+        "text_alignment": "center",
+        "heading_size": 50,
+        "subheading_size": 24,
+        "heading_color": "#000000",
+        "subheading_color": "#000000",
+        "container_width": 1300,
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "background_color": "#ffffff",
+        "cards_per_row": 3,
+        "tab_1_title": "กระตุ้นการไหลเวียนเลือด",
+        "tab_2_title": "ล็อกความแข็งแรงของรากผม",
+        "tab_3_title": "เร่งการงอกใหม่",
+        "tab_4_title": "ปลอบประโลมและปกป้องหนังศีรษะ",
+        "tab_bg_color": "#ffffff",
+        "tab_text_color": "#9a9a9a",
+        "tab_border_color": "#9a9a9a",
+        "tab_active_bg_color": "#39585b",
+        "tab_active_text_color": "#ffffff",
+        "tab_active_border_color": "#9a9a9a",
+        "tab_border_radius": 30,
+        "slider_btn_bg_color": "#39585b",
+        "slider_btn_icon_color": "#ffffff",
+        "slider_btn_border_color": "#e0e0e0",
+        "tab_1_card_1_image": "shopify://shop_images/caffeine_extract.png",
+        "tab_1_card_1_heading": "คาเฟอีนเข้มข้น",
+        "tab_1_card_1_subheading": "กระตุ้นการขยายตัวของเส้นเลือด",
+        "tab_1_card_1_description": "คลายเส้นเลือดที่หดตัวภายใน 7-14 นาที เพิ่มการไหลเวียนเลือดสูงถึง 300% ยับยั้งฮอร์โมน DHT ไม่ให้เข้าบีบรัดรากผม",
+        "tab_1_card_1_link_text": "Study: British Journal of Dermatology, 2007",
+        "tab_1_card_1_link_url": "#",
+        "tab_1_card_2_image": "shopify://shop_images/Niacinamide_Vitamin_B3.png",
+        "tab_1_card_2_heading": "ไนอะซินาไมด์ (วิตามินบี 3)",
+        "tab_1_card_2_subheading": "เสริมการไหลเวียนเลือด",
+        "tab_1_card_2_description": "เสริมความแข็งแรงให้ผนังเส้นเลือด เพิ่มการนำส่งสารอาหารไปสู่รากผม พร้อมลดการอักเสบ สาเหตุหนึ่งที่ขัดขวางการไหลเวียนเลือด",
+        "tab_1_card_2_link_text": "Study: Journal of Cosmetic Dermatology, 2005",
+        "tab_1_card_2_link_url": "#",
+        "tab_1_card_3_heading": "",
+        "tab_1_card_3_subheading": "",
+        "tab_1_card_3_description": "",
+        "tab_1_card_3_link_text": "",
+        "tab_1_card_3_link_url": "",
+        "tab_2_card_1_image": "shopify://shop_images/peptide.png",
+        "tab_2_card_1_heading": "เปปไทด์คอมเพล็กซ์ (Acetyl Tetrapeptide-3)",
+        "tab_2_card_1_subheading": "เปปไทด์ล็อกรากผม",
+        "tab_2_card_1_description": "ทำงานคล้ายซีเมนต์ที่เข้าประสานรอบรากผม ช่วยเสริมการยึดเกาะ ยับยั้งการหลุดร่วงก่อนเวลาอันควร",
+        "tab_2_card_1_link_text": "Study: International Journal of Cosmetic Science, 2011",
+        "tab_2_card_1_link_url": "#",
+        "tab_2_card_2_image": "shopify://shop_images/Hydrolyzed_Rice_Protein.png",
+        "tab_2_card_2_heading": "โปรตีนข้าวไฮโดรไลซ์",
+        "tab_2_card_2_subheading": "เสริมความแข็งแรงให้เส้นผม",
+        "tab_2_card_2_description": "เข้ายึดเกาะกับแกนผม ทำให้ผมแต่ละเส้นหนาและยืดหยุ่นทนทาน ผมงอกใหม่แข็งแรง",
+        "tab_2_card_2_link_text": "Study: Journal of Cosmetic Dermatology, 2018",
+        "tab_2_card_2_link_url": "#",
+        "tab_2_card_3_heading": "",
+        "tab_2_card_3_subheading": "",
+        "tab_2_card_3_description": "",
+        "tab_2_card_3_link_text": "",
+        "tab_2_card_3_link_url": "",
+        "tab_3_card_1_image": "shopify://shop_images/Thai_Ginger_Extract.png",
+        "tab_3_card_1_heading": "สารสกัดขิงไทย",
+        "tab_3_card_1_subheading": "เสริมการไหลเวียนและเร่งการงอกใหม่",
+        "tab_3_card_1_description": "ช่วยให้เส้นเลือดขยายตัวต่อเนื่องนาน 8-12 ชั่วโมง เพื่อให้สารอาหารไหลเวียนอย่างสม่ำเสมอ พร้อมส่งสัญญาณให้รากผมเจริญเติบโตอย่างรวดเร็ว",
+        "tab_3_card_1_link_text": "Study: Planta Medica, 2012",
+        "tab_3_card_1_link_url": "#",
+        "tab_3_card_2_image": "shopify://shop_images/Ginseng_Extract.png",
+        "tab_3_card_2_heading": "สารสกัดโสม",
+        "tab_3_card_2_subheading": "ตัวช่วยเติมพลังให้รากผม",
+        "tab_3_card_2_description": "กระตุ้นพลังงานให้เซลล์ในรากผม เร่งวงจรการเติบโต ทำให้เส้นผมเปลี่ยนจากระยะพักตัวไปสู่ระยะเจริญเติบโตได้เร็วขึ้น 30%",
+        "tab_3_card_2_link_text": "Study: Journal of Ginseng Research, 2015",
+        "tab_3_card_2_link_url": "#",
+        "tab_3_card_3_image": "shopify://shop_images/Butterfly_Pea.png",
+        "tab_3_card_3_heading": "ดอกอัญชันไทย",
+        "tab_3_card_3_subheading": "ปกป้องการเจริญเติบโต",
+        "tab_3_card_3_description": "อุดมด้วยสารแอนโทไซยานิน (Anthocyanins) ช่วยปกป้อง DNA ของรากผมในระหว่างการเจริญเติบโต ทำให้เส้นผมงอกใหม่มีสุขภาพดี เงางาม และแข็งแรงยิ่งขึ้น",
+        "tab_3_card_3_link_text": "Study: Pharmacognosy Journal, 2017",
+        "tab_3_card_3_link_url": "#",
+        "tab_4_card_1_image": "shopify://shop_images/Aloe_Vera.png",
+        "tab_4_card_1_heading": "ว่านหางจระเข้",
+        "tab_4_card_1_subheading": "บำรุงหนังศีรษะให้แข็งแรง",
+        "tab_4_card_1_description": "เติมความชุ่มชื้นอย่างล้ำลึก ลดการระคายเคืองและอักเสบที่ขัดขวางการเติบโตของเส้นผม พร้อมสร้างสภาพแวดล้อมที่เหมาะสำหรับการงอกใหม่",
+        "tab_4_card_1_link_text": "Study: Journal of Ethnopharmacology, 2009",
+        "tab_4_card_1_link_url": "",
+        "tab_4_card_2_image": "shopify://shop_images/Kaffir_Lime_Bergamot.png",
+        "tab_4_card_2_heading": "มะกรูด",
+        "tab_4_card_2_subheading": "คืนความสดชื่นให้หนังศีรษะ",
+        "tab_4_card_2_description": "ป้องกันการสะสมของสิ่งตกค้าง ปรับสมดุล pH ของหนังศีรษะ เพิ่มความเงางาม พร้อมทั้งรักษาความสะอาด เพื่อให้รากผมทำงานได้อย่างเต็มที่",
+        "tab_4_card_2_link_text": "Study: Asian Journal of Pharmaceutical Sciences, 2016",
+        "tab_4_card_2_link_url": "#",
+        "tab_4_card_3_heading": "",
+        "tab_4_card_3_subheading": "",
+        "tab_4_card_3_description": "",
+        "tab_4_card_3_link_text": "",
+        "tab_4_card_3_link_url": "",
+        "card_bg_color": "#ffffff",
+        "card_border_radius": 30,
+        "card_image_aspect_ratio": "1.78",
+        "card_heading_size": 24,
+        "card_subheading_size": 20,
+        "card_description_size": 18,
+        "card_heading_color": "#39585b",
+        "card_subheading_color": "#000000",
+        "card_description_color": "#000000",
+        "card_link_bg_color": "rgba(0,0,0,0)",
+        "card_link_text_color": "#39585b",
+        "card_link_border_radius": 4
+      }
+    },
+    "custom_image_with_text_oil_bfrzbP": {
+      "type": "custom-image-with-text-oil",
+      "blocks": {
+        "text_6MaCYH": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_4.png",
+            "info": "ซึมซาบไวภายใน 30 วินาที"
+          }
+        },
+        "text_fX3QRH": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_4.png",
+            "info": "สัมผัสเบาสบาย ไม่เหนียวเหนอะหนะ"
+          }
+        },
+        "text_eJELeG": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_4.png",
+            "info": "ตอบโจทย์แม้ในสภาพอากาศร้อนชื้น"
+          }
+        },
+        "text_fYLpDT": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Vector_4.png",
+            "info": "จัดแต่งทรงผมได้ทันทีหลังใช้"
+          }
+        }
+      },
+      "block_order": [
+        "text_6MaCYH",
+        "text_fX3QRH",
+        "text_eJELeG",
+        "text_fYLpDT"
+      ],
+      "name": "image with text custom oil",
+      "settings": {
+        "image-1": "shopify://shop_images/heat_section.png",
+        "heading1": "",
+        "heading2": "สัมผัสเบาสบายหนังศีรษะ แม้ท่ามกลางอากาศร้อนของเมืองไทย",
+        "paragraph": "<p>แตกต่างจากออยล์บำรุงที่มักทิ้งความเหนอะหนะไว้บนผิว Peptiva ซึมซาบเข้าสู่หนังศีรษะอย่างรวดเร็วและให้ความรู้สึกเบาสบาย คุณจึงสามารถใช้ได้ทุกวันโดยไม่รู้สึกมันเยิ้มหรือหนักศีรษะ</p>",
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "save_time_mony_9iVyP7": {
