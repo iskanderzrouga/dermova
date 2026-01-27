@@ -19,6 +19,7 @@
     },
     "peptiva_product_section_rLnN6r": {
       "type": "peptiva-product-section",
+      "disabled": true,
       "settings": {
         "rating_value": "4.88/5",
         "review_text": "จาก 6,200+ รีวิว",
@@ -69,6 +70,7 @@
         "icon_text_block_ayAAyY",
         "icon_text_block_8TNg4H"
       ],
+      "disabled": true,
       "name": "Custom Text Image Section",
       "settings": {
         "title": "<p><strong>ปัญหาผมร่วงของคุณมีอาการเหล่านี้หรือไม่?</strong></p>",
@@ -80,6 +82,7 @@
     },
     "bacground_img_section_gaNR7t": {
       "type": "bacground-img-section",
+      "disabled": true,
       "name": "backgroundImage Section",
       "settings": {
         "background_image": "shopify://shop_images/image_462.png",
@@ -133,6 +136,7 @@
         "icon_text_block_VUtR6n",
         "icon_text_block_qbaMNb"
       ],
+      "disabled": true,
       "name": "Section with blocks",
       "settings": {
         "main_title": "<p><strong>ทำไมวิธีที่เคยลอง...ถึงไม่ได้ผล?</strong></p>",
@@ -175,6 +179,7 @@
         "step_block_qUGQ7C",
         "step_block_x4ARWy"
       ],
+      "disabled": true,
       "name": "3-Step Process",
       "settings": {
         "main_title": "<p><strong>การทำงานที่เห็นผลจริงของ Peptiva</strong></p>",
@@ -474,6 +479,7 @@
         "image_pfCGAd",
         "image_QBhdQc"
       ],
+      "disabled": true,
       "name": "Image Grid ",
       "settings": {
         "padding_top": 60,
@@ -958,6 +964,7 @@
         "step_zRLL6f",
         "step_rpTB4P"
       ],
+      "disabled": true,
       "name": "Progress Timeline Slider",
       "settings": {
         "heading": "ผลลัพธ์ที่คุณจะสังเกตเห็นเมื่อใช้ Peptiva เป็นประจำทุกวัน",
@@ -1127,6 +1134,7 @@
         "icon_text_block_dAeAT7",
         "icon_text_block_VmyHih"
       ],
+      "disabled": true,
       "name": "Facility custom section",
       "settings": {
         "title": "<p>ผลิตจากโรงงานที่ได้มาตรฐาน ความปลอดภัยระดับสากล</p>",
@@ -1243,6 +1251,7 @@
         "collapsible_row_tEqBCC",
         "collapsible_row_VWfLRQ"
       ],
+      "disabled": true,
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
