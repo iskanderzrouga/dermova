@@ -487,91 +487,6 @@
         "background_color": "#ffffff"
       }
     },
-    "custom_testimonial_slider_rXyNiP": {
-      "type": "custom-testimonial-slider",
-      "blocks": {
-        "testimonial_Mj6thj": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10160.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "“ไรผมกลับมาหนา หลังคลอดลูก”",
-            "text": "หลังคลอดลูกคนที่สอง ผมตรงขมับร่วงไปเยอะมากจนกังวลว่าจะไม่ขึ้นอีก พอใช้ Peptiva เข้าสัปดาห์ที่ 5 รู้สึกได้ว่าผมร่วงน้อยลง พอสัปดาห์ที่ 9 ไรผมก็เริ่มดูหนาขึ้นชัดเจน ตอนนี้ใช้มา 3 เดือนแล้ว กล้ากลับมามัดผมโชว์หน้าผากได้อย่างมั่นใจอีกครั้งแล้วค่ะ!",
-            "name": "— คุณนิชา อายุ 34 ปี กรุงเทพฯ",
-            "verified": true
-          }
-        },
-        "testimonial_MhRhfD": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10160_1.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "“ในที่สุดก็เจอตัวที่ได้ผลจริง”",
-            "text": "เป็นคนทำงานหนักและผมร่วงเยอะมากค่ะ ลองทานวิตามินแพงๆ มาหลายเดือนก็ไม่ช่วยอะไรเลย แต่พอใช้ Peptiva ได้ 3 สัปดาห์ เห็นเลยว่าตอนหวี ผมติดแปรงน้อยลง รู้สึกเหมือนหนังศีรษะสุขภาพดีขึ้น ไม่มันเหมือนก่อน ตอนนี้แสกผมดูหนาขึ้น และผมดูสุขภาพดีกว่าเดิมมากค่ะ",
-            "name": "— คุณพลอย อายุ 42 ปี เชียงใหม่",
-            "verified": true
-          }
-        },
-        "testimonial_hkB94C": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10160_5.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "“เกือบถอดใจแล้ว จนมาเจอตัวนี้”",
-            "text": "พอเข้าวัยทองปั๊บ ผมนี่บางลงมาก โดยเฉพาะตรงกลางหัว เห็นรูปตัวเองแล้วรู้สึกไม่มั่นใจเลย พอใช้ Peptiva เข้าสัปดาห์ที่ 4 ผมร่วงน้อยลง พอสักสัปดาห์ที่ 8 ก็เริ่มเห็นลูกผมเล็กๆ งอกใหม่เต็มไปหมด ตอนนี้มีแต่คนทักค่ะว่าไปใช้อะไรมา",
-            "name": "— คุณอ้อม อายุ 51 ปี ภูเก็ต",
-            "verified": true
-          }
-        },
-        "testimonial_cRYq7Q": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10160_3.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "“รู้สึกเหมือนผมกลับมามีชีวิตอีกครั้ง”",
-            "text": "พี่อายุ 48 แล้วค่ะ ผมก็เริ่มบางลงเรื่อยๆ มาหลายปี สระผมทีไรผมร่วงติดเต็มท่อระบายน้ำตลอด แต่พอใช้ Peptiva ครบ 2 เดือน เห็นความต่างชัดเจนมาก! ตอนนี้รวบผมแล้วรู้สึกได้เลยว่า ผมหนาขึ้น หนังหัวไม่มัน ไม่คัน เบาสบาย รู้สึกอย่างกับได้ฟื้นคืนชีพเส้นผมขึ้นมาอีกรอบเลยค่ะ",
-            "name": "คุณมาลี อายุ 48 ปี นครราชสีมา",
-            "verified": true
-          }
-        },
-        "testimonial_Hn88AD": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_10160_4.png",
-            "star_image": "shopify://shop_images/Group_1321315220.png",
-            "title": "“หมดปัญหาผมร่วงเต็มบ้าน!”",
-            "text": "ทั้งบนหมอน เสื้อผ้า บนพื้น มีแต่เส้นผมเกลื่อนเต็มไปหมด ร่วงเยอะจนน่าใจหายเลยค่ะ แต่พอใช้ Peptiva ได้ 3 สัปดาห์ ผมร่วงลดลงเยอะมาก พอเข้าสัปดาห์ที่ 10 ก็เริ่มเห็นไรผมหนาขึ้น ความมั่นใจกลับมาเต็มร้อยเลยทีนี้",
-            "name": "คุณส้ม อายุ 39 ปี ชลบุรี",
-            "verified": true
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_Mj6thj",
-        "testimonial_MhRhfD",
-        "testimonial_hkB94C",
-        "testimonial_cRYq7Q",
-        "testimonial_Hn88AD"
-      ],
-      "name": "Testimonial Slider Before After",
-      "settings": {
-        "section-bg": "#f2f6f6",
-        "heading": "ผู้ใช้จริง เห็นผลชัดเจน ดูรีวิวได้เลย",
-        "heading_size_desktop": 50,
-        "heading_size_mobile": 28,
-        "heading_weight": "700",
-        "title_size_desktop": 16,
-        "title_size_mobile": 15,
-        "text_size_desktop": 14,
-        "text_size_mobile": 13,
-        "align-content": "center",
-        "verified-buyer-text": "ผู้ซื้อที่ยืนยันตัวตนแล้ว",
-        "button_label": "",
-        "button_link": "#shopify-section-template--28554793484637__1767877168b2c8d5a1",
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
     "custom_progress_slider_U3WJhU": {
       "type": "custom-progress-slider",
       "blocks": {
@@ -723,6 +638,91 @@
         "description": "<p>เราเชื่อมั่นในคุณภาพของ Peptiva และพร้อมรับประกันความพึงพอใจ 100%</p><p>ลองใช้ Peptiva ทุกวันเป็นเวลา 90 วัน ถ้าผมคุณไม่หนาขึ้น ผมร่วงยังไม่ลดลง หรือแนวแสกผมยังคงกว้างอยู่เท่าเดิม เรายินดีคืนเงินทันที แบบไม่ต้องถามเหตุผล คุณไม่ต้องส่งสินค้าคืนด้วยซ้ำ</p><p>ผู้ใช้กว่า 6,200 คน เห็นผลแล้ว เรามั่นใจว่าคุณเองก็จะได้ผลลัพธ์ที่ดีไม่ต่างกัน</p>",
         "padding_top": 42,
         "padding_bottom": 42
+      }
+    },
+    "custom_testimonial_slider_rXyNiP": {
+      "type": "custom-testimonial-slider",
+      "blocks": {
+        "testimonial_Mj6thj": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10160.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "“ไรผมกลับมาหนา หลังคลอดลูก”",
+            "text": "หลังคลอดลูกคนที่สอง ผมตรงขมับร่วงไปเยอะมากจนกังวลว่าจะไม่ขึ้นอีก พอใช้ Peptiva เข้าสัปดาห์ที่ 5 รู้สึกได้ว่าผมร่วงน้อยลง พอสัปดาห์ที่ 9 ไรผมก็เริ่มดูหนาขึ้นชัดเจน ตอนนี้ใช้มา 3 เดือนแล้ว กล้ากลับมามัดผมโชว์หน้าผากได้อย่างมั่นใจอีกครั้งแล้วค่ะ!",
+            "name": "— คุณนิชา อายุ 34 ปี กรุงเทพฯ",
+            "verified": true
+          }
+        },
+        "testimonial_MhRhfD": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10160_1.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "“ในที่สุดก็เจอตัวที่ได้ผลจริง”",
+            "text": "เป็นคนทำงานหนักและผมร่วงเยอะมากค่ะ ลองทานวิตามินแพงๆ มาหลายเดือนก็ไม่ช่วยอะไรเลย แต่พอใช้ Peptiva ได้ 3 สัปดาห์ เห็นเลยว่าตอนหวี ผมติดแปรงน้อยลง รู้สึกเหมือนหนังศีรษะสุขภาพดีขึ้น ไม่มันเหมือนก่อน ตอนนี้แสกผมดูหนาขึ้น และผมดูสุขภาพดีกว่าเดิมมากค่ะ",
+            "name": "— คุณพลอย อายุ 42 ปี เชียงใหม่",
+            "verified": true
+          }
+        },
+        "testimonial_hkB94C": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10160_5.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "“เกือบถอดใจแล้ว จนมาเจอตัวนี้”",
+            "text": "พอเข้าวัยทองปั๊บ ผมนี่บางลงมาก โดยเฉพาะตรงกลางหัว เห็นรูปตัวเองแล้วรู้สึกไม่มั่นใจเลย พอใช้ Peptiva เข้าสัปดาห์ที่ 4 ผมร่วงน้อยลง พอสักสัปดาห์ที่ 8 ก็เริ่มเห็นลูกผมเล็กๆ งอกใหม่เต็มไปหมด ตอนนี้มีแต่คนทักค่ะว่าไปใช้อะไรมา",
+            "name": "— คุณอ้อม อายุ 51 ปี ภูเก็ต",
+            "verified": true
+          }
+        },
+        "testimonial_cRYq7Q": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10160_3.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "“รู้สึกเหมือนผมกลับมามีชีวิตอีกครั้ง”",
+            "text": "พี่อายุ 48 แล้วค่ะ ผมก็เริ่มบางลงเรื่อยๆ มาหลายปี สระผมทีไรผมร่วงติดเต็มท่อระบายน้ำตลอด แต่พอใช้ Peptiva ครบ 2 เดือน เห็นความต่างชัดเจนมาก! ตอนนี้รวบผมแล้วรู้สึกได้เลยว่า ผมหนาขึ้น หนังหัวไม่มัน ไม่คัน เบาสบาย รู้สึกอย่างกับได้ฟื้นคืนชีพเส้นผมขึ้นมาอีกรอบเลยค่ะ",
+            "name": "คุณมาลี อายุ 48 ปี นครราชสีมา",
+            "verified": true
+          }
+        },
+        "testimonial_Hn88AD": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_10160_4.png",
+            "star_image": "shopify://shop_images/Group_1321315220.png",
+            "title": "“หมดปัญหาผมร่วงเต็มบ้าน!”",
+            "text": "ทั้งบนหมอน เสื้อผ้า บนพื้น มีแต่เส้นผมเกลื่อนเต็มไปหมด ร่วงเยอะจนน่าใจหายเลยค่ะ แต่พอใช้ Peptiva ได้ 3 สัปดาห์ ผมร่วงลดลงเยอะมาก พอเข้าสัปดาห์ที่ 10 ก็เริ่มเห็นไรผมหนาขึ้น ความมั่นใจกลับมาเต็มร้อยเลยทีนี้",
+            "name": "คุณส้ม อายุ 39 ปี ชลบุรี",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_Mj6thj",
+        "testimonial_MhRhfD",
+        "testimonial_hkB94C",
+        "testimonial_cRYq7Q",
+        "testimonial_Hn88AD"
+      ],
+      "name": "Testimonial Slider Before After",
+      "settings": {
+        "section-bg": "#f2f6f6",
+        "heading": "ผู้ใช้จริง เห็นผลชัดเจน ดูรีวิวได้เลย",
+        "heading_size_desktop": 50,
+        "heading_size_mobile": 28,
+        "heading_weight": "700",
+        "title_size_desktop": 16,
+        "title_size_mobile": 15,
+        "text_size_desktop": 14,
+        "text_size_mobile": 13,
+        "align-content": "center",
+        "verified-buyer-text": "ผู้ซื้อที่ยืนยันตัวตนแล้ว",
+        "button_label": "",
+        "button_link": "#shopify-section-template--28554793484637__1767877168b2c8d5a1",
+        "padding_top": 64,
+        "padding_bottom": 64
       }
     },
     "comparison_gpt_jKGVGG": {
@@ -1479,11 +1479,11 @@
     "four_blocks_section_GUrqqC",
     "step_process_section_6zqFqg",
     "images_section_EWjexj",
-    "custom_testimonial_slider_rXyNiP",
     "custom_progress_slider_U3WJhU",
     "progress_bar_DPTpXb",
     "1767877168b2c8d5a1",
     "money_back_gurantee_FJYTCG",
+    "custom_testimonial_slider_rXyNiP",
     "comparison_gpt_jKGVGG",
     "custom_testimonial_slider_n3NQHU",
     "custom_progress_slider_jxPHag",
